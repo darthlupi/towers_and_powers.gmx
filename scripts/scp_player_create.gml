@@ -20,12 +20,18 @@ alarm[2] += regen_timer;
 
 //Attacking
 attack_charge = 0;
-attack_charge_max = 15;
+attack_charge_max = 1;
 
 
 //Movement target for mouse and grid based movement
 target_x = x;
 target_y = y;
+
+//Trigger movement vs shoot 
+//How long you are holding down mouse / screen
+move_count = 0;
+//How long you have to hold it down before activating move
+move_count_max = 15;
 
 //Jumping stuff
 jump = 0;
@@ -34,6 +40,8 @@ gravity = 0;
 
 //Only used for multipathmovement :)
 my_path = path_add();
+//Found a good path
+good_path_found = 0;
 //Check if moving by checking the path index :)
 moving = path_index;
 //If player is selected to move

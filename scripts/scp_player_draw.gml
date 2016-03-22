@@ -19,4 +19,3 @@ for ( i = 0; i<=1;i+= 10/path_ln )
 draw_set_alpha(1);
 
 draw_sprite_ext(sprite_index,-1,x + tmp_rand,y + tmp_rand,xscale,yscale,image_angle,color,image_alpha);
-

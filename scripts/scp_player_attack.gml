@@ -29,27 +29,15 @@ if ( tmp_m_dir <= 45 || tmp_m_dir >= 315 )
 if ( !move_select  )
 {
   //Charge shot
-  if ( mouse_check_button(mb_left) )
+  if ( mouse_check_button(mb_left) && alarm[1] <= 0 )
   {
-    attack_charge += 1;
-    if attack_charge >= attack_charge_max then attack_charge = attack_charge_max;
-  }
 
-  if ( mouse_check_button_released( mb_left) )
-  {
-    attack_charge = 0;
-  }
-  
-  if ( attack_charge >= attack_charge_max )
-  {
     //Create the machine gun attack
     my_attack = instance_create(x,y,obj_machine_gun_shot);
     my_attack.range = range;
     my_attack.attack = attack;
     my_attack.direction = tmp_a_dir;
     my_attack.image_angle = tmp_a_dir; 
-    
-    attack_charge = 0;
 
     //Set the range on the attack
     with(my_attack)
