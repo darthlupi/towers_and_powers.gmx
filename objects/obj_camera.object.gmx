@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Move around and shize
-if ( instance_exists(obj_player) )
+            <string>//Set the object to follow
+tmp_camera_target = obj_player_parent;
+
+//Move around and shize
+if ( instance_exists(tmp_camera_target) )
 {
   //If player is selected to and chosing next move 
   //then move the camera towards the mouse in distance restricted fashion.
@@ -37,22 +40,22 @@ if ( instance_exists(obj_player) )
   
   
   
-  if ( obj_player.move_select = 1 )
+  if ( tmp_camera_target.move_select = 1 )
   {
-    tmp_dist = point_distance(obj_player.x,obj_player.y,x,y);
-    tmp_dir = point_direction(obj_player.x,obj_player.y,x,y) 
+    tmp_dist = point_distance(tmp_camera_target.x,tmp_camera_target.y,x,y);
+    tmp_dir = point_direction(tmp_camera_target.x,tmp_camera_target.y,x,y) 
     move_towards_point(mouse_x + tmp_x,mouse_y + tmp_y,4);
     //Restrict the movement of the camera to 80 pixels away from the player
     if ( tmp_dist &gt; 80 )
     {
-      x = obj_player.x + lengthdir_x(80,tmp_dir);
-      y = obj_player.y + lengthdir_y(80,tmp_dir);
+      x = tmp_camera_target.x + lengthdir_x(80,tmp_dir);
+      y = tmp_camera_target.y + lengthdir_y(80,tmp_dir);
     }
   }
   else
   {
     yoff = 0;   
-    tmp_m_dir = obj_player.direction;
+    tmp_m_dir = tmp_camera_target.direction;
 
    if ( tmp_m_dir &gt;= 45 &amp;&amp; tmp_m_dir &lt; 135 )
    {
@@ -63,7 +66,7 @@ if ( instance_exists(obj_player) )
    {
      yoff = 30;
    }
-    move_towards_point(obj_player.x,obj_player.y + yoff,2)
+    move_towards_point(tmp_camera_target.x,tmp_camera_target.y + yoff,2)
   }
 }
 </string>

@@ -28,19 +28,19 @@ my_button_4.y = y+8;
 
 //Draw the select box based on the grid coordinates.
 //This can be removed if you are not using grid based movement.0
-draw_sprite(spr_grid_selection,-1,mouse_grid_x,mouse_grid_y);
+//draw_sprite(spr_grid_selection,-1,mouse_grid_x,mouse_grid_y);
 
 draw_sprite(spr_hud,-1,x,y);
 
 
 //Draw player health
-if ( instance_exists(obj_player) )
+if ( instance_exists(player_id) && player_id != -1 )
 {
-  for ( h = 0; h < obj_player.hp_max; h+=1 )
+  for ( h = 0; h < player_id.hp_max; h+=1 )
   {
     draw_sprite(spr_player_health,1,x+118+h*4,y+8);
   }
-  for ( h2 = 0; h2 < obj_player.hp; h2+=1 )
+  for ( h2 = 0; h2 < player_id.hp; h2+=1 )
   {
     draw_sprite(spr_player_health,0,x+118+h2*4,y+8);
   }

@@ -7,8 +7,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
-  <bbox_left>3</bbox_left>
-  <bbox_right>20</bbox_right>
+  <bbox_left>7</bbox_left>
+  <bbox_right>15</bbox_right>
   <bbox_top>3</bbox_top>
   <bbox_bottom>23</bbox_bottom>
   <HTile>0</HTile>
@@ -20,6 +20,6 @@
   <width>24</width>
   <height>24</height>
   <frames>
-    <frame index="0">images\spr_player_cs_0.png</frame>
+    <frame index="0">images\spr_player_2_s_0.png</frame>
   </frames>
 </sprite>

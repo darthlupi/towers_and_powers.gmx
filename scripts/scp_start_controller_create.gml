@@ -14,12 +14,12 @@ global.setup_array[1] = 10; //Current Level
 global.setup_array[2] = 200; //Level Up Cost
 
 //Stats starting
-global.hp_max[0] = 30;
+global.hp_max[0] = 2;
 global.reload[0] = 15;
 global.attack[0] = 10;
 global.armor[0] = 1;
 global.range[0] = 180;
-global.regen[0] = 1;
+global.regen[0] = 0;
 global.mana[0] = 10;
 global.mana_regen[1] = 1;
 //Stats current level
@@ -28,7 +28,7 @@ global.reload[1] = 1;
 global.attack[1] = 1;
 global.armor[1] = 1;
 global.range[1] = 1;
-global.regen[1] = 1;
+global.regen[1] = 0;
 global.mana[1] = 1;
 global.mana_regen[1] = 1;
 

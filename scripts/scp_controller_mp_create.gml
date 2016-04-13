@@ -8,16 +8,17 @@ for ( tmp_rx = 0; tmp_rx < room_width; tmp_rx += grid_size_x )
     //Check center of grid one grid size below for "solid object" else mark the space as air.  
     tmp_cx = tmp_rx + grid_size_x / 2;
     tmp_cy = tmp_ry +grid_size_y +  ( grid_size_y / 2 );
-    if ( !position_meeting( tmp_rx, tmp_ry, obj_block )  && !position_meeting( tmp_rx, tmp_ry, obj_block_ladder ) )
-    {
-      if ( !position_meeting( tmp_cx, tmp_cy, obj_block )  && !position_meeting( tmp_cx, tmp_cy, obj_block_ladder ) )
-      {
-        if ( !position_meeting( tmp_cx, tmp_ry - 2, obj_block )  && !position_meeting( tmp_cx, tmp_ry - 2, obj_block_ladder ) )
-        {
-          instance_create(tmp_rx,tmp_ry,obj_block_air);
-        }
-      }
-    }
+    tmp_air = 1; //Air is a block that cannot be navigated - out of bounds for non fliers
+    
+    //If the postion is on a block or ladder
+    if position_meeting( tmp_rx, tmp_ry, obj_block ) || position_meeting( tmp_rx, tmp_ry, obj_block_ladder ) then tmp_air = 0;
+    
+    //If the postion below is a block then make it air space
+    if position_meeting( tmp_cx, tmp_ry + grid_size_y, obj_block )  || position_meeting( tmp_cx, tmp_ry + grid_size_y, obj_block_ladder )  then tmp_air = 0;
+    
+    if tmp_air then instance_create(tmp_rx,tmp_ry,obj_block_air);
+    
+
   }
 }
 

@@ -13,7 +13,7 @@ mana_regen = global.mana_regen[0];
 hp = hp_max;
 
 //Trigger the attack
-alarm[1] = reload;
+alarm[1] = -1;
 //Regen triger
 regen_timer = 200;
 alarm[2] += regen_timer;
@@ -55,6 +55,11 @@ path_alpha = 1;
 //Sprites stuff
 player_offset_x = 0;
 player_offset_y = 0;
+
+sprite_walk = spr_player_1_w;
+sprite_climb = spr_player_1_c;
+sprite_climb_still = spr_player_1_cs;
+sprite_stand_still = spr_player_1_s;
 
 //image_xscale will scale the bbox breaking collisions
 xscale = 1;

@@ -37,20 +37,26 @@
         <sprite>sprites\spr_machine_gun</sprite>
       </sprites>
       <sprites name="units">
-        <sprite>sprites\spr_player_1</sprite>
-        <sprite>sprites\spr_player_w</sprite>
-        <sprite>sprites\spr_player_w_a</sprite>
-        <sprite>sprites\spr_player_s</sprite>
-        <sprite>sprites\spr_player_s_a</sprite>
-        <sprite>sprites\spr_player_j</sprite>
-        <sprite>sprites\spr_player_j_a</sprite>
-        <sprite>sprites\spr_player_f</sprite>
-        <sprite>sprites\spr_player_f_a</sprite>
-        <sprite>sprites\spr_player_c</sprite>
-        <sprite>sprites\spr_player_c_a</sprite>
-        <sprite>sprites\spr_player_cs</sprite>
-        <sprite>sprites\spr_player_cs_a</sprite>
-        <sprite>sprites\spr_player_delete</sprite>
+        <sprite>sprites\spr_player_1_w</sprite>
+        <sprite>sprites\spr_player_1_s</sprite>
+        <sprite>sprites\spr_player_1_c</sprite>
+        <sprite>sprites\spr_player_1_cs</sprite>
+        <sprite>sprites\spr_player_2_s</sprite>
+        <sprite>sprites\spr_player_2_cs</sprite>
+        <sprite>sprites\spr_player_2_c</sprite>
+        <sprite>sprites\spr_player_2_w</sprite>
+        <sprites name="unused">
+          <sprite>sprites\spr_player_f_a</sprite>
+          <sprite>sprites\spr_player_cs_a</sprite>
+          <sprite>sprites\spr_player_c_a</sprite>
+          <sprite>sprites\spr_player_j_a</sprite>
+          <sprite>sprites\spr_player_w_a</sprite>
+          <sprite>sprites\spr_player_j</sprite>
+          <sprite>sprites\spr_player_f</sprite>
+          <sprite>sprites\spr_player_1</sprite>
+          <sprite>sprites\spr_player_delete</sprite>
+          <sprite>sprites\spr_player_1_s_a</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="enemy">
@@ -71,6 +77,7 @@
       <sprite>sprites\spr_check_mark</sprite>
       <sprite>sprites\spr_down_arrow</sprite>
       <sprite>sprites\spr_selection_thingy2</sprite>
+      <sprite>sprites\spr_selection_thingy_4</sprite>
       <sprite>sprites\spr_selection_thingy3</sprite>
       <sprite>sprites\spr_grid_selection</sprite>
       <sprite>sprites\spr_player_health</sprite>
@@ -110,7 +117,6 @@
     <background>background\background0</background>
     <background>background\bg_tiles</background>
     <background>background\background2</background>
-    <background>background\background3</background>
     <background>background\bg_wall_1</background>
   </backgrounds>
   <paths name="paths">
@@ -149,6 +155,8 @@
       <script>scripts\scp_enemy_jump_fall.gml</script>
       <script>scripts\scp_enemy_do_damage.gml</script>
       <script>scripts\scp_enemy_sprite.gml</script>
+      <script>scripts\scp_enemy_mp_move.gml</script>
+      <script>scripts\scp_enemy_short_path.gml</script>
     </scripts>
     <scripts name="tools">
       <script>scripts\scp_mouse_over_check.gml</script>
@@ -156,6 +164,7 @@
       <script>scripts\scp_create_chunks.gml</script>
       <script>scripts\scp_obj_array.gml</script>
       <script>scripts\scp_block_auto_tile.gml</script>
+      <script>scripts\scp_can_hit.gml</script>
     </scripts>
     <scripts name="buttons">
       <scripts name="buttons">
@@ -176,7 +185,9 @@
   </scripts>
   <objects name="objects">
     <objects name="player">
-      <object>objects\obj_player</object>
+      <object>objects\obj_player_1</object>
+      <object>objects\obj_player_2</object>
+      <object>objects\obj_player_3</object>
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
@@ -218,6 +229,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_template</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>

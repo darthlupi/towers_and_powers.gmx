@@ -12,6 +12,10 @@ start_y = 96;
 my_player = instance_create(start_x,start_y,obj_player);
 */
 
+//Which player was selected
+player_selected = 0;
+player_id = -1;
+
 //Create bottons
 my_button_1 = instance_create(x+245,y+8,obj_button_item);
 my_button_2 = instance_create(x+245 + 32 + 4,y+8,obj_button_item);
@@ -22,8 +26,6 @@ my_button_4 = instance_create(x+245 + 96 + 12,y+8,obj_button_item);
 xscale=1;
 yscale=1;
 angle =0;
-
-
 
 //Prepare the grid movement
 scp_controller_grid_create();

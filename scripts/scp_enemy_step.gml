@@ -1,35 +1,44 @@
-tmp_target = obj_player;
+//This will eventually store the closest player or target player.
+//For now we just point it towards the player parent object.
+tmp_target = obj_player_parent;
 
+//This 2d array is used to record the potential players
+//The first dim is used to record which player and the 
+//second is set thus: 0 = player obj id, 1 = recorded path length to that player 
+tmp_player_list[] = 0;
+tmp_player_list[0,0] = obj_player_1;
+tmp_player_list[1,0] = obj_player_2;
+tmp_player_list[2,0] = obj_player_3;
 
 //Set depth
 depth = -y;
 
-
 //Basic movement using the multipathing examples
-if ( random(100)> 90  && instance_exists(obj_player) && gravity == 0  )
-{
-    target_x = obj_player.x;
-    target_y = obj_player.y;
-    if flying = 1 then my_grid = global.mp_grid_fly else my_grid = global.mp_grid;
-    tmp_path_results = mp_grid_path(my_grid, my_path, x, y, target_x, target_y, false);
-    if ( tmp_path_results )
-    {
-      path_start(my_path,move_speed,0,0);
-    }
+if ( random(100)> 90  && instance_exists(obj_player_parent) && gravity == 0  ){
+
+  //Find the shortest path to the player...
+  scp_enemy_short_path();  
+
+  //Move towards the closest player...
+  scp_enemy_mp_move(tmp_target.x,tmp_target.y);
+  
+  //Start moving on the path if one was found
+  if ( tmp_path_results ){
+    path_start(my_path,move_speed,0,0);
+  }
+
 }
 
 //Get the image_xscale
-if ( direction < 90 || direction > 270 )
-{
+if ( direction < 90 || direction > 270 ){
   xscale = 1
 }
-else if ( direction > 90 && direction < 270 )
-{
+else if ( direction > 90 && direction < 270 ){
   xscale = -1;
 }
 
 //Jumping or falling
-scp_enemy_jump_fall()
+//scp_enemy_jump_fall()
 //Sprite selection
 scp_enemy_sprite();
 
