@@ -17,11 +17,11 @@ player_selected = 0;
 player_id = -1;
 
 //Create bottons
-my_button_1 = instance_create(x+245,y+8,obj_button_item);
-my_button_2 = instance_create(x+245 + 32 + 4,y+8,obj_button_item);
-my_button_3 = instance_create(x+245 + 64 + 8,y+8,obj_button_item);
-my_button_4 = instance_create(x+245 + 96 + 12,y+8,obj_button_item);
-
+my_button_1 = instance_create(x+213,y+8,obj_button_action);
+my_button_2 = instance_create(x+213 + 32 + 4,y+8,obj_button_item);
+my_button_3 = instance_create(x+213 + 64 + 8,y+8,obj_button_item);
+my_button_4 = instance_create(x+213 + 96 + 12,y+8,obj_button_item);
+my_button_5 = instance_create(x+213 + 128 + 12,y+8,obj_button_item);
 //Text variables
 xscale=1;
 yscale=1;

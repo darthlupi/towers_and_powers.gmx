@@ -38,20 +38,24 @@
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_player_1_w</sprite>
+        <sprite>sprites\spr_player_1_j_u</sprite>
+        <sprite>sprites\spr_player_1_j_d</sprite>
         <sprite>sprites\spr_player_1_s</sprite>
         <sprite>sprites\spr_player_1_c</sprite>
         <sprite>sprites\spr_player_1_cs</sprite>
+        <sprite>sprites\spr_player_2_w</sprite>
+        <sprite>sprites\spr_player_2_j_u</sprite>
+        <sprite>sprites\spr_player_2_j_d</sprite>
         <sprite>sprites\spr_player_2_s</sprite>
         <sprite>sprites\spr_player_2_cs</sprite>
         <sprite>sprites\spr_player_2_c</sprite>
-        <sprite>sprites\spr_player_2_w</sprite>
         <sprites name="unused">
           <sprite>sprites\spr_player_f_a</sprite>
           <sprite>sprites\spr_player_cs_a</sprite>
           <sprite>sprites\spr_player_c_a</sprite>
           <sprite>sprites\spr_player_j_a</sprite>
           <sprite>sprites\spr_player_w_a</sprite>
-          <sprite>sprites\spr_player_j</sprite>
+          <sprite>sprites\spr_player_j_old</sprite>
           <sprite>sprites\spr_player_f</sprite>
           <sprite>sprites\spr_player_1</sprite>
           <sprite>sprites\spr_player_delete</sprite>
@@ -85,6 +89,7 @@
     <sprites name="button">
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
+      <sprite>sprites\spr_jump</sprite>
       <sprite>sprites\spr_back_button</sprite>
       <sprite>sprites\spr_upgrade_button</sprite>
       <sprite>sprites\spr_player_button_ko</sprite>
@@ -166,6 +171,7 @@
       <script>scripts\scp_obj_array.gml</script>
       <script>scripts\scp_block_auto_tile.gml</script>
       <script>scripts\scp_can_hit.gml</script>
+      <script>scripts\scp_platform_collision.gml</script>
     </scripts>
     <scripts name="buttons">
       <scripts name="buttons">
@@ -173,8 +179,9 @@
         <script>scripts\scp_button_step.gml</script>
         <script>scripts\scp_button_draw.gml</script>
       </scripts>
-      <scripts name="botton_scripts">
+      <scripts name="button_scripts">
         <script>scripts\scp_button_test.gml</script>
+        <script>scripts\scp_action_button_script.gml</script>
       </scripts>
     </scripts>
     <scripts name="pause">
@@ -211,6 +218,7 @@
     <objects name="button">
       <object>objects\obj_button</object>
       <object>objects\obj_button_item</object>
+      <object>objects\obj_button_action</object>
       <object>objects\obj_button_pause</object>
     </objects>
     <objects name="effects">

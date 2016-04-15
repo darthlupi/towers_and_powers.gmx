@@ -60,6 +60,8 @@ sprite_walk = spr_player_1_w;
 sprite_climb = spr_player_1_c;
 sprite_climb_still = spr_player_1_cs;
 sprite_stand_still = spr_player_1_s;
+sprite_jump_u = spr_player_1_j_u;
+sprite_jump_d = spr_player_1_j_d;
 
 //image_xscale will scale the bbox breaking collisions
 xscale = 1;

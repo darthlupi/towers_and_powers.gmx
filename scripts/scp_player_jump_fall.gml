@@ -12,10 +12,10 @@ else if ( direction > 90 && direction < 270 )
 }
 
 //Trying to jump
-//If moving along path and nothing is below your feet ahead or not a ladder then try to jump
-tmp_last_jump = this_jump;
-this_jump = instance_place(x,y,obj_block_jump );
-if ( jump == 0 && this_jump  && this_jump != tmp_last_jump && path_position != 1 ){//( jump == 0 && should_jump && path_position == 1 ){
+if keyboard_check_pressed(ord('X') ) && obj_controller.player_id == id then should_jump = 1;
+//
+if ( jump == 0 && should_jump  ){
+  y -= 1; //SOMETIMES the player is 1 pixel stuck in the floor for fun...
   jump = 1;
   should_jump = 0;
   vspeed = -2; 
@@ -23,45 +23,17 @@ if ( jump == 0 && this_jump  && this_jump != tmp_last_jump && path_position != 1
   hspeed = xscale * 3;
   path_end();
 }
-//Collisions
-if ( vspeed != 0 || hspeed != 0 || gravity != 0 ) {
-  //Place this object over the object it collided with.
-  tmp_block = -1;
-  
 
-
-  //Hitting your head
-  if ( vspeed < 0 )
-  {
-    if ( place_meeting(x,y+vspeed,obj_block) ){
-      tmp_block = instance_place(x,y+vspeed,obj_block);
-      y = tmp_block.bbox_bottom + 7 ;
-      //vspeed = 0;
-    }
+//We cannot walk if we are stuck on an air tile, so move off of it.
+if ( place_meeting(x,y,obj_block_air) && jump == 0 )
+{
+  tmp_block = instance_place(x,y+vspeed,obj_block_air);
+  if ( tmp_block.x + tmp_block.sprite_width / 2 >= x ){
+    x-= move_speed
+    direction = 180; //For setting 
+  } else {
+    x+= move_speed; 
+    direction = 0;
   }
-  
-  //Landing
-  if ( vspeed > 0 ){
-    if place_meeting(x,y+vspeed,obj_block) then tmp_block = instance_place(x,y+vspeed,obj_block);
-    if ( tmp_block || ( place_meeting(x,y,obj_block_ladder) && !place_meeting(x,y,obj_block_air) ) ) {
-      //Place the player OVER the block they collided with
-      if tmp_block then y = tmp_block.y - (bbox_bottom - y) -1;
-      vspeed = 0;
-      hspeed = 0;
-      gravity = 0;
-      jump = 0;
-    }
-  }
-  
-  //Colliding sideways
-  if ( hspeed != 0 )
-  {
-    if ( place_meeting(x + hspeed ,y,obj_block) ){
-      x += -hspeed;
-      hspeed = 0;
-    }
-  }  
-  
-  
 }
 

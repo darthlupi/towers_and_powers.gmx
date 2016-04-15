@@ -19,5 +19,11 @@ else
 //Allow the mouse to move in a grid
 scp_controller_grid_mouse();
 
-
+//If the selected player is no more then we should deselect them...
+if ( !instance_exists( player_id ) )
+{
+  obj_controller.player_selected = 0;
+  //Set the icon for the mouse
+  obj_controller.my_selection_thingy.state = 0;  
+}
 

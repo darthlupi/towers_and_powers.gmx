@@ -34,6 +34,8 @@ sprite_walk = spr_player_2_w;
 sprite_climb = spr_player_2_c;
 sprite_climb_still = spr_player_2_cs;
 sprite_stand_still = spr_player_2_s;
+sprite_jump_u = spr_player_2_j_u;
+sprite_jump_d = spr_player_2_j_d;
 </string>
           </argument>
         </arguments>

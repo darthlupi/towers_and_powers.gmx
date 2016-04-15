@@ -5,14 +5,17 @@ y = view_yview[0] + 192;
 
 
 //Create bottons
-my_button_1.x = x+245;
+my_button_1.x = x+209;
 my_button_1.y = y+8;
-my_button_2.x = x+245 + 32 + 4;
+my_button_2.x = x+213 + 32;
 my_button_2.y = y+8;
-my_button_3.x = x+245 + 64 + 8;
+my_button_3.x = x+218 + 64 ;
 my_button_3.y = y+8;
-my_button_4.x = x+245 + 96 + 12;
+my_button_4.x = x+222 + 96 ;
 my_button_4.y = y+8;
+my_button_5.x = x+225 + 128 ;
+my_button_5.y = y+8;
+
 
 //If multipath movement draw the grid for debugging purposes
 //draw_set_alpha(0.2);
@@ -49,7 +52,7 @@ else
 {
   for ( h = 0; h < global.hp_max[0]; h+=1 )
   {
-    draw_sprite(spr_player_health,1,x+110+h*4,y+8);
+    draw_sprite(spr_player_health,1,x+118+h*4,y+8);
   }
 
 }
@@ -59,7 +62,7 @@ draw_set_font(global.font_score);
 draw_set_halign(fa_left);
 draw_set_color(c_white);
 draw_set_font(global.font_white);
-draw_text(x+144,y + 20,"LEVEL 1");
+draw_text(x+125,y + 20,"LEVEL 1");
 //draw_text(x+122,y + 1,"HEALTH");
 draw_set_font(global.font_score);
 draw_text_transformed(x + 10,y + 8, "$" + string(global.points),xscale,yscale,angle );
