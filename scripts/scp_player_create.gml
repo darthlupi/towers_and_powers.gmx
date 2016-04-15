@@ -27,14 +27,14 @@ attack_charge_max = 1;
 target_x = x;
 target_y = y;
 
-//Trigger movement vs shoot 
-//How long you are holding down mouse / screen
-move_count = 0;
-//How long you have to hold it down before activating move
-move_count_max = 15;
+
+//How fast you move
+move_speed = 3;
 
 //Jumping stuff
 jump = 0;
+should_jump = 0;
+this_jump = -1;
 jump_max = 12; //How many steps you stay air born when jumping :)
 gravity = 0;
 

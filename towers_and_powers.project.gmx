@@ -111,6 +111,7 @@
       <sprite>sprites\spr_blocks</sprite>
       <sprite>sprites\spr_block_ladder</sprite>
       <sprite>sprites\spr_block_air</sprite>
+      <sprite>sprites\spr_jump_block</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -225,6 +226,7 @@
       <object>objects\obj_block</object>
       <object>objects\obj_block_ladder</object>
       <object>objects\obj_block_air</object>
+      <object>objects\obj_block_jump</object>
     </objects>
   </objects>
   <rooms name="rooms">

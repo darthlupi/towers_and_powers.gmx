@@ -15,8 +15,8 @@ if ( xscale == -1 ) {
 
 //Attack if the reload alarm is not set and we are not moving this step
 if ( !move_select  ){
-  //Charge shot
-  if ( alarm[1] <= 0 )
+  //Attack if the alarm for being ready to shoot again OR being read to run can hit is ready
+  if ( alarm[1] <= 0 and alarm[4] <= 0)
   {
     //Check to see if you can actually shoot the enemy before attacking
     //Currently scp_can_hit check in degrees of 15
@@ -36,6 +36,7 @@ if ( !move_select  ){
       //Set the time for next attack :)
       alarm[1] = reload;
     }
+    alarm[4] = 5; //Just to keep the scp_can hit from running every step
   }
 }
 

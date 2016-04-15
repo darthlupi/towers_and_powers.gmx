@@ -4,12 +4,10 @@ target_x = mouse_x + view_xview[0];
 target_y = obj_controller.mouse_grid_y + obj_controller.grid_size_y / 2 ;
 
 //Set target coordinates
-if ( mouse_check_button(mb_left) && jump == 0 )
-{
+if ( mouse_check_button(mb_left) && jump == 0 ){
   //If moused over the player than you can move the player
   //Move selectiong has started if you also press the mouse button
-  if ( scp_mouse_over_check(id,10) && mouse_check_button_pressed(mb_left) && !obj_controller.player_selected )
-  {
+  if ( scp_mouse_over_check(id,10) && mouse_check_button_pressed(mb_left) && !obj_controller.player_selected ){
     //Uncomment to allow drag and drop move
     move_select = 1;
     //Which player was selected
@@ -17,8 +15,7 @@ if ( mouse_check_button(mb_left) && jump == 0 )
     obj_controller.player_id = id;
   }
 
-  if ( move_select )
-  {  
+  if ( move_select ){  
     //Set scale
     if mouse_x >= x then xscale = 1 else xscale = -1;
   
@@ -38,15 +35,16 @@ if ( mouse_check_button(mb_left) && jump == 0 )
     path_alpha = 1;
     
     //If no good path found
-    if ( !tmp_path_results )
-    {
+    if ( !tmp_path_results ){
       //Set the icon for the mouse
       obj_controller.my_selection_thingy.state = 2;
       //Uncomment if you want to not show path
       if !good_path_found then path_ln = 0.001;
+      
+
+      
     }
-    else
-    {
+    else{
         //Found a good path
         //Prevents taking a path if no good one was found
         good_path_found = 1;
@@ -57,15 +55,30 @@ if ( mouse_check_button(mb_left) && jump == 0 )
 }
 
 //If move selected start moving along the path
-if ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right))
-{
+if ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right)){
 
     //Rest how long you are holding down the mouse
     //move_count = 0;
 
-  if ( move_select )
-  {
-    if good_path_found == 1 then path_start(my_path,3,0,0);
+  if ( move_select ){
+    if ( good_path_found == 1 ){
+      //There was a good path found, let's follow it!
+      path_start(my_path,move_speed,0,0);
+      //Decide if we jump or not...
+
+      tmp_end_x = path_get_x(my_path,1);
+      tmp_end_y = path_get_y(my_path,1);
+      
+      if ( !collision_line(tmp_end_x,tmp_end_y,target_x,target_y,obj_block,false,false) && 
+           position_meeting(target_x,target_y,obj_block_air) &&
+           good_path_found  ){
+        should_jump = 1;
+      }
+      else 
+      {
+        should_jump = 0;
+      }
+    }
 
     //Can select another player to move
     obj_controller.player_selected = 0;
