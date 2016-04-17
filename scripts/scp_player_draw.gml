@@ -9,6 +9,9 @@ if (alarm[0])
 //Only used for multipathing
 //draw_path(my_path,x,y,true);
 
+
+//draw_text(x,y-15,obj_controller.player_id);
+
 draw_set_alpha(path_alpha);
 for ( i = 0; i<=1;i+= 10/path_ln )
 {

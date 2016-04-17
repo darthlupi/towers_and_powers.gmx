@@ -9,11 +9,11 @@ my_button_1.x = x+209;
 my_button_1.y = y+8;
 my_button_2.x = x+213 + 32;
 my_button_2.y = y+8;
-my_button_3.x = x+218 + 64 ;
+my_button_3.x = x+218 + 69 ;
 my_button_3.y = y+8;
-my_button_4.x = x+222 + 96 ;
+my_button_4.x = x+222 + 101 ;
 my_button_4.y = y+8;
-my_button_5.x = x+225 + 128 ;
+my_button_5.x = x+225 + 133 ;
 my_button_5.y = y+8;
 
 

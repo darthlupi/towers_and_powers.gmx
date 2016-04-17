@@ -89,6 +89,8 @@
     <sprites name="button">
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
+      <sprite>sprites\spr_button_p_2</sprite>
+      <sprite>sprites\spr_button_p_1</sprite>
       <sprite>sprites\spr_jump</sprite>
       <sprite>sprites\spr_back_button</sprite>
       <sprite>sprites\spr_upgrade_button</sprite>
@@ -182,6 +184,9 @@
       <scripts name="button_scripts">
         <script>scripts\scp_button_test.gml</script>
         <script>scripts\scp_action_button_script.gml</script>
+        <script>scripts\scp_button_player_1.gml</script>
+        <script>scripts\scp_button_player_2.gml</script>
+        <script>scripts\scp_button_player_3.gml</script>
       </scripts>
     </scripts>
     <scripts name="pause">
@@ -218,6 +223,9 @@
     <objects name="button">
       <object>objects\obj_button</object>
       <object>objects\obj_button_item</object>
+      <object>objects\obj_button_p1</object>
+      <object>objects\obj_button_p2</object>
+      <object>objects\obj_button_p3</object>
       <object>objects\obj_button_action</object>
       <object>objects\obj_button_pause</object>
     </objects>
