@@ -50,6 +50,10 @@
         <sprite>sprites\spr_player_2_cs</sprite>
         <sprite>sprites\spr_player_2_c</sprite>
         <sprite>sprites\spr_player_3_s</sprite>
+        <sprite>sprites\spr_player_3_w</sprite>
+        <sprite>sprites\spr_player_3_j_u</sprite>
+        <sprite>sprites\spr_player_3_j_d</sprite>
+        <sprite>sprites\sprite63</sprite>
         <sprites name="unused">
           <sprite>sprites\spr_player_f_a</sprite>
           <sprite>sprites\spr_player_cs_a</sprite>
