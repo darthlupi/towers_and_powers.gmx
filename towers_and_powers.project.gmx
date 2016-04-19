@@ -51,6 +51,7 @@
         <sprite>sprites\spr_player_2_c</sprite>
         <sprite>sprites\spr_player_3_s</sprite>
         <sprite>sprites\spr_player_3_c</sprite>
+        <sprite>sprites\spr_player_3_cs</sprite>
         <sprite>sprites\spr_player_3_w</sprite>
         <sprite>sprites\spr_player_3_j_u</sprite>
         <sprite>sprites\spr_player_3_j_d</sprite>
@@ -97,6 +98,7 @@
       <sprite>sprites\spr_question_button</sprite>
       <sprite>sprites\spr_button_p_2</sprite>
       <sprite>sprites\spr_button_p_1</sprite>
+      <sprite>sprites\spr_button_p_3</sprite>
       <sprite>sprites\spr_jump</sprite>
       <sprite>sprites\spr_back_button</sprite>
       <sprite>sprites\spr_upgrade_button</sprite>
