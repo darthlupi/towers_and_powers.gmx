@@ -100,6 +100,7 @@
       <sprite>sprites\spr_button_p_1</sprite>
       <sprite>sprites\spr_button_p_3</sprite>
       <sprite>sprites\spr_jump</sprite>
+      <sprite>sprites\sprite72</sprite>
       <sprite>sprites\spr_back_button</sprite>
       <sprite>sprites\spr_upgrade_button</sprite>
       <sprite>sprites\spr_player_button_ko</sprite>
@@ -133,6 +134,7 @@
     <background>background\background0</background>
     <background>background\bg_tiles</background>
     <background>background\background2</background>
+    <background>background\bg_mockups</background>
     <background>background\bg_wall_1</background>
   </backgrounds>
   <paths name="paths">
@@ -231,6 +233,7 @@
     <objects name="button">
       <object>objects\obj_button</object>
       <object>objects\obj_button_item</object>
+      <object>objects\obj_button_upgrade</object>
       <object>objects\obj_button_p1</object>
       <object>objects\obj_button_p2</object>
       <object>objects\obj_button_p3</object>
@@ -257,6 +260,7 @@
     <room>rooms\rm_start</room>
     <room>rooms\rm_template</room>
     <room>rooms\rm_test</room>
+    <room>rooms\room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

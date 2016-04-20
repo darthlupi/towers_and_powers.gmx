@@ -3,7 +3,7 @@ target_x = mouse_x + view_xview[0];
 target_y = obj_controller.mouse_grid_y + obj_controller.grid_size_y / 2 ;
 
 //Not in the middle of jumping 
-if ( mouse_check_button(mb_left) && jump == 0 ){
+if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){
   if ( mouse_check_button_pressed(mb_left) ){
    //Switch which player is selected on mb press.
    //We have to check all players at once to avoid moving an already selected player.
