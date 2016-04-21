@@ -12,7 +12,7 @@ else if ( direction > 90 && direction < 270 )
 }
 
 //Trying to jump
-if keyboard_check_pressed(ord('X') ) && obj_controller.player_id == id then should_jump = 1;
+if ( keyboard_check_pressed(ord('X') ) || mouse_check_button_pressed(mb_right) ) && obj_controller.player_id == id then should_jump = 1;
 //
 if ( jump == 0 && should_jump  ){
   y -= 1; //SOMETIMES the player is 1 pixel stuck in the floor for fun...
