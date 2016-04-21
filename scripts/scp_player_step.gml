@@ -8,7 +8,7 @@ sprite_index = scp_player_sprite_select();
 if ( hp <= 0 )
 {
     hp = 0;
-    scp_create_chunks(sprite_index,8,x - abs(sprite_xoffset),y - abs(sprite_yoffset),bbox_bottom,xscale,yscale,0);
+    scp_create_chunks(sprite_index,2,x - abs(sprite_xoffset),y - abs(sprite_yoffset),bbox_bottom,xscale,yscale,0);
     instance_destroy();
 }   
 
