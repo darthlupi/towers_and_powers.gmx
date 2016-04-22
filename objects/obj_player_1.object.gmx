@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scp_player_create();
+            <string>p_index = 0;
+scp_player_create();
 </string>
           </argument>
         </arguments>

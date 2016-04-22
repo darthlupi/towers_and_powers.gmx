@@ -8,29 +8,81 @@ global.left_border = 0;
 global.right_border = 0;
 
 
-//Array for setup screen and leveling up
-global.setup_array[0] = "The main character"; //Description of unit
-global.setup_array[1] = 10; //Current Level
-global.setup_array[2] = 200; //Level Up Cost
+//////////////////////
+//Player 1
+//Natural Stats
+global.hp_max[0] = 5; //Starting hitpoints
+global.reload[0] = 0; //Reload bonus
+global.armor[0] = 0; //Armor bonus
+global.attack[0] = 0; //Attack Bonus
+global.regen[0] = 0; //Regen bonus
+global.wand[0] = 0;  //Which wand is equiped - determines default projectile
+//Leveling
+global.level[0] = 1;
+global.exp_points[0] = 0;
+global.level_points[0] = 1;
+//Gifted by items
+global.item_hp_max[0] = 0; //Starting hitpoints
+global.item_reload[0] = 0; //Reload bonus
+global.item_armor[0] = 0; //Armor bonus
+global.item_attack[0] = 0; //Attack Bonus
+global.item_regen[0] = 0; //Regen bonus
+global.action[0] = 0; //Which action is equiped
+//Which spell is selected
+global.spell_selected[0] = 0; //Which spell is selected where index = player index
 
-//Stats starting
-global.hp_max[0] = 5;
-global.reload[0] = 15;
-global.attack[0] = 10;
-global.armor[0] = 1;
-global.range[0] = 180;
-global.regen[0] = 0;
-global.mana[0] = 10;
-global.mana_regen[1] = 1;
-//Stats current level
-global.hp_max[1] = 1;
-global.reload[1] = 1;
-global.attack[1] = 1;
-global.armor[1] = 1;
-global.range[1] = 1;
-global.regen[1] = 0;
-global.mana[1] = 1;
-global.mana_regen[1] = 1;
+//////////////////////
+//Player 2
+//Natural Stats
+global.hp_max[1] = 5; //Starting hitpoints
+global.reload[1] = 0; //Reload bonus
+global.armor[1] = 0; //Armor bonus
+global.attack[1] = 0; //Attack Bonus
+global.regen[1] = 1; //Regen bonus
+global.wand[1] = 0;  //Which wand is equiped - determines default projectile
+//Leveling
+global.level[1] = 1;
+global.exp_points[1] = 0;
+global.level_points[1] = 1;
+//Gifted by items
+global.item_hp_max[1] = 1; //Starting hitpoints
+global.item_reload[1] = 0; //Reload bonus
+global.item_armor[1] = 0; //Armor bonus
+global.item_attack[1] = 0; //Attack Bonus
+global.item_regen[1] = 2; //Regen bonus
+global.action[1] = 0; //Which action is equiped
+//Which spell is selected
+global.spell_selected[1] = 0; //Which spell is selected where index = player index
+
+//////////////////////
+//Player 3
+//Natural Stats
+global.hp_max[2] = 5; //Starting hitpoints
+global.reload[2] = 0; //Reload bonus
+global.armor[2] = 0; //Armor bonus
+global.attack[2] = 0; //Attack Bonus
+global.regen[2] = 0; //Regen bonus
+global.wand[2] = 0;  //Which wand is equiped - determines default projectile
+//Leveling
+global.level[2] = 1;
+global.exp_points[2] = 0;
+global.level_points[2] = 1;
+//Gifted by items
+global.item_hp_max[2] = 2; //Starting hitpoints
+global.item_reload[2] = 0; //Reload bonus
+global.item_armor[2] = 0; //Armor bonus
+global.item_attack[2] = 0; //Attack Bonus
+global.item_regen[2] = 0; //Regen bonus
+global.action[2] = 0; //Which action is equiped
+//Which spell is selected
+global.spell_selected[2] = 0; //Which spell is selected where index = player index
+
+//Spells and their levels
+global.spell_level[0] = 0; //P1 Spells 0-4 = p1, 5-9 = p2, 10-14 = p3
+
+
+
+
 
 
 

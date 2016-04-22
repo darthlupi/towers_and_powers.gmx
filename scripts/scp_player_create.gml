@@ -2,14 +2,12 @@ move_speed = 2;
 image_speed = 0.25;
 
 //Stats
-hp_max = global.hp_max[0];
-reload = global.reload[0];
-attack = global.attack[0];
-armor = global.armor[0];
-range = global.range[0];
-regen = global.regen[0];
-mana = global.mana[0];
-mana_regen = global.mana_regen[0];
+hp_max = global.hp_max[p_index] + global.item_hp_max[p_index];
+reload = global.reload[p_index] + global.item_reload[p_index];
+attack = global.attack[p_index] + global.item_attack[p_index];
+armor = global.armor[p_index] + global.item_armor[p_index];
+regen = global.regen[p_index] + global.item_regen[p_index];
+
 hp = hp_max;
 
 //Trigger the attack

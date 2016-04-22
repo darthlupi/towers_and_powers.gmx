@@ -75,7 +75,8 @@
             <kind>1</kind>
             <string>//Regenerate health
 alarm[2] = regen_timer;
-scp_player_heal(regen)
+//Only regen if we can and we need to
+if regen &gt; 0 and hp_max &gt; hp then scp_player_heal(regen)
 </string>
           </argument>
         </arguments>
