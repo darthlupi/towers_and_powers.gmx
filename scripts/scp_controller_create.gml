@@ -27,6 +27,10 @@ xscale=1;
 yscale=1;
 angle =0;
 
+//For leveling stuff
+lvl_frame = 0;
+
+
 //Prepare the grid movement
 scp_controller_grid_create();
 //Prepare multipath

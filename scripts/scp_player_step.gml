@@ -30,3 +30,6 @@ scp_player_jump_fall()
 //Collisions
 scp_platform_collision();
 
+//Level up
+scp_player_level_up();
+

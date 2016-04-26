@@ -10,6 +10,10 @@ regen = global.regen[p_index] + global.item_regen[p_index];
 
 hp = hp_max;
 
+//Leveling
+exp_next = scp_player_next_level(); 
+
+
 //Trigger the attack
 alarm[1] = -1;
 //Regen triger

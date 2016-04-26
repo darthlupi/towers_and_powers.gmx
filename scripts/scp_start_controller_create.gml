@@ -7,6 +7,8 @@ global.top_border = 20;
 global.left_border = 0;
 global.right_border = 0;
 
+//Make level for players allowed
+global.level_max = 12;
 
 //////////////////////
 //Player 1
@@ -38,7 +40,7 @@ global.hp_max[1] = 5; //Starting hitpoints
 global.reload[1] = 0; //Reload bonus
 global.armor[1] = 0; //Armor bonus
 global.attack[1] = 0; //Attack Bonus
-global.regen[1] = 1; //Regen bonus
+global.regen[1] = 0; //Regen bonus
 global.wand[1] = 0;  //Which wand is equiped - determines default projectile
 //Leveling
 global.level[1] = 1;
@@ -49,7 +51,7 @@ global.item_hp_max[1] = 1; //Starting hitpoints
 global.item_reload[1] = 0; //Reload bonus
 global.item_armor[1] = 0; //Armor bonus
 global.item_attack[1] = 0; //Attack Bonus
-global.item_regen[1] = 2; //Regen bonus
+global.item_regen[1] = 0; //Regen bonus
 global.action[1] = 0; //Which action is equiped
 //Which spell is selected
 global.spell_selected[1] = 0; //Which spell is selected where index = player index

@@ -37,3 +37,5 @@ if ( place_meeting(x,y,obj_block_air) && jump == 0 )
   }
 }
 
+//Limit vspeed
+if vspeed > 10 then vspeed = 10;

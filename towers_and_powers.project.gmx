@@ -92,6 +92,8 @@
       <sprite>sprites\spr_selection_thingy3</sprite>
       <sprite>sprites\spr_grid_selection</sprite>
       <sprite>sprites\spr_player_health</sprite>
+      <sprite>sprites\spr_hud_exp_bar_b</sprite>
+      <sprite>sprites\spr_hud_exp_bar_t</sprite>
     </sprites>
     <sprites name="button">
       <sprite>sprites\spr_player_button</sprite>
@@ -164,6 +166,8 @@
       <script>scripts\scp_player_mp_move.gml</script>
       <script>scripts\scp_player_do_damage.gml</script>
       <script>scripts\scp_player_jump_fall.gml</script>
+      <script>scripts\scp_player_level_up.gml</script>
+      <script>scripts\scp_player_next_level.gml</script>
     </scripts>
     <scripts name="enemy">
       <script>scripts\scp_enemy_step.gml</script>

@@ -3,13 +3,14 @@ image_speed = 0.25;
 //Stats
 
 //Stats
-hp_max = 15;
+hp_max = 2;
 hp = hp_max;
 reload = 20;
 attack = 2;
 armor = 1;
 //Point value 
-value = 100;
+gold_value = 100;
+exp_value = 40;
 
 //Only used for multipathmovement :)
 my_path = path_add();
