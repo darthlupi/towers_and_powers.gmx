@@ -110,14 +110,20 @@
     <sprites name="effects">
       <sprite>sprites\spr_shadow_small</sprite>
       <sprite>sprites\spr_player_selected</sprite>
-      <sprite>sprites\spr_font_blue</sprite>
-      <sprite>sprites\spr_font_white</sprite>
-      <sprite>sprites\spr_font_red</sprite>
-      <sprite>sprites\spr_font_press_start</sprite>
-      <sprite>sprites\spr_font_score</sprite>
       <sprite>sprites\spr_coin</sprite>
       <sprites name="particles">
         <sprite>sprites\spr_spark</sprite>
+      </sprites>
+      <sprites name="fonts">
+        <sprite>sprites\spr_font_red</sprite>
+        <sprite>sprites\spr_font_score</sprite>
+        <sprite>sprites\spr_font_press_start</sprite>
+        <sprite>sprites\spr_font_blue</sprite>
+        <sprite>sprites\spr_font_white</sprite>
+      </sprites>
+      <sprites name="level_up">
+        <sprite>sprites\spr_effect_stat_up</sprite>
+        <sprite>sprites\spr_effect_level_power</sprite>
       </sprites>
     </sprites>
     <sprites name="grid">
@@ -168,6 +174,7 @@
       <script>scripts\scp_player_jump_fall.gml</script>
       <script>scripts\scp_player_level_up.gml</script>
       <script>scripts\scp_player_next_level.gml</script>
+      <script>scripts\scp_player_level_effects.gml</script>
     </scripts>
     <scripts name="enemy">
       <script>scripts\scp_enemy_step.gml</script>
@@ -250,6 +257,9 @@
       <object>objects\obj_coin</object>
       <objects name="particles">
         <object>objects\obj_e_spark</object>
+      </objects>
+      <objects name="level_up">
+        <object>objects\obj_stat_up</object>
       </objects>
     </objects>
     <object>objects\obj_song_1</object>
