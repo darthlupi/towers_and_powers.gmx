@@ -68,6 +68,7 @@
           <sprite>sprites\spr_player_delete</sprite>
           <sprite>sprites\spr_player_1_s_a</sprite>
         </sprites>
+        <sprite>sprites\spr_this_player</sprite>
       </sprites>
     </sprites>
     <sprites name="enemy">
@@ -123,6 +124,7 @@
       </sprites>
       <sprites name="level_up">
         <sprite>sprites\spr_effect_stat_up</sprite>
+        <sprite>sprites\sprite75</sprite>
         <sprite>sprites\spr_effect_level_power</sprite>
       </sprites>
     </sprites>
@@ -171,7 +173,6 @@
       <script>scripts\scp_player_sprite_select.gml</script>
       <script>scripts\scp_player_mp_move.gml</script>
       <script>scripts\scp_player_do_damage.gml</script>
-      <script>scripts\scp_player_jump_fall.gml</script>
       <script>scripts\scp_player_level_up.gml</script>
       <script>scripts\scp_player_next_level.gml</script>
       <script>scripts\scp_player_level_effects.gml</script>
@@ -195,6 +196,8 @@
       <script>scripts\scp_block_auto_tile.gml</script>
       <script>scripts\scp_can_hit.gml</script>
       <script>scripts\scp_platform_collision.gml</script>
+      <script>scripts\scp_make_me_unique.gml</script>
+      <script>scripts\scp_jump_fall.gml</script>
     </scripts>
     <scripts name="buttons">
       <scripts name="buttons">
@@ -227,6 +230,7 @@
         <object>objects\obj_machine_gun_shot</object>
       </objects>
       <object>objects\obj_player_ko</object>
+      <object>objects\obj_this_player</object>
     </objects>
     <objects name="enemy">
       <object>objects\obj_enemy</object>
@@ -261,6 +265,7 @@
       <objects name="level_up">
         <object>objects\obj_stat_up</object>
       </objects>
+      <object>objects\obj_dark_screen</object>
     </objects>
     <object>objects\obj_song_1</object>
     <objects name="blocks">

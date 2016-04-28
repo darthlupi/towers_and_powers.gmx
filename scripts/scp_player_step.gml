@@ -24,7 +24,9 @@ depth = -y;
 
 
 //Jumping or falling
-scp_player_jump_fall()
+//Trying to jump
+if ( keyboard_check_pressed(ord('X') ) || mouse_check_button_pressed(mb_right) ) && obj_controller.player_id == id then should_jump = 1;
+scp_jump_fall();
 
 
 //Collisions

@@ -32,6 +32,7 @@ target_y = y;
 
 //How fast you move
 move_speed = 3;
+jump_speed = 3;
 
 //Jumping stuff
 jump = 0;

@@ -10,8 +10,8 @@ if (alarm[0])
 //draw_path(my_path,x,y,true);
 
 
-//draw_text(x,y-15,xscale);
 
+//Draw the path line
 draw_set_alpha(path_alpha);
 for ( i = 0; i<=1;i+= 10/path_ln ){
   tmp_x = path_get_x(my_path, i);
