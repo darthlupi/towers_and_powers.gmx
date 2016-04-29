@@ -35,3 +35,6 @@ lvl_frame = 0;
 scp_controller_grid_create();
 //Prepare multipath
 scp_controller_mp_create();
+
+//Create the go graphic
+instance_create(room_width/2,-40,obj_effect_go);

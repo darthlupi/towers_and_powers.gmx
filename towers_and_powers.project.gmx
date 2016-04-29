@@ -111,7 +111,6 @@
     <sprites name="effects">
       <sprite>sprites\spr_shadow_small</sprite>
       <sprite>sprites\spr_player_selected</sprite>
-      <sprite>sprites\spr_coin</sprite>
       <sprites name="particles">
         <sprite>sprites\spr_spark</sprite>
       </sprites>
@@ -127,6 +126,13 @@
         <sprite>sprites\sprite75</sprite>
         <sprite>sprites\spr_effect_level_power</sprite>
       </sprites>
+      <sprites name="collectables">
+        <sprite>sprites\spr_coin</sprite>
+      </sprites>
+      <sprites name="display_effects">
+        <sprite>sprites\spr_effect_go</sprite>
+        <sprite>sprites\spr_effect_victory</sprite>
+      </sprites>
     </sprites>
     <sprites name="grid">
       <sprite>sprites\spr_grid_small</sprite>
@@ -138,6 +144,13 @@
       <sprite>sprites\spr_block_ladder</sprite>
       <sprite>sprites\spr_block_air</sprite>
       <sprite>sprites\spr_jump_block</sprite>
+    </sprites>
+    <sprites name="menus">
+      <sprites name="start_menu">
+        <sprite>sprites\sprite81</sprite>
+        <sprite>sprites\spr_start_menu_power</sprite>
+        <sprite>sprites\spr_start_menu_energy</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -256,9 +269,8 @@
       <object>objects\obj_button_pause</object>
     </objects>
     <objects name="effects">
-      <object>objects\obj_chunk</object>
       <object>objects\obj_damage_done</object>
-      <object>objects\obj_coin</object>
+      <object>objects\obj_chunk</object>
       <objects name="particles">
         <object>objects\obj_e_spark</object>
       </objects>
@@ -266,6 +278,12 @@
         <object>objects\obj_stat_up</object>
       </objects>
       <object>objects\obj_dark_screen</object>
+      <objects name="collectables">
+        <object>objects\obj_coin</object>
+      </objects>
+      <objects name="display_effects">
+        <object>objects\obj_effect_go</object>
+      </objects>
     </objects>
     <object>objects\obj_song_1</object>
     <objects name="blocks">
@@ -274,9 +292,16 @@
       <object>objects\obj_block_air</object>
       <object>objects\obj_block_jump</object>
     </objects>
+    <objects name="Menus">
+      <objects name="start_meny">
+        <object>objects\obj_start_menu_power</object>
+        <object>objects\obj_start_menu_energy</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_start_menu</room>
     <room>rooms\rm_template</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_level_up_mock_up</room>
