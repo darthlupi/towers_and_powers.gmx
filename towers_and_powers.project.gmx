@@ -25,6 +25,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_song_1</sound>
+    <sound>sound\snd_song_2</sound>
     <sound>sound\snd_hit</sound>
     <sound>sound\snd_coin</sound>
     <sound>sound\snd_shoot</sound>
@@ -286,6 +287,7 @@
       </objects>
     </objects>
     <object>objects\obj_song_1</object>
+    <object>objects\obj_song_2</object>
     <objects name="blocks">
       <object>objects\obj_block</object>
       <object>objects\obj_block_ladder</object>

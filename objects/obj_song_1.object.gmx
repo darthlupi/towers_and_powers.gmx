@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_song_1, 1, true);
+            <string>audio_stop_all();
+audio_play_sound(snd_song_1, 1, true);
 </string>
           </argument>
         </arguments>
