@@ -9,8 +9,6 @@ if (alarm[0])
 //Only used for multipathing
 //draw_path(my_path,x,y,true);
 
-
-
 //Draw the path line
 draw_set_alpha(path_alpha);
 for ( i = 0; i<=1;i+= 10/path_ln ){
@@ -28,5 +26,5 @@ if ( alarm[5] ){
   }
 }
 
-
+//Draw the actual sprite.
 draw_sprite_ext(sprite_index,-1,x + tmp_rand,y + tmp_rand,xscale,yscale,image_angle,color,image_alpha);

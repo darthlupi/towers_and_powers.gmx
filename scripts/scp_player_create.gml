@@ -15,7 +15,7 @@ exp_next = scp_player_next_level();
 
 
 //Trigger the attack
-alarm[1] = -1;
+alarm[1] = reload;
 //Regen triger
 regen_timer = 200;
 alarm[2] += regen_timer;
@@ -37,8 +37,9 @@ jump_speed = 3;
 //Jumping stuff
 jump = 0;
 should_jump = 0;
-this_jump = -1;
-jump_max = 12; //How many steps you stay air born when jumping :)
+//This should only ever be set if colliding with a jump block.
+//This will allow the path to be reset to the last target after landing from a jump.
+jump_path = 0;
 gravity = 0;
 
 //Only used for multipathmovement :)

@@ -13,11 +13,11 @@ global.level_max = 12;
 //////////////////////
 //Player 1
 //Natural Stats
-global.hp_max[0] = 5; //Starting hitpoints
-global.reload[0] = 0; //Reload bonus
+global.hp_max[0] = 15; //Starting hitpoints
+global.reload[0] = 10; //Reload bonus
 global.armor[0] = 0; //Armor bonus
 global.attack[0] = 0; //Attack Bonus
-global.regen[0] = 0; //Regen bonus
+global.regen[0] = 5; //Regen bonus
 global.wand[0] = 0;  //Which wand is equiped - determines default projectile
 //Leveling
 global.level[0] = 1;
@@ -36,11 +36,11 @@ global.spell_selected[0] = 0; //Which spell is selected where index = player ind
 //////////////////////
 //Player 2
 //Natural Stats
-global.hp_max[1] = 5; //Starting hitpoints
+global.hp_max[1] = 15; //Starting hitpoints
 global.reload[1] = 0; //Reload bonus
 global.armor[1] = 0; //Armor bonus
 global.attack[1] = 0; //Attack Bonus
-global.regen[1] = 0; //Regen bonus
+global.regen[1] = 5; //Regen bonus
 global.wand[1] = 0;  //Which wand is equiped - determines default projectile
 //Leveling
 global.level[1] = 1;
@@ -59,11 +59,11 @@ global.spell_selected[1] = 0; //Which spell is selected where index = player ind
 //////////////////////
 //Player 3
 //Natural Stats
-global.hp_max[2] = 5; //Starting hitpoints
+global.hp_max[2] = 15; //Starting hitpoints
 global.reload[2] = 0; //Reload bonus
 global.armor[2] = 0; //Armor bonus
 global.attack[2] = 0; //Attack Bonus
-global.regen[2] = 0; //Regen bonus
+global.regen[2] = 5; //Regen bonus
 global.wand[2] = 0;  //Which wand is equiped - determines default projectile
 //Leveling
 global.level[2] = 1;

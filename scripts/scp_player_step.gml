@@ -24,8 +24,15 @@ depth = -y;
 
 
 //Jumping or falling
-//Trying to jump
-if ( keyboard_check_pressed(ord('X') ) || mouse_check_button_pressed(mb_right) ) && obj_controller.player_id == id then should_jump = 1;
+//Trying to jump if any of these conditions are met...
+if ( ( place_meeting(x,y,obj_block_jump) || keyboard_check_pressed(ord('X') ) || mouse_check_button_pressed(mb_right) ) && obj_controller.player_id == id ){
+ should_jump = 1;
+
+ //If auto jumping then rest the path once you land if you are 
+ if place_meeting(x,y,obj_block_jump) && !jump then jump_path = 1;
+ //Not auto jumping so we don't want to follow the path after jumping
+ if keyboard_check_pressed(ord('X') ) || mouse_check_button_pressed(mb_right) then jump_path = 0;
+}
 scp_jump_fall();
 
 

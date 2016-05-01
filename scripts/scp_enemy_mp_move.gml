@@ -4,6 +4,7 @@ target_y = argument1;
 
 //Flying creatures ignore the air blocks
 if flying = 1 then my_grid = global.mp_grid_fly else my_grid = global.mp_grid;
+if !jumping and !flying then my_grid = global.mp_grid_no_jump;
 tmp_path_results = mp_grid_path(my_grid, my_path, x, y, target_x, target_y, false);
 
 //Check the length of the path if a path was found

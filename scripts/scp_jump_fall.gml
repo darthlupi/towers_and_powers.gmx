@@ -1,3 +1,9 @@
+//Make sure we don't set should jump if we are jumping!
+if ( jump == 1 ){
+  should_jump = 0;
+  //path_end(); //Always stop moving on the path if jumping...
+}
+
 //Falling or jumping
 if ( jump == 0 && should_jump  ){
   y -= 1; //SOMETIMES the player is 1 pixel stuck in the floor for fun...
@@ -8,6 +14,8 @@ if ( jump == 0 && should_jump  ){
   hspeed = xscale * jump_speed;
   path_end();
 }
+
+
 
 //We cannot walk if we are stuck on an air tile, so move off of it if not jumping.
 if ( place_meeting(x,y,obj_block_air) && jump == 0 )

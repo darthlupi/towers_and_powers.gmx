@@ -1,9 +1,13 @@
-//Set the mouse coordinates as the target
-target_x = mouse_x + view_xview[0];
-target_y = obj_controller.mouse_grid_y + obj_controller.grid_size_y / 2 ;
 
-//Not in the middle of jumping 
-if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){
+//Set the path for the player
+if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
+  
+  //Only set the target one mouse press.
+  //We use these variables to reset the path after an auto jump so it must stay set manually only.
+  target_x = mouse_x + view_xview[0];
+  target_y = obj_controller.mouse_grid_y + obj_controller.grid_size_y / 2 ;
+
+  
   if ( mouse_check_button_pressed(mb_left) ){
    //Switch which player is selected on mb press.
    //We have to check all players at once to avoid moving an already selected player.
@@ -40,8 +44,6 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){
 
     if ( obj_controller.player_id == id){
   
-    //Set scale
-    if mouse_x >= x then xscale = 1 else xscale = -1;
   
     //Set the icon for the mouse
     obj_controller.my_selection_thingy.state = 1;
@@ -72,7 +74,7 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){
 }
 
 //If move selected start moving along the path
-if ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right)){
+if ( jump == 0 && ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right) ) ){
 
   //If a good path was found then start that thang
   if ( obj_controller.player_id == id){
@@ -84,8 +86,7 @@ if ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_righ
     good_path_found = 0;
     //Set the icon for the mouse
     obj_controller.my_selection_thingy.state = 0;
-    //Don't fire now
-    if alarm[1] <= 0 then alarm[1] = 1;
   }
 }
+//Make the dotted line disappear..
 path_alpha -= 0.1;

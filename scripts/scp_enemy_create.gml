@@ -32,5 +32,6 @@ jump = 0;
 jump_max = 24; //How many steps you stay air born when jumping :)
 gravity = 0;
 
-//Which grid to use - normal or flying
+//Which grid to use - normal, no jumping or flying
 flying = 0;
+jumping = 0;

@@ -16,6 +16,8 @@ if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) &&
     xscale = -1
   }
 
+  //Set scale based on mouse 
+  //if mouse_x >= x then xscale = 1 else xscale = -1;
 
   //Moving and climbing
   if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom + 1,obj_block) ) 
@@ -48,9 +50,5 @@ if ( jump ){
     tmp_sprite = sprite_jump_d;
   }
 }
-
-
-
-
 
 return tmp_sprite;

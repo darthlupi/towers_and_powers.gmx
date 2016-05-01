@@ -27,3 +27,10 @@ if ( !instance_exists( player_id ) )
   obj_controller.my_selection_thingy.state = 0;  
 }
 
+
+
+//Game over
+if ( !instance_exists(obj_player_parent) )
+{
+    game_restart();
+}

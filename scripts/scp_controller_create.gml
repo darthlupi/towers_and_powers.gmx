@@ -16,6 +16,9 @@ my_player = instance_create(start_x,start_y,obj_player);
 player_selected = 0;
 player_id = -1;
 
+//Alarm 2 is for auto selecting a player
+alarm[2] = 8;
+
 //Create bottons
 my_button_1 = instance_create(x+213,y+8,obj_button_action);
 my_button_2 = instance_create(x+213 + 32 + 4,y+8,obj_button_item);
