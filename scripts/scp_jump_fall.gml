@@ -1,7 +1,9 @@
 //Make sure we don't set should jump if we are jumping!
 if ( jump == 1 ){
   should_jump = 0;
-  //path_end(); //Always stop moving on the path if jumping...
+  //Always stop moving on the path if jumping...
+  //This should not be necessary.  Sometimes a jump will continue the path at the end of the jump...
+  path_end(); 
 }
 
 //Falling or jumping

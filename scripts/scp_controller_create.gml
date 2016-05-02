@@ -36,8 +36,15 @@ lvl_frame = 0;
 
 //Prepare the grid movement
 scp_controller_grid_create();
+
+//Random level generation
+if room_get_name(room) == "rm_random" then scp_controller_random_level();
+
 //Prepare multipath
 scp_controller_mp_create();
+//Triggers the above script again.  Needed for the random level stuff.
+//Apparently the objects deleted in random level are not deleted until later.
+alarm[0] = 1; 
 
 //Create the go graphic
 instance_create(room_width/2,-40,obj_effect_go);

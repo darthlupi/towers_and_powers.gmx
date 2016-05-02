@@ -94,8 +94,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Amount of time between checks for moving enemies
-//in grid mode :) 
+            <string>//Create the multipath stuff!
+scp_controller_mp_create();
 </string>
           </argument>
         </arguments>

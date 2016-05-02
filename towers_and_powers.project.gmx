@@ -170,13 +170,14 @@
         <script>scripts\scp_start_controller_create.gml</script>
       </scripts>
       <scripts name="game">
+        <script>scripts\scp_controller_create.gml</script>
         <script>scripts\scp_controller_draw.gml</script>
         <script>scripts\scp_controller_grid_create.gml</script>
         <script>scripts\scp_controller_grid_mouse.gml</script>
-        <script>scripts\scp_controller_create.gml</script>
         <script>scripts\scp_controller_step.gml</script>
         <script>scripts\scp_controller_mp_create.gml</script>
         <script>scripts\scp_controller_select_first_player.gml</script>
+        <script>scripts\scp_controller_random_level.gml</script>
       </scripts>
     </scripts>
     <scripts name="player">
@@ -304,9 +305,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_random</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\rm_template</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_template</room>
     <room>rooms\rm_level_up_mock_up</room>
   </rooms>
   <help>

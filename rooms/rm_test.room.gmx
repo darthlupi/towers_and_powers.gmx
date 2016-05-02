@@ -307,8 +307,8 @@
     <instance objName="obj_block_ladder" x="336" y="264" name="inst_77FE4DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ladder" x="192" y="384" name="inst_3282B95A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ladder" x="264" y="360" name="inst_473E9E0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="432" y="144" name="inst_F883F6D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_song_1" x="456" y="312" name="inst_5830CB2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controller" x="432" y="60" name="inst_F883F6D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_song_1" x="432" y="120" name="inst_5830CB2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ladder" x="312" y="312" name="inst_83F7831A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ladder" x="312" y="336" name="inst_8DA7C17A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ladder" x="312" y="216" name="inst_1CB52F27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -333,6 +333,8 @@
     <instance objName="obj_block" x="264" y="312" name="inst_6D84B1A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="72" y="264" name="inst_0720BF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="48" y="264" name="inst_4C08F947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_jump" x="264" y="192" name="inst_3CC88F98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_jump" x="288" y="288" name="inst_05DA0262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tiles" x="360" y="144" w="24" h="24" xo="101" yo="126" id="10000170" name="inst_C7565CF4" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

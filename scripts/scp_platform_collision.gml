@@ -2,8 +2,6 @@
 if ( vspeed != 0 || hspeed != 0 || gravity != 0 ) {
   //Place this object over the object it collided with.
   tmp_block = -1;
-
-
   //Colliding sideways
   if ( hspeed != 0 )
   {
