@@ -37,7 +37,5 @@
     <frame index="14">images\spr_enemy_door_14.png</frame>
     <frame index="15">images\spr_enemy_door_15.png</frame>
     <frame index="16">images\spr_enemy_door_16.png</frame>
-    <frame index="17">images\spr_enemy_door_17.png</frame>
-    <frame index="18">images\spr_enemy_door_18.png</frame>
   </frames>
 </sprite>
