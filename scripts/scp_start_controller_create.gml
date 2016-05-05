@@ -14,7 +14,7 @@ global.level_max = 12;
 //Player 1
 //Natural Stats
 global.hp_max[0] = 15; //Starting hitpoints
-global.reload[0] = 10; //Reload bonus
+global.reload[0] = 2; //Reload bonus
 global.armor[0] = 0; //Armor bonus
 global.attack[0] = 0; //Attack Bonus
 global.regen[0] = 5; //Regen bonus
