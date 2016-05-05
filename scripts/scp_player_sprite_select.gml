@@ -4,18 +4,22 @@
 tmp_sprite = sprite_stand_still;
 image_speed = 0.25;
 
+
 //Moving
 if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) && jump == 0 ) )
 {
 
   //Set the xscale
   if ( direction < 90 || direction > 270 ){
-    xscale = 1 
+    xscale = 1;
   }
   else if ( direction > 90 && direction < 270 ){
-    xscale = -1
+    xscale = -1;
   }
 
+  
+  
+  
   //Set scale based on mouse 
   //if mouse_x >= x then xscale = 1 else xscale = -1;
 

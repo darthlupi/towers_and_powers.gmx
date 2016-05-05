@@ -71,5 +71,6 @@ sprite_jump_d = spr_player_1_j_d;
 xscale = 1;
 yscale = 1;
 
+
 //Create the camera
 my_camera = instance_create(x,y,obj_camera);

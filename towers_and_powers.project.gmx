@@ -36,6 +36,8 @@
     <sprites name="player">
       <sprites name="projectiles">
         <sprite>sprites\spr_machine_gun</sprite>
+        <sprite>sprites\spr_proj_sprout_1</sprite>
+        <sprite>sprites\spr_proj_sprout_2</sprite>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_player_1_w</sprite>
@@ -244,6 +246,10 @@
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
+        <objects name="proj_sprout">
+          <object>objects\obj_proj_sprout_1</object>
+          <object>objects\obj_proj_sprout_2</object>
+        </objects>
       </objects>
       <object>objects\obj_player_ko</object>
       <object>objects\obj_this_player</object>

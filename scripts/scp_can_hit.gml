@@ -52,7 +52,7 @@ else {
     tmp_collider = collision_line(x,y,tmp_target_x,tmp_target_y,tmp_target,false,true);
     if ( tmp_collider ){
       if ( !collision_line(x,y,tmp_collider.x,tmp_collider.y,tmp_block,false,true) ){
-        return 1;
+        return tmp_collider;
       }
     }
     //You can create an object here to visualize where the lines of collision will check from
