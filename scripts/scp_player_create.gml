@@ -34,6 +34,9 @@ target_y = y;
 move_speed = 3;
 jump_speed = 3;
 
+
+//Flying or not 
+flying = 0;
 //Jumping stuff
 jump = 0;
 should_jump = 0;

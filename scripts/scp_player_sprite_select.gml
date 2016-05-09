@@ -55,4 +55,11 @@ if ( jump ){
   }
 }
 
+//Set xscale for player if holding down the mouse...
+if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
+  target_x = mouse_x + view_xview[0];
+  if target_x > x then xscale = 1 else xscale = -1;
+}
+
+
 return tmp_sprite;

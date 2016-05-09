@@ -1,5 +1,4 @@
 mouse_over = scp_mouse_over_check(self.id);
-
 image_index = paused * 2;
 
 if ( mouse_check_button(mb_left) && mouse_over )
@@ -17,31 +16,21 @@ if ( ( mouse_check_button_released(mb_left) || keyboard_check_pressed(ord('P') )
         paused = 0 
         instance_activate_all();
         scp_pause_reset();
-        
-        //Destroy unpause buttons
-        //if ( instance_exists(obj_retry) )
-        //{
-        //    with(obj_retry){instance_destroy()}
-        //    with(obj_quit_level){instance_destroy()}
-        //}
-        //When view[1] draws it draws the surface srf_screen over everything.
-        //Below we draw everything in view[0] to srf_screen.
-        if ( !surface_exists(srf_screen) )
-        {
+
+        //Make sure the surface exists.
+        if ( !surface_exists(srf_screen) ){
           //We need to make sure the surface exists that we are drawing view 0 to.
           srf_screen = surface_create(view_wview[0], view_hview[0]);
-          view_surface_id[0] = srf_screen; //Assign the surface to the view
         }
-        //screen_sprite = sprite_create_from_surface(srf_screen,0,0,view_wview[0],view_hview[0],false,false,0,0);
+        //Make sure that view0 is drawing to the surface.
+        //View 1 should only be drawing this surface...
+        if ( view_surface_id[0] != srf_screen){
+          view_surface_id[0] = srf_screen
+        }
+
     }
     else
     {
- 
-        
-        //Create buttons
-        //instance_create(200,40,obj_retry);
-        //instance_create(200,80,obj_quit_level);
-
         //We need to make sure the surface exists that we are drawing view 0 to.
         if ( !surface_exists(srf_screen) )
         {

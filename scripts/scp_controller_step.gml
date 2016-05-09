@@ -3,6 +3,8 @@ if ( keyboard_check_pressed(ord('R') ) )
     game_restart();
 }
 
+
+
 //If a coin was collected
 //do a little effect for the text for score:)
 if ( alarm[1] )
@@ -34,3 +36,11 @@ if ( !instance_exists(obj_player_parent) )
 {
     game_restart();
 }
+
+
+if ( keyboard_check_pressed(ord('D') ) )
+{
+    instance_create(x,y,obj_transition_blocks);
+    //room_goto_next();
+}
+

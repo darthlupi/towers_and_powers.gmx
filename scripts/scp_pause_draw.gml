@@ -1,11 +1,11 @@
 //We add in the view_xview and yview because the view[1] does not move thus
 //mouse x is not updated with the default views position since we are using view[1]:)
+//Apparently the mouse x uses the relative position of the last drawn view.
+
 
 x = start_x + view_xview[0];
 y = start_y + view_yview[0];
 
-//view_xview[1] = view_xview[0];
-//view_xview[1] = view_xview[0];
 
 //View 0 is now drawing to a surface vs the screen.
 //We need to make sure view 0 exists!

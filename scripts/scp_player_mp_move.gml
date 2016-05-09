@@ -8,6 +8,24 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse
   target_y = obj_controller.mouse_grid_y + obj_controller.grid_size_y / 2 ;
 
   
+  
+  //If Not flying and you selected a location this is in the air
+  //try to see if there is a open position to select to move to below...
+  if (  !flying && position_meeting(target_x,target_y,obj_block_air )  ){
+    //Right now we are only check 10 blocks down
+    for ( d=0;d<10;d+=1){
+      tmp_check_y = obj_controller.grid_size_y*d;
+      //Check for open spaces to set as the target for moving...
+      if ( !position_meeting(target_x,target_y+tmp_check_y,obj_block_air ) && !position_meeting(target_x,target_y+tmp_check_y,obj_block ) ){
+        target_y = target_y+tmp_check_y;
+        break;
+      }
+      //Stop checking if you hit a wall.
+      if position_meeting(target_x,target_y+tmp_check_y,obj_block ) then break;
+    }
+  }
+  
+  
   if ( mouse_check_button_pressed(mb_left) ){
    //Switch which player is selected on mb press.
    //We have to check all players at once to avoid moving an already selected player.
