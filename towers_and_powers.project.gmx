@@ -163,6 +163,10 @@
     <background>background\background2</background>
     <background>background\bg_mockups</background>
     <background>background\bg_wall_1</background>
+    <background>background\bg_title_gradient</background>
+    <background>background\bg_clouds_title_1</background>
+    <background>background\bg_clouds_title_2</background>
+    <background>background\bg_clouds_title_3</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -325,8 +329,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_start_menu</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_start_menu</room>
     <room>rooms\rm_template</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_level_up_mock_up</room>

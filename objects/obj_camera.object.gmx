@@ -44,7 +44,7 @@ if ( instance_exists(tmp_camera_target) )
   {
     tmp_dist = point_distance(tmp_camera_target.x,tmp_camera_target.y,x,y);
     tmp_dir = point_direction(tmp_camera_target.x,tmp_camera_target.y,x,y) 
-    move_towards_point(mouse_x + tmp_x,mouse_y + tmp_y,4);
+    move_towards_point(mouse_x + tmp_x,mouse_y + tmp_y,6);
     //Restrict the movement of the camera to 80 pixels away from the player
     if ( tmp_dist &gt; 80 )
     {
