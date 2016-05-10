@@ -17,9 +17,6 @@ if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) &&
     xscale = -1;
   }
 
-  
-  
-  
   //Set scale based on mouse 
   //if mouse_x >= x then xscale = 1 else xscale = -1;
 
@@ -56,7 +53,7 @@ if ( jump ){
 }
 
 //Set xscale for player if holding down the mouse...
-if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
+if ( obj_controller.player_id == id && mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
   target_x = mouse_x + view_xview[0];
   if target_x > x then xscale = 1 else xscale = -1;
 }

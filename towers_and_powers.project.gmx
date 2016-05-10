@@ -102,6 +102,7 @@
     <sprites name="button">
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
+      <sprite>sprites\spr_button_key_stone</sprite>
       <sprite>sprites\spr_button_spell_sprout</sprite>
       <sprite>sprites\spr_button_p_2</sprite>
       <sprite>sprites\spr_button_p_1</sprite>
@@ -155,6 +156,11 @@
         <sprite>sprites\spr_start_menu_power</sprite>
         <sprite>sprites\spr_start_menu_energy</sprite>
       </sprites>
+    </sprites>
+    <sprites name="collectables">
+      <sprite>sprites\spr_door_opening</sprite>
+      <sprite>sprites\spr_key_stone</sprite>
+      <sprite>sprites\sprite87</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -311,6 +317,10 @@
       <objects name="transitions">
         <object>objects\obj_transition_blocks</object>
       </objects>
+      <objects name="background">
+        <object>objects\obj_bg_speed_slow_rd</object>
+        <object>objects\obj_bg_speed_slow_title</object>
+      </objects>
     </objects>
     <object>objects\obj_song_1</object>
     <object>objects\obj_song_2</object>
@@ -326,12 +336,17 @@
         <object>objects\obj_start_menu_energy</object>
       </objects>
     </objects>
+    <objects name="collectables">
+      <object>objects\obj_door</object>
+      <object>objects\obj_key_stone_counter_6</object>
+      <object>objects\obj_key_stone</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_start_menu</room>
     <room>rooms\rm_template</room>
+    <room>rooms\rm_test</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_level_up_mock_up</room>
   </rooms>

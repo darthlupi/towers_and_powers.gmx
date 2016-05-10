@@ -2,6 +2,8 @@ game_state = 0;
 
 my_selection_thingy = instance_create(mouse_x,mouse_y,obj_selection_thingy);
 
+//Set the key stone counter to 0 :)
+global.key_stone = 0;
 
 /*
 //Start position of the player

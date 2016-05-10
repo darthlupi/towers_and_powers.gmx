@@ -14,7 +14,7 @@ tmp_player_list[2,0] = obj_player_3;
 depth = -y;
 
 //Basic movement using the multipathing examples
-if ( random(100)> 90  && instance_exists(obj_player_parent) && gravity == 0  ){
+if ( random(100)> 95  && instance_exists(obj_player_parent) && gravity == 0  ){
 
   //Find the shortest path to the player...
   scp_enemy_short_path();  
