@@ -18,6 +18,7 @@ if ( !surface_exists(srf_screen) )
 //the surface view 0 is drawing 2 in view 1
 if ( view_current == 1 )
 {
+  //Draw the screen surface that is updated by view[0].
   draw_surface(srf_screen, 0, 0);
   if ( paused == 1 )
   {

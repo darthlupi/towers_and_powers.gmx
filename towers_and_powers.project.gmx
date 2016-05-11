@@ -31,6 +31,8 @@
     <sound>sound\snd_shoot</sound>
     <sound>sound\snd_game_over</sound>
     <sound>sound\snd_player_hit</sound>
+    <sound>sound\snd_power_up</sound>
+    <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -137,6 +139,12 @@
       <sprites name="display_effects">
         <sprite>sprites\spr_effect_go</sprite>
         <sprite>sprites\spr_effect_victory</sprite>
+      </sprites>
+      <sprites name="shines">
+        <sprite>sprites\spr_effect_little_shine</sprite>
+      </sprites>
+      <sprites name="transitions">
+        <sprite>sprites\spr_square_grow</sprite>
       </sprites>
     </sprites>
     <sprites name="grid">
@@ -256,6 +264,7 @@
       <script>scripts\scp_transition_reset.gml</script>
       <script>scripts\scp_transition_create.gml</script>
       <script>scripts\scp_transition_draw.gml</script>
+      <script>scripts\scp_transition_draw_new.gml</script>
       <script>scripts\scp_transition_freeze_unfreeze.gml</script>
     </scripts>
   </scripts>
@@ -308,9 +317,6 @@
         <object>objects\obj_stat_up</object>
       </objects>
       <object>objects\obj_dark_screen</object>
-      <objects name="collectables">
-        <object>objects\obj_coin</object>
-      </objects>
       <objects name="display_effects">
         <object>objects\obj_effect_go</object>
       </objects>
@@ -320,6 +326,9 @@
       <objects name="background">
         <object>objects\obj_bg_speed_slow_rd</object>
         <object>objects\obj_bg_speed_slow_title</object>
+      </objects>
+      <objects name="shines">
+        <object>objects\obj_effect_little_shine</object>
       </objects>
     </objects>
     <object>objects\obj_song_1</object>
@@ -340,6 +349,7 @@
       <object>objects\obj_door</object>
       <object>objects\obj_key_stone_counter_6</object>
       <object>objects\obj_key_stone</object>
+      <object>objects\obj_coin</object>
     </objects>
   </objects>
   <rooms name="rooms">

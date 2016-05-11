@@ -4,20 +4,53 @@
 x = start_x + view_xview[0];
 y = start_y + view_yview[0];
 
-
 if ( pause == 1 ){
   if ( view_current == 1 )
   {
     //We use a sprite because surfaces are volatile.
     //For example, a minimize will destroy it.
     draw_sprite(screen_sprite,image_index,0,0);
-    //This does not need to be used, but we can use it for a fade out if 
-    //we wanted...
-    draw_set_alpha(0.8);
-    draw_set_color(c_black);
-    draw_rectangle(0,0,room_width,room_height,false);
-    draw_set_alpha(1);
-    draw_set_color(c_white);    
-  }
-}
 
+    
+    //This is the effect for level end.
+    if ( level_start == 0){
+    
+      alpha += 0.1;
+      draw_set_color(c_black);
+      draw_set_alpha(alpha);
+      draw_rectangle(view_xview[1], view_yview[1],view_wview[1],view_hview[1],false);
+
+      tmp_grow += 1;
+      if tmp_grow > 11 then tmp_grow = 11;
+      for ( ty = 0; ty < view_hview[1];ty+=32){
+        for ( tx = 0; tx < view_wview[1];tx+=32){
+          draw_sprite(spr_square_grow,tmp_grow,view_xview[1] + tx, view_yview[1] + ty); 
+        }
+      }  
+    }
+    else {
+      alpha -= 0.05;
+      draw_set_color(c_black);
+      draw_set_alpha(alpha);
+      draw_rectangle(view_xview[1], view_yview[1],view_wview[1],view_hview[1],false);
+
+      tmp_grow -= 0.6;
+      if tmp_grow < 0 then tmp_grow = 0;
+      for ( ty = 0; ty < view_hview[1];ty+=32){
+        for ( tx = 0; tx < view_wview[1];tx+=32){
+          draw_sprite(spr_square_grow,tmp_grow,view_xview[1] + tx, view_yview[1] + ty); 
+        }
+      }    
+      
+      draw_set_alpha(1);  
+    
+    }
+    
+  }
+} //Draw some darkness before transtioning in at level start
+else if ( level_start == 1 && view_current == 1 ) {
+      draw_set_color(c_black);
+      draw_set_color(c_black);
+      draw_set_alpha(1);
+      draw_rectangle(view_xview[1], view_yview[1],view_wview[1],view_hview[1],false);
+}

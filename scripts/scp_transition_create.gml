@@ -8,10 +8,19 @@ pause= 0;
 //How long to wait to unfreeze
 alarm[0] = argument0;
 //Freeze the screen.  We need at least 1 step to draw the screen to the surface
-//the we will copy to the sprite ELSE it will just be blank.
-alarm[1] = 1; 
+//then we will copy to the sprites ELSE it will just be blank.
+alarm[1] = 2; 
 start_x = x;
 start_y = y;
+//Ending a level
+tmp_grow = 0;
+alpha = 0;
+level_start = 0;
+
+//Starting a new level
+//tmp_grow = 11;
+//alpha = 1.2;
+//level_start = 1;
 
 
 

@@ -26,6 +26,32 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.5;
+alarm[0] = 10 + random(30);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = 50 + random(50);
+instance_create(x+4 - random(4),y+4 - random(4),obj_effect_little_shine);
 </string>
           </argument>
         </arguments>
@@ -51,6 +77,14 @@
             <string>//Reset in the controller
 global.key_stone += 1;
 instance_destroy();
+
+my_flash = instance_create(x,y,obj_dark_screen);
+my_flash.color = c_white;
+my_flash.alarm[0] = 15;
+my_flash.alpha = 0.25;
+
+//Sounds
+audio_play_sound(snd_power_up,1,false);
 
 </string>
           </argument>

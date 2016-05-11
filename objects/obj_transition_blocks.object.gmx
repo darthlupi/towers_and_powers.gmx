@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,6 +51,17 @@
             <kind>1</kind>
             <string>//Freeze the screen 
 scp_transition_freeze_unfreeze(1);
+
+
+//Not working for some reason... ...had to move to draw event.
+//Place any effects you wish!
+
+//Place the growing squares effect
+//for ( ty = 0; ty &lt; view_hview[1];ty+=32){
+//  for ( tx = 0; tx &lt; view_wview[1];tx+=32){
+//    instance_create(view_xview[1] + tx, view_yview[1] + ty,obj_transition_block); 
+//  }
+//}
 </string>
           </argument>
         </arguments>
@@ -77,6 +88,10 @@ scp_transition_freeze_unfreeze(1);
 scp_transition_freeze_unfreeze(0);
 scp_transition_reset();
 //instance_destroy();
+//Goto next room if this is the end of the level...
+if level_start == 0 then room_goto_next();
+//Destroy self if this is the start of the level...
+if level_start == 1 then instance_destroy();
 </string>
           </argument>
         </arguments>

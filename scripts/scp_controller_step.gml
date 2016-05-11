@@ -34,7 +34,8 @@ if ( !instance_exists( player_id ) )
 //Game over
 if ( !instance_exists(obj_player_parent) )
 {
-    game_restart();
+    if alarm[3] <= 0 alarm[3] = 30;
+
 }
 
 

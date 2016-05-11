@@ -50,3 +50,9 @@ alarm[0] = 1;
 
 //Create the go graphic
 instance_create(room_width/2,-40,obj_effect_go);
+
+//Do the level transition in!!!
+my_t = instance_create(x,y,obj_transition_blocks);
+my_t.tmp_grow = 11;
+my_t.alpha = 1.35;
+my_t.level_start = 1;

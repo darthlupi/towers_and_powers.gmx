@@ -77,7 +77,7 @@ opening = 0; //Is the door opening?
             <kind>1</kind>
             <string>//If the door is open then move to the next room
 if ( open == 1 ){
-  room_goto_next();
+  instance_create(x,y,obj_transition_blocks);
 }
 </string>
           </argument>
