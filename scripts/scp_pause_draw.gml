@@ -2,7 +2,6 @@
 //mouse x is not updated with the default views position since we are using view[1]:)
 //Apparently the mouse x uses the relative position of the last drawn view.
 
-
 x = start_x + view_xview[0];
 y = start_y + view_yview[0];
 
@@ -39,6 +38,7 @@ if ( view_current == 1 )
     //Draw the button  
     draw_sprite(sprite_index,image_index,start_x,start_y);
   }
+
   
 }
 

@@ -264,7 +264,6 @@
       <script>scripts\scp_transition_reset.gml</script>
       <script>scripts\scp_transition_create.gml</script>
       <script>scripts\scp_transition_draw.gml</script>
-      <script>scripts\scp_transition_draw_new.gml</script>
       <script>scripts\scp_transition_freeze_unfreeze.gml</script>
     </scripts>
   </scripts>
@@ -355,8 +354,8 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\rm_template</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_template</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_level_up_mock_up</room>
   </rooms>
