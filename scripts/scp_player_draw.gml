@@ -1,4 +1,8 @@
+
+
+
 color = c_white;
+//Wiggle a bit if hurt
 tmp_rand = 0;
 //If hurt
 if (alarm[0])

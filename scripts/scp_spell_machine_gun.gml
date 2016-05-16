@@ -13,4 +13,9 @@ if ( scp_can_hit(range,15,xscale,15,obj_enemy,obj_block) ){
   }
   alarm[1] = tmp_reload - reload;
   if alarm[1] <= 0 then alarm[1] = 1;
+ 
+  //Attack sprite setup
+  my_wand.attack_1 = 1;
+  my_wand.image_index = 0;
+   
 }

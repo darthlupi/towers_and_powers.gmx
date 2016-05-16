@@ -7,7 +7,7 @@ tmp_stat3 = ""
 tmp_stat4 = ""
 tmp_stat5 = ""
 //Debuggy crap
-if keyboard_check_pressed(vk_space) then global.exp_points[p_index] += 40;
+//if keyboard_check_pressed(vk_space) then global.exp_points[p_index] += 40;
 
 if global.level[p_index] >= global.level_max then global.exp_points[p_index] = 0;
 

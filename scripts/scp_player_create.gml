@@ -24,7 +24,6 @@ alarm[2] += regen_timer;
 attack_charge = 0;
 attack_charge_max = 1;
 
-
 //Movement target for mouse and grid based movement
 target_x = x;
 target_y = y;
@@ -69,6 +68,12 @@ sprite_climb_still = spr_player_1_cs;
 sprite_stand_still = spr_player_1_s;
 sprite_jump_u = spr_player_1_j_u;
 sprite_jump_d = spr_player_1_j_d;
+
+//Create the wand
+my_wand = instance_create(x,y,obj_player_1_wand);
+
+
+
 
 //image_xscale will scale the bbox breaking collisions
 xscale = 1;

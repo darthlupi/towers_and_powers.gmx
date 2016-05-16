@@ -24,10 +24,12 @@ if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) &&
   if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom + 1,obj_block) ) 
   {
     tmp_sprite = sprite_climb;
+    
   }
   else  //Moving and walking
   {
     tmp_sprite = sprite_walk; 
+
   }
 }
 else if ( !jump )//Standing still
@@ -36,10 +38,12 @@ else if ( !jump )//Standing still
   if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom+ 1,obj_block) ) 
   {
     tmp_sprite = sprite_climb_still;
+
   }
   else  //Standing still
   {
     tmp_sprite = sprite_stand_still;
+
   }
 }
 
@@ -47,8 +51,11 @@ else if ( !jump )//Standing still
 if ( jump ){
   if ( vspeed <= 0 ){
     tmp_sprite = sprite_jump_u;
+
+    
   } else {
     tmp_sprite = sprite_jump_d;
+
   }
 }
 

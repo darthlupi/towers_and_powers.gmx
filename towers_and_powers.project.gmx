@@ -48,19 +48,23 @@
         <sprite>sprites\spr_player_1_s</sprite>
         <sprite>sprites\spr_player_1_c</sprite>
         <sprite>sprites\spr_player_1_cs</sprite>
-        <sprite>sprites\spr_player_2_w</sprite>
-        <sprite>sprites\spr_player_2_j_u</sprite>
-        <sprite>sprites\spr_player_2_j_d</sprite>
-        <sprite>sprites\spr_player_2_s</sprite>
-        <sprite>sprites\spr_player_2_cs</sprite>
-        <sprite>sprites\spr_player_2_c</sprite>
-        <sprite>sprites\spr_player_3_s</sprite>
-        <sprite>sprites\spr_player_3_c</sprite>
-        <sprite>sprites\spr_player_3_cs</sprite>
-        <sprite>sprites\spr_player_3_w</sprite>
-        <sprite>sprites\spr_player_3_j_u</sprite>
-        <sprite>sprites\spr_player_3_j_d</sprite>
-        <sprite>sprites\sprite63</sprite>
+        <sprite>sprites\spr_player_1_wand</sprite>
+        <sprite>sprites\spr_player_1_wand_a1</sprite>
+        <sprites name="old_units">
+          <sprite>sprites\spr_player_3_w</sprite>
+          <sprite>sprites\spr_player_3_cs</sprite>
+          <sprite>sprites\spr_player_2_j_u</sprite>
+          <sprite>sprites\spr_player_2_w</sprite>
+          <sprite>sprites\spr_player_2_j_d</sprite>
+          <sprite>sprites\spr_player_3_s</sprite>
+          <sprite>sprites\spr_player_3_j_d</sprite>
+          <sprite>sprites\sprite63</sprite>
+          <sprite>sprites\spr_player_3_j_u</sprite>
+          <sprite>sprites\spr_player_2_c</sprite>
+          <sprite>sprites\spr_player_3_c</sprite>
+          <sprite>sprites\spr_player_2_cs</sprite>
+          <sprite>sprites\spr_player_2_s</sprite>
+        </sprites>
         <sprites name="unused">
           <sprite>sprites\spr_player_f_a</sprite>
           <sprite>sprites\spr_player_cs_a</sprite>
@@ -75,6 +79,7 @@
         </sprites>
         <sprite>sprites\spr_this_player</sprite>
       </sprites>
+      <sprite>sprites\sprite93</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -163,6 +168,8 @@
         <sprite>sprites\sprite81</sprite>
         <sprite>sprites\spr_start_menu_power</sprite>
         <sprite>sprites\spr_start_menu_energy</sprite>
+        <sprite>sprites\sprite92</sprite>
+        <sprite>sprites\spr_start_menu_top</sprite>
       </sprites>
     </sprites>
     <sprites name="collectables">
@@ -217,6 +224,7 @@
         <script>scripts\scp_spell_machine_gun.gml</script>
         <script>scripts\scp_spell_sprout.gml</script>
       </scripts>
+      <script>scripts\scp_player_end_step.gml</script>
     </scripts>
     <scripts name="enemy">
       <script>scripts\scp_enemy_step.gml</script>
@@ -282,6 +290,7 @@
       </objects>
       <object>objects\obj_player_ko</object>
       <object>objects\obj_this_player</object>
+      <object>objects\obj_player_1_wand</object>
     </objects>
     <objects name="enemy">
       <object>objects\obj_enemy</object>
@@ -339,9 +348,10 @@
       <object>objects\obj_block_jump</object>
     </objects>
     <objects name="Menus">
-      <objects name="start_meny">
+      <objects name="start_menu">
         <object>objects\obj_start_menu_power</object>
         <object>objects\obj_start_menu_energy</object>
+        <object>objects\obj_start_menu_top</object>
       </objects>
     </objects>
     <objects name="collectables">
@@ -354,10 +364,11 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_template</room>
+    <room>rooms\rm_test</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_level_up_mock_up</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
