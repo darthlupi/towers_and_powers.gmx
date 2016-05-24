@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>//Attack sprite setup
 attack_1 = 0;
+normal_sprite = spr_player_1_wand;
+attack_sprite = spr_player_1_wand_a1;
 </string>
           </argument>
         </arguments>
@@ -50,9 +52,9 @@ attack_1 = 0;
           <argument>
             <kind>1</kind>
             <string>if ( attack_1 ){
-  sprite_index = spr_player_1_wand_a1;
+  sprite_index = attack_sprite;
 }else{
-  sprite_index = spr_player_1_wand;
+  sprite_index = normal_sprite;
 }
 </string>
           </argument>

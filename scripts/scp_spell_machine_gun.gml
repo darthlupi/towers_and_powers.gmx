@@ -1,5 +1,21 @@
-range = 180
-if ( scp_can_hit(range,15,xscale,15,obj_enemy,obj_block) ){
+//Set the attack range...
+range = 180;
+//Set an enemy target if we have a clear line of site to the target.        
+                   //range,radius,xscale,start_angle,target,block,check for closest
+tmp_enemy_target = scp_can_hit(range,30,xscale,15,obj_enemy,obj_block,true);            
+
+//Shoot away :)         
+if ( tmp_enemy_target ){
+   
+  //Set the xscale based on the direction to the enemy
+  if x > tmp_enemy_target.x then xscale = -1 else xscale =1;
+  if ( xscale == 1 ) {
+    tmp_a_dir = 0;
+  }
+  if ( xscale == -1 ) {
+    tmp_a_dir = 180;
+  }
+
   //Create the machine gun attack
   my_attack = instance_create(x,y,obj_machine_gun_shot);
   my_attack.range = range;

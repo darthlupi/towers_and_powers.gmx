@@ -9,16 +9,10 @@ image_speed = 0.25;
 if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) && jump == 0 ) )
 {
 
-  //Set the xscale
-  if ( direction < 90 || direction > 270 ){
-    xscale = 1;
-  }
-  else if ( direction > 90 && direction < 270 ){
-    xscale = -1;
-  }
 
-  //Set scale based on mouse 
-  //if mouse_x >= x then xscale = 1 else xscale = -1;
+
+  //Set xscale
+  scp_set_xscale();
 
   //Moving and climbing
   if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom + 1,obj_block) ) 

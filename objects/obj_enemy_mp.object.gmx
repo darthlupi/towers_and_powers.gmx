@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_enemy</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_devil_dog_w</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -26,6 +26,55 @@
           <argument>
             <kind>1</kind>
             <string>scp_enemy_create();
+jumping = 1;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player_parent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ( !other.alarm[0] )
+{
+    scp_enemy_do_damage(attack,other);
+    other.alarm[0] = 20;
+    //Sounds
+    audio_play_sound(snd_player_hit,1,false);
+}
+
+//End the path temporarily
+path_end();
+
+//Bounce off the player a little
+if ( other.x &gt; x ){
+  hspeed = -1;
+  vspeed = -2;
+  jump = 1;
+  gravity = 0.4;
+} 
+else {
+  hspeed = 1;
+  vspeed = -2;
+  jump = 1;
+  gravity = 0.4;
+}
+
 
 </string>
           </argument>

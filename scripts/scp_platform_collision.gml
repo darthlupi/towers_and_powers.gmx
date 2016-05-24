@@ -1,46 +1,57 @@
+
+
+
 //Collisions while moving
 if ( vspeed != 0 || hspeed != 0 || gravity != 0 ) {
   //Place this object over the object it collided with.
   tmp_block = -1;
+
   //Colliding sideways
   if ( hspeed != 0 )
   {
     if ( place_meeting(x + hspeed ,y,obj_block) ){
-      tmp_block = instance_place(x+hspeed,y,obj_block);
-      if ( hspeed > 0 ){
-        x = tmp_block.x - (   bbox_right - x ) - 2
-      }
-      if ( hspeed < 0 ){
-        x = tmp_block.bbox_right + 7;
-      }
-      hspeed = 0;
+      //tmp_block = instance_place(x+hspeed,y,obj_block);
+      //if ( hspeed > 0 ){
+      //  x = tmp_block.x - (   bbox_right - x ) - 2
+      //}
+      //if ( hspeed < 0 ){
+      //  x = tmp_block.bbox_right + ( x - bbox_left ) + 2;
+      //}
+      //hspeed = 0;
+      if (hspeed<=0){move_contact_solid(180,abs(hspeed));}
+      if (hspeed>0){move_contact_solid(0,abs(hspeed));}
+      hspeed=0;
     }
   }
-  
-  
-  //Hitting your head
+
+    //Hitting your head
   if ( vspeed < 0 )
   {
     if ( place_meeting(x,y+vspeed,obj_block) ){
-      tmp_block = instance_place(x,y+vspeed,obj_block);
-      y = tmp_block.bbox_bottom + 7 ;
-      //vspeed = 0;
+    //  tmp_block = instance_place(x,y+vspeed,obj_block);
+    //  y = tmp_block.bbox_bottom + ( y - bbox_top ) + 2 ;
+    //  vspeed = 0;
+      move_contact_solid(90,abs(vspeed) );
+      vspeed = 0;
     }
-  }
-  
- 
-  
+  }  
+
   //Landing
-  if ( vspeed > 0 ){
-    if ( place_meeting(x,y+vspeed+1,obj_block) || ( place_meeting(x,y,obj_block_ladder) && !place_meeting(x,y,obj_block_air) ) ) {
-      if place_meeting(x,y+vspeed+1,obj_block) then tmp_block = instance_place(x,y+vspeed+1,obj_block)
+  if ( vspeed >= 0 ){
+    if ( place_meeting(x,y+vspeed,obj_block) || ( place_meeting(x,y,obj_block_ladder) && !place_meeting(x,y,obj_block_air) ) ) {
+      //if place_meeting(x,y+vspeed+1,obj_block) then tmp_block = instance_place(x,y+vspeed+1,obj_block)
       //Place the player OVER the block they collided with
-      if tmp_block then y = tmp_block.y - (bbox_bottom - y) -1;
+      //if tmp_block then y = tmp_block.y - (bbox_bottom - y) -1;
+      
+      if ( place_meeting(x,y+vspeed,obj_block) ){
+        if (vspeed>0){move_contact_solid(270,abs(vspeed));}
+      }
       
       vspeed = 0;
       hspeed = 0;
       gravity = 0;
       jump = 0;
+      should_jump = 0; //Something, button or event, should trigger the jump
       
       //Move to the previous target set after jumping.
       //Only do it if the distance is > 24.  We do this to avoid the loop

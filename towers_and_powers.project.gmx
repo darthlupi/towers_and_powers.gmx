@@ -42,28 +42,32 @@
         <sprite>sprites\spr_proj_sprout_2</sprite>
       </sprites>
       <sprites name="units">
-        <sprite>sprites\spr_player_1_w</sprite>
-        <sprite>sprites\spr_player_1_j_u</sprite>
-        <sprite>sprites\spr_player_1_j_d</sprite>
-        <sprite>sprites\spr_player_1_s</sprite>
-        <sprite>sprites\spr_player_1_c</sprite>
-        <sprite>sprites\spr_player_1_cs</sprite>
-        <sprite>sprites\spr_player_1_wand</sprite>
-        <sprite>sprites\spr_player_1_wand_a1</sprite>
-        <sprites name="old_units">
-          <sprite>sprites\spr_player_3_w</sprite>
-          <sprite>sprites\spr_player_3_cs</sprite>
+        <sprite>sprites\spr_this_player</sprite>
+        <sprites name="player2">
+          <sprite>sprites\spr_player_2_s</sprite>
           <sprite>sprites\spr_player_2_j_u</sprite>
           <sprite>sprites\spr_player_2_w</sprite>
-          <sprite>sprites\spr_player_2_j_d</sprite>
-          <sprite>sprites\spr_player_3_s</sprite>
-          <sprite>sprites\spr_player_3_j_d</sprite>
-          <sprite>sprites\sprite63</sprite>
-          <sprite>sprites\spr_player_3_j_u</sprite>
           <sprite>sprites\spr_player_2_c</sprite>
-          <sprite>sprites\spr_player_3_c</sprite>
           <sprite>sprites\spr_player_2_cs</sprite>
-          <sprite>sprites\spr_player_2_s</sprite>
+          <sprite>sprites\spr_player_2_j_d</sprite>
+        </sprites>
+        <sprites name="player1">
+          <sprite>sprites\spr_player_1_cs</sprite>
+          <sprite>sprites\spr_player_1_j_d</sprite>
+          <sprite>sprites\spr_player_1_w</sprite>
+          <sprite>sprites\spr_player_1_j_u</sprite>
+          <sprite>sprites\spr_player_1_c</sprite>
+          <sprite>sprites\spr_player_1_s</sprite>
+          <sprite>sprites\spr_player_1_wand</sprite>
+          <sprite>sprites\spr_player_1_wand_a1</sprite>
+        </sprites>
+        <sprites name="player3">
+          <sprite>sprites\spr_player_3_cs</sprite>
+          <sprite>sprites\spr_player_3_w</sprite>
+          <sprite>sprites\spr_player_3_j_u</sprite>
+          <sprite>sprites\spr_player_3_j_d</sprite>
+          <sprite>sprites\spr_player_3_c</sprite>
+          <sprite>sprites\spr_player_3_s</sprite>
         </sprites>
         <sprites name="unused">
           <sprite>sprites\spr_player_f_a</sprite>
@@ -77,9 +81,7 @@
           <sprite>sprites\spr_player_delete</sprite>
           <sprite>sprites\spr_player_1_s_a</sprite>
         </sprites>
-        <sprite>sprites\spr_this_player</sprite>
       </sprites>
-      <sprite>sprites\sprite93</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -213,6 +215,7 @@
     <scripts name="player">
       <script>scripts\scp_player_create.gml</script>
       <script>scripts\scp_player_step.gml</script>
+      <script>scripts\scp_player_end_step.gml</script>
       <script>scripts\scp_player_attack.gml</script>
       <script>scripts\scp_player_draw.gml</script>
       <script>scripts\scp_player_heal.gml</script>
@@ -226,14 +229,13 @@
         <script>scripts\scp_spell_machine_gun.gml</script>
         <script>scripts\scp_spell_sprout.gml</script>
       </scripts>
-      <script>scripts\scp_player_end_step.gml</script>
     </scripts>
     <scripts name="enemy">
-      <script>scripts\scp_enemy_step.gml</script>
       <script>scripts\scp_enemy_create.gml</script>
+      <script>scripts\scp_enemy_step.gml</script>
+      <script>scripts\scp_enemy_end_step.gml</script>
       <script>scripts\scp_enemy_draw.gml</script>
       <script>scripts\scp_enemy_destroy.gml</script>
-      <script>scripts\scp_enemy_jump_fall.gml</script>
       <script>scripts\scp_enemy_do_damage.gml</script>
       <script>scripts\scp_enemy_sprite.gml</script>
       <script>scripts\scp_enemy_mp_move.gml</script>
@@ -249,6 +251,7 @@
       <script>scripts\scp_make_me_unique.gml</script>
       <script>scripts\scp_platform_collision.gml</script>
       <script>scripts\scp_jump_fall.gml</script>
+      <script>scripts\scp_set_xscale.gml</script>
     </scripts>
     <scripts name="buttons">
       <scripts name="buttons">
@@ -369,8 +372,9 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\rm_template</room>
+    <room>rooms\rm_template_2</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_template</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_level_up_mock_up</room>
     <room>rooms\room6</room>

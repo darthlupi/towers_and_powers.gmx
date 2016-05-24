@@ -10,22 +10,23 @@ tmp_player_list[0,0] = obj_player_1;
 tmp_player_list[1,0] = obj_player_2;
 tmp_player_list[2,0] = obj_player_3;
 
-//Set depth
-depth = -y;
 
 //Basic movement using the multipathing examples
-if ( random(100)> 95  && instance_exists(obj_player_parent) && gravity == 0  ){
+if ( random(100)> 95  && instance_exists(obj_player_parent) && gravity == 0 && jump == 0 ){
 
   //Find the shortest path to the player...
   scp_enemy_short_path();  
 
   //Move towards the closest player...
-  scp_enemy_mp_move(tmp_target.x,tmp_target.y);
+  if ( instance_exists(tmp_target) ){
+    scp_enemy_mp_move(tmp_target.x,tmp_target.y);
   
-  //Start moving on the path if one was found
-  if ( tmp_path_results ){
-    path_start(my_path,move_speed,0,0);
+    //Start moving on the path if one was found
+    if ( tmp_path_results ){
+      path_start(my_path,move_speed,0,0);
+    }
   }
+  
 
 }
 
@@ -37,10 +38,35 @@ else if ( direction > 90 && direction < 270 ){
   xscale = -1;
 }
 
-//Jumping or falling
-//scp_enemy_jump_fall()
+//Jumping and collisions
+//Auto jump
+if ( place_meeting(x,y,obj_block_jump) && should_jump == 0 && jump == 0 && alarm[2] <= 0){
+  should_jump = 1;
+  //Sounds
+  audio_play_sound(snd_jump,1,false);
+ //We should never have to auto reset the jump path for enemies.  They already do that.
+ jump_path = 0;
+ //Not auto jumping so we don't want to follow the path after jumping
+ 
+ //Set direction and xscale!
+ tmp_block = instance_place(x,y+vspeed,obj_block_jump);
+ if ( tmp_block.x >= bbox_left ){
+   //xscale = 1 
+ }
+ else {
+   //xscale = -1;
+ }
+ 
+ //Set the jump cool down
+ alarm[2] = 30;
+ 
+}
+scp_jump_fall();
+scp_platform_collision();
+
 //Sprite selection
 scp_enemy_sprite();
+
 
 
 ///////////////////////
@@ -53,3 +79,5 @@ if x < view_xview[0] -sprite_width and hspeed < 0 then instance_destroy();
 if x > view_xview[0] + view_wview[0] and hspeed > 0 then instance_destroy();
 //Out of hit points
 if hp <= 0 then instance_destroy();
+
+

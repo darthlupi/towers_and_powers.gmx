@@ -33,12 +33,15 @@ target_y = y;
 move_speed = 3;
 jump_speed = 3;
 
+//How high to jump
+jump_max = 2;
 
 //Flying or not 
 flying = 0;
 //Jumping stuff
 jump = 0;
 should_jump = 0;
+manual_jump = 0; //Did we press a button to jump?
 //This should only ever be set if colliding with a jump block.
 //This will allow the path to be reset to the last target after landing from a jump.
 jump_path = 0;

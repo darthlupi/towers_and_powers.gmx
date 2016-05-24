@@ -3,10 +3,10 @@ image_speed = 0.25;
 //Stats
 
 //Stats
-hp_max = 2;
+hp_max = 5;
 hp = hp_max;
 reload = 20;
-attack = 2;
+attack = 1;
 armor = 1;
 //Point value 
 gold_value = 100;
@@ -14,6 +14,10 @@ exp_value = 40;
 
 //Only used for multipathmovement :)
 my_path = path_add();
+//These will be used later once a target is chosen for the enemy.
+//Set in scp_enemy_mp_move.
+target_x = x;
+target_y = y;
 
 //Move speed 
 move_speed= 0.75;
@@ -29,9 +33,11 @@ yscale = 1;
 
 //Jumping stuff
 jump = 0;
-jump_max = 24; //How many steps you stay air born when jumping :)
+jump_max = 2; //Vspeed from jumping
 gravity = 0;
-
+should_jump = 0; //Should we trigger the jump now?
+jump_speed = 3;
+jump_path = 0; //Should we continue the prior path on landing  - always 0 for enemies
 //Which grid to use - normal, no jumping or flying
 flying = 0;
 jumping = 0;

@@ -31,8 +31,6 @@ if ( instance_exists(obj_player_3) ){
 //mp_grid_draw(global.mp_grid);
 //draw_set_alpha(1);
 
-
-
 //Uncomment if you decide to use the gui surface and scale it.
 //Gui surface is always set to the screen size regardless of how the game is scaled.
 //It is ideal to display images you DON'T want scaled.

@@ -13,16 +13,22 @@ tmp_start_angle = argument3
 tmp_target = argument4;
 //Blocking object
 tmp_block = argument5;
+//Should we check for closest enemy?
+tmp_get_closest = argument6;
 
 //Angle to increment the radius per step
 tmp_angle_increment = 15;
 
-//Check direction based tmp_direction or xcale provided
-if ( tmp_direction = 1 ) {
+//Closest enemy
+tmp_closest = instance_nearest(x,y,tmp_target);
+
+//Check direction based tmp_direction or look both directions if looking for closest enemy
+
+//Check right
+if ( tmp_direction == 1 || tmp_get_closest == true ) {
   tmp_cur_dir = 0 - tmp_start_angle;
-  //if tmp_cur_dir < 0 then tmp_cur_dir += 360;
-  
-  for ( a = tmp_cur_dir; a <= tmp_radius; a += tmp_angle_increment ) {
+  tmp_radius2 = tmp_radius + tmp_cur_dir;
+  for ( a = tmp_cur_dir; a <= tmp_radius2; a += tmp_angle_increment ) {
     //Check to see if there was a collision
     tmp_target_x = x + lengthdir_x(tmp_range,a);
     tmp_target_y = y + lengthdir_y(tmp_range,a);
@@ -30,7 +36,10 @@ if ( tmp_direction = 1 ) {
     tmp_collider = collision_line(x,y,tmp_target_x,tmp_target_y,tmp_target,false,true);
     if ( tmp_collider ){
       if ( !collision_line(x,y,tmp_collider.x,tmp_collider.y,tmp_block,false,true) ){
-        return 1;
+        if tmp_direction = 1 then return tmp_collider;
+        if ( tmp_closest == tmp_collider ){
+          return tmp_collider;
+        }
       }
     }
     
@@ -40,11 +49,11 @@ if ( tmp_direction = 1 ) {
   }
   
 }
-else {
+//Check left
+if ( tmp_direction == -1 || tmp_get_closest == true ) {
   tmp_cur_dir = 180 + tmp_start_angle;
-  //if tmp_cur_dir > 360 then tmp_cur_dir -= 360;
-  //
-  for ( a = tmp_cur_dir; a >= tmp_radius; a -= tmp_angle_increment ) {
+  tmp_radius2 = tmp_cur_dir - tmp_radius;
+  for ( a = tmp_cur_dir; a >= tmp_radius2; a -= tmp_angle_increment ) {
     //Check to see if there was a collision
     tmp_target_x = x + lengthdir_x(tmp_range,a);
     tmp_target_y = y + lengthdir_y(tmp_range,a);
@@ -52,7 +61,10 @@ else {
     tmp_collider = collision_line(x,y,tmp_target_x,tmp_target_y,tmp_target,false,true);
     if ( tmp_collider ){
       if ( !collision_line(x,y,tmp_collider.x,tmp_collider.y,tmp_block,false,true) ){
-        return tmp_collider;
+        if tmp_direction == -1 then return tmp_collider;
+        if ( tmp_closest == tmp_collider ){
+          return tmp_collider;
+        }
       }
     }
     //You can create an object here to visualize where the lines of collision will check from
