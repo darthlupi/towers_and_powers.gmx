@@ -27,8 +27,9 @@ if ( place_meeting(x,y,obj_block_jump) && should_jump == 0 && jump == 0 ){
   audio_play_sound(snd_jump,1,false);
  //If auto jumping then rest the path once you land if you are 
  jump_path = 1;
- if manual_jump then jump_path = 0;
  //Not auto jumping so we don't want to follow the path after jumping
+ if manual_jump then jump_path = 0;
+ //Just making sure we are facing in the proper direction
  scp_set_xscale();
 }
 //Jumping or falling

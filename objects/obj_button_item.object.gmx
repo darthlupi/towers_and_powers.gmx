@@ -76,6 +76,29 @@ button_script = scp_button_test;
           <argument>
             <kind>1</kind>
             <string>scp_button_draw();
+
+draw_set_color(c_red);
+draw_set_alpha(0.5);
+
+if ( instance_exists(obj_player_1) )
+{
+  if ( obj_player_1.alarm[6] &gt; 0 ){
+    tmp_per = obj_player_1.alarm[6] / 50;
+    tmp_rec=28-28*tmp_per;
+  }
+  else{
+    tmp_rec = 28;
+  }
+}
+else
+{
+  tmp_rec = 28;
+}
+if ( tmp_rec != 28 ){
+  draw_rectangle(x + 2,y+2+tmp_rec,x+30,y+30,false);
+} 
+
+draw_set_alpha(1); 
 </string>
           </argument>
         </arguments>

@@ -2,13 +2,17 @@
 range = 180;
 //Set an enemy target if we have a clear line of site to the target.        
                    //range,radius,xscale,start_angle,target,block,check for closest
-tmp_enemy_target = scp_can_hit(range,30,xscale,15,obj_enemy,obj_block,true);            
+tmp_enemy_target = scp_can_hit(range,30,xscale,15,obj_enemy,obj_block,global.auto_target);            
+
+
 
 //Shoot away :)         
 if ( tmp_enemy_target ){
    
-  //Set the xscale based on the direction to the enemy
-  if x > tmp_enemy_target.x then xscale = -1 else xscale =1;
+  //Set the xscale based on the direction to the enemy for auto targeting
+  if x > tmp_enemy_target.x && global.auto_target then xscale = -1 
+  if x <= tmp_enemy_target.x && global.auto_target then xscale = 1 
+  
   if ( xscale == 1 ) {
     tmp_a_dir = 0;
   }

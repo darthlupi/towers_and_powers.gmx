@@ -1,6 +1,3 @@
-
-
-
 color = c_white;
 //Wiggle a bit if hurt
 tmp_rand = 0;

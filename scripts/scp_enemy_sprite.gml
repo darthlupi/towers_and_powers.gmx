@@ -3,6 +3,12 @@
 //and index selection
 ///////////////////////
 
+
+//Set the image_xscale if not being knocked back
+if ( !knocked_back ){
+  scp_set_xscale();
+}
+
 //Moving and climbing
 if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom + 1,obj_block) ) 
 {

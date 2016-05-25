@@ -16,7 +16,7 @@ if ( random(100)> 95  && instance_exists(obj_player_parent) && gravity == 0 && j
 
   //Find the shortest path to the player...
   scp_enemy_short_path();  
-
+  
   //Move towards the closest player...
   if ( instance_exists(tmp_target) ){
     scp_enemy_mp_move(tmp_target.x,tmp_target.y);
@@ -26,48 +26,29 @@ if ( random(100)> 95  && instance_exists(obj_player_parent) && gravity == 0 && j
       path_start(my_path,move_speed,0,0);
     }
   }
-  
-
 }
 
-//Get the image_xscale
-if ( direction < 90 || direction > 270 ){
-  xscale = 1
-}
-else if ( direction > 90 && direction < 270 ){
-  xscale = -1;
-}
 
 //Jumping and collisions
 //Auto jump
-if ( place_meeting(x,y,obj_block_jump) && should_jump == 0 && jump == 0 && alarm[2] <= 0){
+if ( place_meeting(x,y,obj_block_jump) && should_jump == 0 && jump == 0 && alarm[2] <= 0  && !flying){
   should_jump = 1;
   //Sounds
   audio_play_sound(snd_jump,1,false);
- //We should never have to auto reset the jump path for enemies.  They already do that.
+ //We should never have to auto reset the path for enemies.  They already do that.
  jump_path = 0;
- //Not auto jumping so we don't want to follow the path after jumping
- 
  //Set direction and xscale!
  tmp_block = instance_place(x,y+vspeed,obj_block_jump);
- if ( tmp_block.x >= bbox_left ){
-   //xscale = 1 
- }
- else {
-   //xscale = -1;
- }
- 
  //Set the jump cool down
  alarm[2] = 30;
- 
 }
+//Perform the actual jump
 scp_jump_fall();
+//Check for collisions
 scp_platform_collision();
 
 //Sprite selection
 scp_enemy_sprite();
-
-
 
 ///////////////////////
 //Kill the enemy if...

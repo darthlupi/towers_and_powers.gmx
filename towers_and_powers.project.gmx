@@ -240,6 +240,7 @@
       <script>scripts\scp_enemy_sprite.gml</script>
       <script>scripts\scp_enemy_mp_move.gml</script>
       <script>scripts\scp_enemy_short_path.gml</script>
+      <script>scripts\scp_enemy_attack_knock_back.gml</script>
     </scripts>
     <scripts name="tools">
       <script>scripts\scp_mouse_over_check.gml</script>
@@ -252,6 +253,7 @@
       <script>scripts\scp_platform_collision.gml</script>
       <script>scripts\scp_jump_fall.gml</script>
       <script>scripts\scp_set_xscale.gml</script>
+      <script>scripts\scp_jump_reset.gml</script>
     </scripts>
     <scripts name="buttons">
       <scripts name="buttons">

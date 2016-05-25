@@ -1,6 +1,5 @@
 
 //Make sprite selection based on various player status here
-
 tmp_sprite = sprite_stand_still;
 image_speed = 0.25;
 
@@ -8,9 +7,6 @@ image_speed = 0.25;
 //Moving
 if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) && jump == 0 ) )
 {
-
-
-
   //Set xscale
   scp_set_xscale();
 
@@ -23,7 +19,6 @@ if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) &&
   else  //Moving and walking
   {
     tmp_sprite = sprite_walk; 
-
   }
 }
 else if ( !jump )//Standing still
@@ -44,12 +39,9 @@ else if ( !jump )//Standing still
 //Jumping
 if ( jump ){
   if ( vspeed <= 0 ){
-    tmp_sprite = sprite_jump_u;
-
-    
+    tmp_sprite = sprite_jump_u; 
   } else {
     tmp_sprite = sprite_jump_d;
-
   }
 }
 
@@ -58,6 +50,5 @@ if ( obj_controller.player_id == id && mouse_check_button(mb_left) && jump == 0 
   target_x = mouse_x + view_xview[0];
   if target_x > x then xscale = 1 else xscale = -1;
 }
-
 
 return tmp_sprite;

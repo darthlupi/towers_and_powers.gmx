@@ -1,6 +1,10 @@
 //Reset the displayas it fixes interpolation issues with scaling etc
 display_reset(0,false);
 
+
+//Do players auto target?
+global.auto_target = false;
+
 //Setup screen borders
 global.bottom_border = room_height;
 global.top_border = 20;
@@ -13,7 +17,7 @@ global.level_max = 12;
 //////////////////////
 //Player 1
 //Natural Stats
-global.hp_max[0] = 2; //Starting hitpoints
+global.hp_max[0] = 6; //Starting hitpoints
 global.reload[0] = 2; //Reload bonus
 global.armor[0] = 0; //Armor bonus
 global.attack[0] = 0; //Attack Bonus

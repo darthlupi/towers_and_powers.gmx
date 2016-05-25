@@ -3,7 +3,7 @@ image_speed = 0.25;
 //Stats
 
 //Stats
-hp_max = 5;
+hp_max = 3;
 hp = hp_max;
 reload = 20;
 attack = 1;
@@ -30,6 +30,11 @@ sprite_jump = spr_devil_dog_j;
 //image_xscale will scale the bbox breaking collisions
 xscale = 1;
 yscale = 1;
+
+//Status effects
+knocked_back = 0;
+//How long for flying enemies to recover from knock back
+knocked_back_delay = 20;
 
 //Jumping stuff
 jump = 0;

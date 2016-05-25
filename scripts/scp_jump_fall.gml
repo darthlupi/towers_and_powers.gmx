@@ -9,15 +9,13 @@ if ( jump == 0 && should_jump  ){
 }
 
 //We cannot walk if we are stuck on an air tile, so move off of it if not jumping.
-if ( place_meeting(x,y,obj_block_air) && jump == 0 )
+if ( place_meeting(x,y,obj_block_air) && jump == 0 && flying = 0 )
 {
   tmp_block = instance_place(x,y+vspeed,obj_block_air);
   if ( tmp_block.x + tmp_block.sprite_width / 2 >= x ){
     x-= move_speed
-    direction = 180; //For setting 
   } else {
     x+= move_speed; 
-    direction = 0;
   }
 }
 

@@ -47,6 +47,9 @@ manual_jump = 0; //Did we press a button to jump?
 jump_path = 0;
 gravity = 0;
 
+//Status effects
+knocked_back = 0;
+
 //Only used for multipathmovement :)
 my_path = path_add();
 //Found a good path

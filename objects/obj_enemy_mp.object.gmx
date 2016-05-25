@@ -50,31 +50,7 @@ jumping = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ( !other.alarm[0] )
-{
-    scp_enemy_do_damage(attack,other);
-    other.alarm[0] = 20;
-    //Sounds
-    audio_play_sound(snd_player_hit,1,false);
-}
-
-//End the path temporarily
-path_end();
-
-//Bounce off the player a little
-if ( other.x &gt; x ){
-  hspeed = -1;
-  vspeed = -2;
-  jump = 1;
-  gravity = 0.4;
-} 
-else {
-  hspeed = 1;
-  vspeed = -2;
-  jump = 1;
-  gravity = 0.4;
-}
-
+            <string>scp_enemy_attack_knock_back();
 
 </string>
           </argument>
