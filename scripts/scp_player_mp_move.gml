@@ -1,4 +1,6 @@
 
+
+
 //Set the path for the player
 if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
   

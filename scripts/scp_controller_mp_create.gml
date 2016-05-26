@@ -39,4 +39,4 @@ mp_grid_add_instances(global.mp_grid_no_jump,obj_block_jump,0);
 mp_grid_add_instances(global.mp_grid,obj_block,0);
 mp_grid_add_instances(global.mp_grid,obj_block_air,0);
 //Flying grid objects
-mp_grid_add_instances(global.mp_grid_fly,obj_block,0);
+mp_grid_add_instances(global.mp_grid_fly,obj_block,1);

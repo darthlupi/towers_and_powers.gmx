@@ -1,7 +1,7 @@
 
 if ( scp_mouse_over_check(self) )
 {
-    if ( mouse_check_button_pressed(mb_left) )
+    if ( mouse_check_button(mb_left) )
     {
         script_execute(button_script);
     }    

@@ -62,9 +62,9 @@
     <instance objName="obj_button_question" x="228" y="144" name="inst_CA071305" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_question" x="276" y="144" name="inst_320A0001" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_upgrade" x="36" y="120" name="inst_F7B98E99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_item" x="84" y="96" name="inst_A45EDDF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_item" x="132" y="96" name="inst_174EC840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_item" x="156" y="192" name="inst_0C821900" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_spell_1" x="84" y="96" name="inst_A45EDDF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_spell_1" x="132" y="96" name="inst_174EC840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_spell_1" x="156" y="192" name="inst_0C821900" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_go" x="360" y="192" name="inst_2EFEDE6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="12" y="192" name="inst_7C01E490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

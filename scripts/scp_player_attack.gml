@@ -5,7 +5,7 @@ if ( !move_select && hp > 0 ){
   if ( alarm[1] <= 0 ){
     
     if ( global.wand[p_index] == 0 ){
-      scp_spell_machine_gun();
+      scp_spell_machine_gun_old();
     }
 
   }

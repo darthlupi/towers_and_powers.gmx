@@ -16,7 +16,7 @@ if ( hp <= 0 )
 scp_player_mp_move();
 
 //Shooting 
-scp_player_attack();
+//scp_player_attack();
 
 
 
