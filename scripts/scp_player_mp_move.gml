@@ -1,8 +1,56 @@
 
+//Delay when you can actually start moving.
+//This allows the player to tap around to change direction.
+tmp_dist = distance_to_point(mouse_x + view_xview[0],mouse_y + view_yview[0]);
+//Make it so that if you are not pressing pressing the mouse then trigger the delay.
+if ( !mouse_check_button(mb_left) ){
+  //How long to wait before engaging move mode
+  alarm[3] = 6;
+}
+//If you are trying to select an area far from the player start moving regardless of delay.
+if (tmp_dist > 24){
+  //Do not wait before engaging move mode
+  alarm[3] = 0;
+}
+
+if ( mouse_check_button_pressed(mb_left) && mouse_y < 192 ){
+ //Switch which player is selected on mb press.
+ //We have to check all players at once to avoid moving an already selected player.
+ //NICE TO HAVE: Could probably be done in a loop if I actually stored the id of each player in
+ //an array.  Nice to have feature for later.  Add it in the player create :)
+  //Check player 1
+  if ( instance_exists(obj_player_1  )){
+    if ( scp_mouse_over_check(obj_player_1,6) ){
+      obj_controller.player_id = obj_player_1.id;
+      //Create the graphic that shows the player is selected
+      tmp_this_player = instance_create(x,y,obj_this_player);
+      tmp_this_player.follow_id = obj_player_1.id;
+    }
+  }
+  //Check player 2
+  if ( instance_exists(obj_player_2 ) ){
+    if ( scp_mouse_over_check(obj_player_2,6) ){
+      obj_controller.player_id = obj_player_2.id;
+      //Create the graphic that shows the player is selected
+      tmp_this_player = instance_create(x,y,obj_this_player);
+      tmp_this_player.follow_id = obj_player_2.id;        
+    }
+  }
+  //Check player 3
+  if ( instance_exists(obj_player_3 ) ){
+    if ( scp_mouse_over_check(obj_player_3,6) ){
+      obj_controller.player_id = obj_player_3.id;
+      //Create the graphic that shows the player is selected
+      tmp_this_player = instance_create(x,y,obj_this_player);
+      tmp_this_player.follow_id = obj_player_3.id;
+    }
+  }
+}
+
 
 
 //Set the path for the player
-if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
+if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 && alarm[3] <= 0 ){//Set the mouse coordinates as the target
   
   //Only set the target one mouse press.
   //We use these variables to reset the path after an auto jump so it must stay set manually only.
@@ -25,39 +73,7 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse
     }
   }
 
-  if ( mouse_check_button_pressed(mb_left) ){
-   //Switch which player is selected on mb press.
-   //We have to check all players at once to avoid moving an already selected player.
-   //NICE TO HAVE: Could probably be done in a loop if I actually stored the id of each player in
-   //an array.  Nice to have feature for later.  Add it in the player create :)
-    //Check player 1
-    if ( instance_exists(obj_player_1  )){
-      if ( scp_mouse_over_check(obj_player_1,6) ){
-        obj_controller.player_id = obj_player_1.id;
-        //Create the graphic that shows the player is selected
-        tmp_this_player = instance_create(x,y,obj_this_player);
-        tmp_this_player.follow_id = obj_player_1.id;
-      }
-    }
-    //Check player 2
-    if ( instance_exists(obj_player_2 ) ){
-      if ( scp_mouse_over_check(obj_player_2,6) ){
-        obj_controller.player_id = obj_player_2.id;
-        //Create the graphic that shows the player is selected
-        tmp_this_player = instance_create(x,y,obj_this_player);
-        tmp_this_player.follow_id = obj_player_2.id;        
-      }
-    }
-    //Check player 3
-    if ( instance_exists(obj_player_3 ) ){
-      if ( scp_mouse_over_check(obj_player_3,6) ){
-        obj_controller.player_id = obj_player_3.id;
-        //Create the graphic that shows the player is selected
-        tmp_this_player = instance_create(x,y,obj_this_player);
-        tmp_this_player.follow_id = obj_player_3.id;
-      }
-    }
-  }
+
 
     if ( obj_controller.player_id == id){
   
@@ -89,6 +105,8 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse
     }
   }
 }
+
+
 
 //If move selected start moving along the path
 if ( jump == 0 && ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right) ) ){

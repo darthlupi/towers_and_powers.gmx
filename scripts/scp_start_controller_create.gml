@@ -34,8 +34,6 @@ global.item_armor[0] = 0; //Armor bonus
 global.item_attack[0] = 0; //Attack Bonus
 global.item_regen[0] = 0; //Regen bonus
 global.action[0] = 0; //Which action is equiped
-//Which spell is selected
-global.spell_selected[0] = 0; //Which spell is selected where index = player index
 
 //////////////////////
 //Player 2
@@ -57,8 +55,7 @@ global.item_armor[1] = 0; //Armor bonus
 global.item_attack[1] = 0; //Attack Bonus
 global.item_regen[1] = 0; //Regen bonus
 global.action[1] = 0; //Which action is equiped
-//Which spell is selected
-global.spell_selected[1] = 0; //Which spell is selected where index = player index
+
 
 //////////////////////
 //Player 3
@@ -80,16 +77,28 @@ global.item_armor[2] = 0; //Armor bonus
 global.item_attack[2] = 0; //Attack Bonus
 global.item_regen[2] = 0; //Regen bonus
 global.action[2] = 0; //Which action is equiped
+
+
+//Spells and their stats
+
+//Fire sprouts
+global.spell_level[0] = 0; 
+global.spell_max_ammo[0] = 10;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[0] = global.spell_max_ammo[0]; 
+global.spell_ammo_per_level[0] = 5;
+
+//Machine Gun
+global.spell_level[1] = 0; 
+global.spell_max_ammo[1] = 30;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[1] = global.spell_max_ammo[1];
+global.spell_ammo_per_level[0] = 10;
+
+//Which spell is selected in postion 1
+global.spell_selected[0] = 0; //Which spell is selected where index = player index
 //Which spell is selected
-global.spell_selected[2] = 0; //Which spell is selected where index = player index
-
-//Spells and their levels
-global.spell_level[0] = 0; //P1 Spells 0-4 = p1, 5-9 = p2, 10-14 = p3
-
-
-
-
-
+global.spell_selected[1] = 1; //Which spell is selected where index = player index
 
 
 //Items
