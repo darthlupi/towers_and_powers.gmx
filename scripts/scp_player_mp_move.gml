@@ -8,7 +8,7 @@ if ( !mouse_check_button(mb_left) ){
   alarm[3] = 6;
 }
 //If you are trying to select an area far from the player start moving regardless of delay.
-if (tmp_dist > 24){
+if (tmp_dist > 12){
   //Do not wait before engaging move mode
   alarm[3] = 0;
 }

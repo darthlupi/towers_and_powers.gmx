@@ -87,6 +87,7 @@ global.spell_max_ammo[0] = 10;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[0] = global.spell_max_ammo[0]; 
 global.spell_ammo_per_level[0] = 5;
+global.spell_reload[0] = 50;
 
 //Machine Gun
 global.spell_level[1] = 0; 
@@ -94,6 +95,7 @@ global.spell_max_ammo[1] = 30;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[1] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[0] = 10;
+global.spell_reload[1] = 20;
 
 //Which spell is selected in postion 1
 global.spell_selected[0] = 0; //Which spell is selected where index = player index
