@@ -42,10 +42,20 @@ for ( rr = 0;rr < chunk_r;rr+=1)
         chunk.image_yscale = chunk_yscale;
         //Chunk behavior
         chunk.type = chunk_type;
-        //Just some default chunk physics
-        chunk.start_y = chunk_start_y - 2 + random(4);         
-        chunk.speed = 1 + random(0.02);
-        chunk.direction = 45 + random(10);
+        //Falls down
+        if ( chunk_type == 0 ){
+          //Just some default chunk physics
+          chunk.start_y = chunk_start_y - 2 + random(4);         
+          chunk.speed = 1 + random(0.02);
+          chunk.chunk_dir = 45 + random(10);
+        }
+        //Explodes
+        if ( chunk_type == 1 ){
+          //Just some default chunk physics       
+          chunk.speed = 2 + random(2);
+          chunk.direction = 0 + random(270);
+        }
+        
     } 
   }
 

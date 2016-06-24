@@ -83,7 +83,7 @@ global.action[2] = 0; //Which action is equiped
 
 //Fire sprouts
 global.spell_level[0] = 0; 
-global.spell_max_ammo[0] = 10;
+global.spell_max_ammo[0] = 60;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[0] = global.spell_max_ammo[0]; 
 global.spell_ammo_per_level[0] = 5;
@@ -91,17 +91,20 @@ global.spell_reload[0] = 50;
 
 //Machine Gun
 global.spell_level[1] = 0; 
-global.spell_max_ammo[1] = 30;
+global.spell_max_ammo[1] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[1] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[0] = 10;
 global.spell_reload[1] = 20;
 
-//Which spell is selected in postion 1
-global.spell_selected[0] = 0; //Which spell is selected where index = player index
-//Which spell is selected
-global.spell_selected[1] = 1; //Which spell is selected where index = player index
-
+//Which spell is selected in slot 1
+global.spell_selected[0] = 0; 
+//Which spell is selected in slot 2
+global.spell_selected[1] = 1; 
+//Which spell is selected in slot 3
+global.spell_selected[2] = 1; 
+//Which spell is selected in slot 4
+global.spell_selected[3] = 0; 
 
 //Items
 global.item_lvl[0] = 1;

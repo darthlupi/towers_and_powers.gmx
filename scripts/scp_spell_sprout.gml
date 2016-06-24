@@ -20,5 +20,5 @@ with(my_attack){
 }
 //Attack sprite setup
 my_wand.attack_1 = 1;
-my_wand.image_index = 0;
+my_wand.image_index = -1;
 

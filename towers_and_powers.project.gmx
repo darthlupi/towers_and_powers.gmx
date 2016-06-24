@@ -58,6 +58,7 @@
           <sprite>sprites\spr_player_1_j_u</sprite>
           <sprite>sprites\spr_player_1_c</sprite>
           <sprite>sprites\spr_player_1_s</sprite>
+          <sprite>sprites\sprite97</sprite>
           <sprite>sprites\spr_player_1_wand</sprite>
           <sprite>sprites\spr_player_1_wand_a1</sprite>
         </sprites>
@@ -155,6 +156,9 @@
       </sprites>
       <sprites name="transitions">
         <sprite>sprites\spr_square_grow</sprite>
+      </sprites>
+      <sprites name="smoke">
+        <sprite>sprites\spr_smoke_bright</sprite>
       </sprites>
     </sprites>
     <sprites name="grid">
@@ -319,6 +323,8 @@
       <object>objects\obj_button</object>
       <object>objects\obj_button_spell_1</object>
       <object>objects\obj_button_spell_2</object>
+      <object>objects\obj_button_spell_3</object>
+      <object>objects\obj_button_spell_4</object>
       <object>objects\obj_button_upgrade</object>
       <object>objects\obj_button_p1</object>
       <object>objects\obj_button_p2</object>
@@ -352,6 +358,9 @@
       <objects name="shines">
         <object>objects\obj_effect_little_shine</object>
       </objects>
+      <objects name="smoke">
+        <object>objects\obj_smoke_bright</object>
+      </objects>
     </objects>
     <object>objects\obj_song_1</object>
     <object>objects\obj_song_2</object>
@@ -370,6 +379,7 @@
     </objects>
     <objects name="collectables">
       <object>objects\obj_door</object>
+      <object>objects\obj_door_opening</object>
       <object>objects\obj_key_stone_counter_6</object>
       <object>objects\obj_key_stone</object>
       <object>objects\obj_coin</object>
@@ -378,14 +388,14 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\room9</room>
-    <room>rooms\rm_template_2</room>
-    <room>rooms\room8</room>
-    <room>rooms\rm_test</room>
-    <room>rooms\rm_random</room>
-    <room>rooms\rm_level_up_mock_up</room>
-    <room>rooms\room6</room>
+    <room>rooms\rm_lv_1_2</room>
+    <room>rooms\rm_lv_1_3</room>
+    <room>rooms\rm_lvl_1_4</room>
     <room>rooms\rm_template</room>
+    <room>rooms\rm_level_up_mock_up</room>
+    <room>rooms\rm_jump_fix</room>
+    <room>rooms\rm_random</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

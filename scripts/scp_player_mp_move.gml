@@ -106,8 +106,6 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 && alarm[3] <= 0 
   }
 }
 
-
-
 //If move selected start moving along the path
 if ( jump == 0 && ( mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right) ) ){
 

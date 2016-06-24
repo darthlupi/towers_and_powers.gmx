@@ -45,6 +45,8 @@ manual_jump = 0; //Did we press a button to jump?
 //This should only ever be set if colliding with a jump block.
 //This will allow the path to be reset to the last target after landing from a jump.
 jump_path = 0;
+//Last jump block you collided with.   You should not jump across the same block twice :)
+last_jump_block = -1;
 gravity = 0;
 
 //Status effects

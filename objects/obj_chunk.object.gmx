@@ -84,7 +84,8 @@ color = c_white;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ( type = 0 )
+            <string>//Falls down
+if ( type = 0 )
 {
     gravity = 0.1;
     if ( y &gt; start_y )
@@ -93,6 +94,13 @@ color = c_white;
         speed = 0;
     }
 }
+
+//Explodes
+if ( type = 1 )
+{
+    gravity = 0.25;
+}
+
 
 if ( alarm[0] &lt; 10 )
 {

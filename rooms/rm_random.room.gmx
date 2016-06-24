@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_controller" x="0" y="192" name="inst_E7FB7EBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_camera" x="468" y="204" name="inst_FE3E3A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_camera" x="420" y="96" name="inst_FE3E3A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tiles" x="192" y="0" w="24" h="24" xo="151" yo="176" id="10000210" name="inst_470EE422" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
