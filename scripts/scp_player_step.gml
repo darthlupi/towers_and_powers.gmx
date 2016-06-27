@@ -13,7 +13,7 @@ if ( hp <= 0 )
 scp_player_mp_move();
 
 //Shooting 
-//scp_player_attack();
+scp_player_attack();
 
 tmp_jump_block = instance_position(x,y,obj_block_jump);
 if ( path_speed && path_index != -1 ){

@@ -266,14 +266,16 @@
         <script>scripts\scp_button_create.gml</script>
         <script>scripts\scp_button_step.gml</script>
         <script>scripts\scp_button_draw.gml</script>
+        <script>scripts\scp_button_spell_draw.gml</script>
       </scripts>
       <scripts name="button_scripts">
+        <script>scripts\scp_button_spell_single.gml</script>
         <script>scripts\scp_button_spell.gml</script>
         <script>scripts\scp_action_button_script.gml</script>
         <script>scripts\scp_button_player_1.gml</script>
         <script>scripts\scp_button_player_2.gml</script>
         <script>scripts\scp_button_player_3.gml</script>
-        <script>scripts\scp_button_spell_draw.gml</script>
+        <script>scripts\scp_button_do_nothing.gml</script>
       </scripts>
     </scripts>
     <scripts name="pause">
@@ -287,6 +289,9 @@
       <script>scripts\scp_transition_create.gml</script>
       <script>scripts\scp_transition_draw.gml</script>
       <script>scripts\scp_transition_freeze_unfreeze.gml</script>
+    </scripts>
+    <scripts name="effects">
+      <script>scripts\scp_enter_door_way.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -321,10 +326,7 @@
     </objects>
     <objects name="button">
       <object>objects\obj_button</object>
-      <object>objects\obj_button_spell_1</object>
-      <object>objects\obj_button_spell_2</object>
-      <object>objects\obj_button_spell_3</object>
-      <object>objects\obj_button_spell_4</object>
+      <object>objects\obj_button_spell_multi</object>
       <object>objects\obj_button_upgrade</object>
       <object>objects\obj_button_p1</object>
       <object>objects\obj_button_p2</object>
@@ -334,12 +336,20 @@
       <object>objects\obj_button_question</object>
       <object>objects\obj_button_empty</object>
       <object>objects\obj_button_go</object>
+      <objects name="for_single_player_jive">
+        <object>objects\obj_button_spell_1</object>
+        <object>objects\obj_button_spell_4</object>
+        <object>objects\obj_button_spell_3</object>
+        <object>objects\obj_button_spell_2</object>
+      </objects>
     </objects>
     <objects name="effects">
-      <object>objects\obj_damage_done</object>
-      <object>objects\obj_chunk</object>
       <objects name="particles">
         <object>objects\obj_e_spark</object>
+        <object>objects\obj_chunk</object>
+        <objects name="smoke">
+          <object>objects\obj_smoke_bright</object>
+        </objects>
       </objects>
       <objects name="level_up">
         <object>objects\obj_stat_up</object>
@@ -347,6 +357,7 @@
       <object>objects\obj_dark_screen</object>
       <objects name="display_effects">
         <object>objects\obj_effect_go</object>
+        <object>objects\obj_damage_done</object>
       </objects>
       <objects name="transitions">
         <object>objects\obj_transition_blocks</object>
@@ -358,19 +369,14 @@
       <objects name="shines">
         <object>objects\obj_effect_little_shine</object>
       </objects>
-      <objects name="smoke">
-        <object>objects\obj_smoke_bright</object>
-      </objects>
     </objects>
-    <object>objects\obj_song_1</object>
-    <object>objects\obj_song_2</object>
     <objects name="blocks">
       <object>objects\obj_block</object>
       <object>objects\obj_block_ladder</object>
       <object>objects\obj_block_air</object>
       <object>objects\obj_block_jump</object>
     </objects>
-    <objects name="Menus">
+    <objects name="menus">
       <objects name="start_menu">
         <object>objects\obj_start_menu_power</object>
         <object>objects\obj_start_menu_energy</object>
@@ -384,17 +390,21 @@
       <object>objects\obj_key_stone</object>
       <object>objects\obj_coin</object>
     </objects>
+    <objects name="music">
+      <object>objects\obj_song_2</object>
+      <object>objects\obj_song_1</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
+    <room>rooms\rm_jump_fix</room>
     <room>rooms\rm_lv_1_2</room>
     <room>rooms\rm_lv_1_3</room>
-    <room>rooms\rm_lvl_1_4</room>
     <room>rooms\rm_template</room>
     <room>rooms\rm_level_up_mock_up</room>
-    <room>rooms\rm_jump_fix</room>
     <room>rooms\rm_random</room>
+    <room>rooms\rm_lvl_1_4</room>
     <room>rooms\room6</room>
   </rooms>
   <help>

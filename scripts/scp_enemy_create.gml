@@ -3,7 +3,7 @@ image_speed = 0.25;
 //Stats
 
 //Stats
-hp_max = 3;
+hp_max = 10;
 hp = hp_max;
 reload = 20;
 attack = 1;

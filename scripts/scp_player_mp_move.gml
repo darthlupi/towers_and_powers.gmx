@@ -48,9 +48,8 @@ if ( mouse_check_button_pressed(mb_left) && mouse_y < 192 ){
 }
 
 
-
 //Set the path for the player
-if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 && alarm[3] <= 0 ){//Set the mouse coordinates as the target
+if ( obj_controller.player_id == id && mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 && alarm[3] <= 0 ){//Set the mouse coordinates as the target
   
   //Only set the target one mouse press.
   //We use these variables to reset the path after an auto jump so it must stay set manually only.
@@ -72,8 +71,6 @@ if ( mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 && alarm[3] <= 0 
       if position_meeting(target_x,target_y+tmp_check_y,obj_block ) then break;
     }
   }
-
-
 
     if ( obj_controller.player_id == id){
   

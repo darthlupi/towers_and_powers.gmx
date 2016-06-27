@@ -1,31 +1,39 @@
 game_state = 0;
-
 my_selection_thingy = instance_create(mouse_x,mouse_y,obj_selection_thingy);
-
 //Set the key stone counter to 0 :)
 global.key_stone = 0;
+
+//Set the combo counter
+global.combo = 0;
 
 /*
 //Start position of the player
 start_x = 96;
 start_y = 96;
-
 //Create the player object
 my_player = instance_create(start_x,start_y,obj_player);
 */
 
 //Which player was selected
 player_selected = 0;
-player_id = -1;
+if ( instance_exists(obj_player_1) ) {
+  player_id = obj_player_1.id;
+}else if ( instance_exists(obj_player_2) ) {
+  player_id = obj_player_2.id;
+}else if ( instance_exists(obj_player_3) ) {
+  player_id = obj_player_3.id;
+}else{
+  player_id = -1;
+}
 
 //Alarm 2 is for auto selecting a player
 alarm[2] = 8;
 
 //Create bottons
-my_button_1 = instance_create(x+213,y+8,obj_button_spell_1);
-my_button_2 = instance_create(x+213 + 32 + 4,y+8,obj_button_spell_2);
-my_button_3 = instance_create(x+213 + 64 + 8,y+8,obj_button_spell_3);
-my_button_4 = instance_create(x+213 + 96 + 12,y+8,obj_button_spell_4);
+my_button_1 = instance_create(x+213,y+8,obj_button_p1);
+my_button_2 = instance_create(x+213 + 32 + 4,y+8,obj_button_p2);
+my_button_3 = instance_create(x+213 + 64 + 8,y+8,obj_button_p3);
+my_button_4 = instance_create(x+213 + 96 + 12,y+8,obj_button_spell_multi);
 my_button_5 = instance_create(x+213 + 128 + 12,y+8,obj_button_action);
 //Text variables
 xscale=1;

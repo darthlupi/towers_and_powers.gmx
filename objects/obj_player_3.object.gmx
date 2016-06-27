@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>p_index = 2;
-
+            <string>p_index = 2;  //Which player am I?
 scp_player_create();
 
 //Any overides for the player

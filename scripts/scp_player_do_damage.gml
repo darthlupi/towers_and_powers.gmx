@@ -13,3 +13,15 @@ tmp_target.hp -= tmp_dmg;
 //Create the damage text object
 tmp_text = instance_create(tmp_target.x,tmp_target.bbox_top,obj_damage_done);
 tmp_text.dmg = "-" + string(tmp_dmg);
+
+//Add to the combo
+global.combo += 1;
+if ( instance_exists(obj_controller) ){
+  obj_controller.alarm[4] = 15;
+}
+//tmp_text = instance_create(tmp_target.x,tmp_target.bbox_top,obj_damage_done);
+//tmp_text.dmg = "X" + string(global.combo);
+//tmp_text.gravity = -0.25;
+//tmp_text.vspeed = -1;
+//y-=10;
+//tmp_text.font = global.font_score;

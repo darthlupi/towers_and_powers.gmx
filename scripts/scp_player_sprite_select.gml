@@ -1,5 +1,5 @@
 
-//Make sprite selection based on various player status here
+//Make sprite selection based on various  status here
 tmp_sprite = sprite_stand_still;
 image_speed = 0.25;
 
@@ -42,7 +42,7 @@ if ( jump ){
   }
 }
 
-//Set xscale for player if holding down the mouse...
+//Set xscale for  if holding down the mouse...
 if ( obj_controller.player_id == id && mouse_check_button(mb_left) && jump == 0 && mouse_y < 192 ){//Set the mouse coordinates as the target
   target_x = mouse_x + view_xview[0];
   if target_x > x then xscale = 1 else xscale = -1;

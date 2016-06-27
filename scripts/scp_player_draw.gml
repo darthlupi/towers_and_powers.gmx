@@ -30,5 +30,9 @@ if ( alarm[5] ){
   }
 }
 
+//Draw target x and y for moving :)
+//draw_sprite(spr_down_arrow,-1,target_x,target_y );
+
+
 //Draw the actual sprite.
 draw_sprite_ext(sprite_index,-1,x + tmp_rand,y + tmp_rand,xscale,yscale,image_angle,color,image_alpha);

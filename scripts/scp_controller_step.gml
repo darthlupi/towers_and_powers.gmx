@@ -21,7 +21,6 @@ scp_controller_grid_mouse();
 
 //Trigger actions
 
-
 //If the selected player is no more then we should deselect them...
 if ( !instance_exists( player_id ) )
 {

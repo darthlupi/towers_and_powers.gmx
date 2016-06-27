@@ -75,10 +75,7 @@ opening = 1; //Is the door opening?
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//If the door is open then move to the next room
-if ( open == 1 ){
-  instance_create(x,y,obj_transition_blocks);
-}
+            <string>scp_enter_door_way();
 </string>
           </argument>
         </arguments>
