@@ -9,7 +9,7 @@ if ( xscale == -1 ) {
   tmp_a_dir = 180;
 }
 
-my_attack = instance_create(x,y,obj_proj_sprout_1);
+my_attack = instance_create(x+xscale*10,y,obj_proj_sprout_1);
 my_attack.range = range;
 my_attack.attack = 2 + attack;
 my_attack.dir = tmp_a_dir;

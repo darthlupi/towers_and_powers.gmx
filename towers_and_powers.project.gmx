@@ -40,6 +40,7 @@
         <sprite>sprites\spr_machine_gun</sprite>
         <sprite>sprites\spr_proj_sprout_1</sprite>
         <sprite>sprites\spr_proj_sprout_2</sprite>
+        <sprite>sprites\spr_proj_water_slash</sprite>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_this_player</sprite>
@@ -113,6 +114,7 @@
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
       <sprite>sprites\spr_button_empty</sprite>
+      <sprite>sprites\spr_button_spell_water_slash</sprite>
       <sprite>sprites\spr_button_spell_m_gun</sprite>
       <sprite>sprites\spr_button_check</sprite>
       <sprite>sprites\spr_button_key_stone</sprite>
@@ -233,6 +235,7 @@
       <scripts name="spells">
         <script>scripts\scp_spell_machine_gun_old.gml</script>
         <script>scripts\scp_spell_machine_gun.gml</script>
+        <script>scripts\scp_spell_water_slash.gml</script>
         <script>scripts\scp_spell_sprout.gml</script>
       </scripts>
     </scripts>
@@ -260,6 +263,7 @@
       <script>scripts\scp_jump_fall.gml</script>
       <script>scripts\scp_set_xscale.gml</script>
       <script>scripts\scp_jump_reset.gml</script>
+      <script>scripts\scp_item_in_array.gml</script>
     </scripts>
     <scripts name="buttons">
       <scripts name="buttons">
@@ -302,6 +306,7 @@
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
+        <object>objects\obj_proj_water_slash</object>
         <objects name="proj_sprout">
           <object>objects\obj_proj_sprout_1</object>
           <object>objects\obj_proj_sprout_2</object>

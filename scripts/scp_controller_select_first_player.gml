@@ -6,8 +6,6 @@ if ( instance_exists(obj_player_1  )){
     tmp_this_player.follow_id = obj_player_1.id;
 }
 
-
-
 //Check player 2
 if ( instance_exists(obj_player_2) && !instance_exists(obj_player_1)  ){
     player_id = obj_player_2.id;
