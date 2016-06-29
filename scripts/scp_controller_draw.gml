@@ -17,13 +17,13 @@ my_button_5.x = x+225 + 133 ;
 my_button_5.y = y+8;
 
 if ( instance_exists(obj_player_1) ){
-  if obj_player_1.alarm[0] > 0 then my_button_3.x += random(2) - random(2)  ;
+  if obj_player_1.alarm[0] > 0 then my_button_1.x += random(2) - random(2)  ;
 }
 if ( instance_exists(obj_player_2) ){
-  if obj_player_2.alarm[0] > 0 then my_button_4.x += random(2) - random(2);
+  if obj_player_2.alarm[0] > 0 then my_button_2.x += random(2) - random(2);
 }
 if ( instance_exists(obj_player_3) ){
-  if obj_player_3.alarm[0] > 0 then my_button_5.x += random(2) - random(2);
+  if obj_player_3.alarm[0] > 0 then my_button_3.x += random(2) - random(2);
 }
 
 //If multipath movement draw the grid for debugging purposes

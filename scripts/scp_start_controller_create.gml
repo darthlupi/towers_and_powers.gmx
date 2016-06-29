@@ -106,10 +106,19 @@ global.spell_ammo[2] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[2] = 10;
 global.spell_reload[2] = 20;
 
+//Roller
+global.spell_level[3] = 0; 
+global.spell_max_ammo[3] = 120;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[3] = global.spell_max_ammo[3];
+global.spell_ammo_per_level[3] = 10;
+global.spell_reload[3] = 20;
+
+
 //Which spell is selected for player 1
 global.spell_selected[0] = 0; 
 //Which spell is selected for player 2
-global.spell_selected[1] = 1; 
+global.spell_selected[1] = 3; 
 //Which spell is selected for player 3
 global.spell_selected[2] = 2; 
 

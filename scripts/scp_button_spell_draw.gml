@@ -1,6 +1,8 @@
-scp_button_draw();
+
 
 if instance_exists( obj_controller.player_id ) && instance_exists(instance_exists(obj_player_parent) ) {
+
+  scp_button_draw();
 
   draw_set_color(c_red);
   draw_set_alpha(0.5);

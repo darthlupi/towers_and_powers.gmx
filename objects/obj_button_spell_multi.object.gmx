@@ -75,6 +75,11 @@ if ( instance_exists( obj_controller.player_id ) &amp;&amp; instance_exists(obj_
     spell_script = scp_spell_water_slash;
     sprite_index = spr_button_spell_water_slash;
   }
+  if ( spell_selected == 3 ){
+    spell_script = scp_spell_roller;
+    sprite_index = spr_button_spell_roller;
+  }  
+
 }
 else {
   sprite_index = spr_button_empty;
