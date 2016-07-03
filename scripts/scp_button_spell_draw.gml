@@ -1,6 +1,6 @@
 
 
-if instance_exists( obj_controller.player_id ) && instance_exists(instance_exists(obj_player_parent) ) {
+if ( instance_exists( obj_controller.player_id ) && instance_exists(obj_player_parent) ) {
 
   scp_button_draw();
 

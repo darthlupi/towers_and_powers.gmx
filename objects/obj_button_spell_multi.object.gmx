@@ -79,6 +79,10 @@ if ( instance_exists( obj_controller.player_id ) &amp;&amp; instance_exists(obj_
     spell_script = scp_spell_roller;
     sprite_index = spr_button_spell_roller;
   }  
+  if ( spell_selected == 4 ){
+    spell_script = scp_spell_beam;
+    sprite_index = spr_button_spell_beam;
+  }  
 
 }
 else {

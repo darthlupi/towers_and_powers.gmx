@@ -98,7 +98,7 @@ global.spell_ammo_per_level[1] = 10;
 global.spell_reload[1] = 20;
 
 
-//Machine Gun
+//Water Slash
 global.spell_level[2] = 0; 
 global.spell_max_ammo[2] = 120;
 //Global ammo so that it can be carried over between stages.
@@ -114,9 +114,17 @@ global.spell_ammo[3] = global.spell_max_ammo[3];
 global.spell_ammo_per_level[3] = 10;
 global.spell_reload[3] = 20;
 
+//Fire beam
+global.spell_level[4] = 0; 
+global.spell_max_ammo[4] = 120;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[4] = global.spell_max_ammo[4];
+global.spell_ammo_per_level[4] = 10;
+global.spell_reload[4] = 20;
+
 
 //Which spell is selected for player 1
-global.spell_selected[0] = 0; 
+global.spell_selected[0] = 4; 
 //Which spell is selected for player 2
 global.spell_selected[1] = 3; 
 //Which spell is selected for player 3

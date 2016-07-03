@@ -42,6 +42,8 @@
         <sprite>sprites\spr_proj_sprout_2</sprite>
         <sprite>sprites\spr_proj_water_slash</sprite>
         <sprite>sprites\spr_proj_roller</sprite>
+        <sprite>sprites\spr_proj_beam_1</sprite>
+        <sprite>sprites\spr_proj_beam_2</sprite>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_this_player</sprite>
@@ -115,6 +117,7 @@
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
       <sprite>sprites\spr_button_empty</sprite>
+      <sprite>sprites\spr_button_spell_beam</sprite>
       <sprite>sprites\spr_button_spell_roller</sprite>
       <sprite>sprites\spr_button_spell_water_slash</sprite>
       <sprite>sprites\spr_button_spell_m_gun</sprite>
@@ -163,6 +166,9 @@
       </sprites>
       <sprites name="smoke">
         <sprite>sprites\spr_smoke_bright</sprite>
+      </sprites>
+      <sprites name="foreground_effects">
+        <sprite>sprites\spr_fg_fog</sprite>
       </sprites>
     </sprites>
     <sprites name="grid">
@@ -238,6 +244,7 @@
         <script>scripts\scp_spell_machine_gun_old.gml</script>
         <script>scripts\scp_spell_machine_gun.gml</script>
         <script>scripts\scp_spell_roller.gml</script>
+        <script>scripts\scp_spell_beam.gml</script>
         <script>scripts\scp_spell_water_slash.gml</script>
         <script>scripts\scp_spell_sprout.gml</script>
       </scripts>
@@ -310,6 +317,7 @@
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
         <object>objects\obj_proj_roller</object>
+        <object>objects\obj_proj_beam</object>
         <object>objects\obj_proj_water_slash</object>
         <objects name="proj_sprout">
           <object>objects\obj_proj_sprout_1</object>
@@ -377,6 +385,10 @@
       </objects>
       <objects name="shines">
         <object>objects\obj_effect_little_shine</object>
+      </objects>
+      <objects name="foreground">
+        <object>objects\obj_fg_fog</object>
+        <object>objects\obj_fg_fog_creator</object>
       </objects>
     </objects>
     <objects name="blocks">

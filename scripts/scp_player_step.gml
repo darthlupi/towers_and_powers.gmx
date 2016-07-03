@@ -50,32 +50,6 @@ scp_player_level_up();
 //Select sprites
 sprite_index = scp_player_sprite_select();
 
-//Key presses 
 
-if ( keyboard_check(ord('Z') ) )
-{
-    with(obj_button_spell_1){script_execute(button_script);}
-}
-if ( keyboard_check(ord('X') ) )
-{
-    with(obj_button_spell_2){script_execute(button_script);}
-}
-if ( keyboard_check_pressed(ord('C') ) )
-{
-    with(obj_button_spell_3){script_execute(button_script);}    
-}
-if ( keyboard_check_pressed(ord('V') ) )
-{
-    with(obj_button_spell_4){script_execute(button_script);}    
-}
-if ( keyboard_check_pressed(ord('B') ) )
-{
-    with(obj_button_action){script_execute(button_script);}    
-}
-
-//Jump and stuff
-if ( mouse_check_button_pressed(mb_right)  ){
-    with(obj_button_spell_1){script_execute(button_script);}
-}
 
 
