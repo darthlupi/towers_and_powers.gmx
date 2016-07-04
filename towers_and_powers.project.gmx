@@ -44,6 +44,7 @@
         <sprite>sprites\spr_proj_roller</sprite>
         <sprite>sprites\spr_proj_beam_1</sprite>
         <sprite>sprites\spr_proj_beam_2</sprite>
+        <sprite>sprites\spr_proj_multi</sprite>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_this_player</sprite>
@@ -243,6 +244,7 @@
       <scripts name="spells">
         <script>scripts\scp_spell_machine_gun_old.gml</script>
         <script>scripts\scp_spell_machine_gun.gml</script>
+        <script>scripts\scp_spell_multi.gml</script>
         <script>scripts\scp_spell_roller.gml</script>
         <script>scripts\scp_spell_beam.gml</script>
         <script>scripts\scp_spell_water_slash.gml</script>
@@ -260,6 +262,7 @@
       <script>scripts\scp_enemy_mp_move.gml</script>
       <script>scripts\scp_enemy_short_path.gml</script>
       <script>scripts\scp_enemy_attack_knock_back.gml</script>
+      <script>scripts\scp_enemy_knocked_back.gml</script>
     </scripts>
     <scripts name="tools">
       <script>scripts\scp_mouse_over_check.gml</script>
@@ -316,6 +319,7 @@
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
+        <object>objects\obj_proj_multi</object>
         <object>objects\obj_proj_roller</object>
         <object>objects\obj_proj_beam</object>
         <object>objects\obj_proj_water_slash</object>
