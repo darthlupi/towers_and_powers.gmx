@@ -168,29 +168,7 @@ instance_destroy();
             <kind>1</kind>
             <string>if x &gt; view_xview[0] + view_wview[0] then instance_destroy();
 
-//image_angle = direction;
-
-len = 0;
-for ( b=10;b&lt;=range;b+=4){
-  
-  if ( collision_line(x,y,x+b*image_xscale,y,obj_block,false,true) ){
-    break;
-  }
-  tmp_target = collision_line(x,y,x+b*image_xscale,y,obj_enemy,false,true);
-  //Do damage
-  if ( tmp_target ){
-    if ( alarm[2] &lt;= 0 ){
-      tmp_target.alarm[0] = 5;
-      scp_player_do_damage(attack,tmp_target);
-      //Sounds
-      audio_play_sound(snd_hit,1,false);
-      alarm[2] = 5;
-    }
-    break;
-  }
-  len = b;
-}
-
+len = scp_beam_step(range,image_angle,4,obj_enemy,obj_block,10);
 
 </string>
           </argument>
@@ -237,17 +215,7 @@ for ( b=10;b&lt;=range;b+=4){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//Draw main sprite
-draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_white,1);
-
-for ( b=10;b&lt;=len-4;b+=4){
-  draw_sprite_ext(spr_proj_beam_2,image_index + random(5),x+b*image_xscale,y,image_xscale,image_yscale,image_angle,c_white,1);
-}
-
-
-
-draw_sprite_ext(sprite_index,-1,x+(b+10)*image_xscale,y,-image_xscale,image_yscale,image_angle,c_white,1);
+            <string>scp_beam_draw(len,image_angle,4,spr_proj_beam_1,spr_proj_beam_2,10,14);
 
 </string>
           </argument>

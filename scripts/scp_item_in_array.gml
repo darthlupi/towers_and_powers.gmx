@@ -3,6 +3,6 @@ tmp_item = argument0;
 tmp_array = argument1;
 
 for ( tmp_i=0;tmp_i<array_length_1d(tmp_array); tmp_i+=1){
-  if enemy_array[tmp_i] == tmp_item then return true;
+  if tmp_array[tmp_i] == tmp_item then return true;
 }
 return false;

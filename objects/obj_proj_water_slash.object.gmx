@@ -110,6 +110,7 @@ alarm[1] = 2;
   audio_play_sound(snd_hit,1,false);
   enemy_array[array_length_1d(tmp_array)]=other.id
   scp_enemy_knocked_back(other);
+ 
 }
 
 </string>

@@ -7,7 +7,8 @@ if ( xscale == 1 ) {
 if ( xscale == -1 ) {
   tmp_a_dir = 180;
 }
-
+//Sounds
+audio_play_sound(snd_shoot,1,false);
 //Create the spell
 for (s=0;s<180;s+=15){
   my_attack = instance_create(x+xscale*10,y,obj_proj_multi);

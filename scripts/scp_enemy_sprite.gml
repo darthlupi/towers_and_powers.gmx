@@ -24,8 +24,8 @@ if ( jump > 0 )
   sprite_index = sprite_jump;
 }
 
-//Rotate if we are on the last frame.  Last frame is for damage.
-if ( image_index > image_number - 2 )
+//Rotate if we are on the last frame.  Last frame is for damage.  Second to last if frozen.
+if ( image_index > image_number - 3 )
 {
     image_index = 0;
 }

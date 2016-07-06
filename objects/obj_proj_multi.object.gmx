@@ -33,8 +33,7 @@ range = 0;
 if range &gt; 0 then alarm[0] = range / hspeed + 1 else alarm[0] = 0;
 
 
-//Sounds
-audio_play_sound(snd_shoot,1,false);
+
 alarm[1] = 2;
 </string>
           </argument>
@@ -158,7 +157,8 @@ image_angle = direction;
 other.alarm[0] = 5;
 scp_player_do_damage(attack,other);
 instance_destroy();
-
+//Freeze the enemy???
+ other.alarm[4] = 50;
 //Sounds
 audio_play_sound(snd_hit,1,false);
 </string>
