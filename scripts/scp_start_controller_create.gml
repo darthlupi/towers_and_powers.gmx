@@ -88,6 +88,8 @@ global.spell_max_ammo[0] = 60;
 global.spell_ammo[0] = global.spell_max_ammo[0]; 
 global.spell_ammo_per_level[0] = 5;
 global.spell_reload[0] = 80;
+global.spell_script[0] = scp_spell_sprout;
+global.spell_sprite[0] = spr_button_spell_sprout;
 
 //Machine Gun
 global.spell_level[1] = 0; 
@@ -96,7 +98,8 @@ global.spell_max_ammo[1] = 120;
 global.spell_ammo[1] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[1] = 10;
 global.spell_reload[1] = 20;
-
+global.spell_script[0] = scp_spell_machine_gun;
+global.spell_sprite[0] = spr_button_spell_m_gun;
 
 //Water Slash
 global.spell_level[2] = 0; 
@@ -105,6 +108,8 @@ global.spell_max_ammo[2] = 120;
 global.spell_ammo[2] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[2] = 10;
 global.spell_reload[2] = 20;
+global.spell_script[0] = scp_spell_water_slash;
+global.spell_sprite[0] = spr_button_spell_sprout;
 
 //Roller
 global.spell_level[3] = 0; 
@@ -113,6 +118,8 @@ global.spell_max_ammo[3] = 120;
 global.spell_ammo[3] = global.spell_max_ammo[3];
 global.spell_ammo_per_level[3] = 10;
 global.spell_reload[3] = 20;
+global.spell_script[3] = scp_spell_roller;
+global.spell_sprite[3] = spr_button_spell_roller;
 
 //Fire beam
 global.spell_level[4] = 0; 
@@ -121,14 +128,32 @@ global.spell_max_ammo[4] = 120;
 global.spell_ammo[4] = global.spell_max_ammo[4];
 global.spell_ammo_per_level[4] = 10;
 global.spell_reload[4] = 20;
+global.spell_script[4] = scp_spell_beam;
+global.spell_sprite[4] = spr_button_spell_beam;
 
 //Multi Shot
 global.spell_level[5] = 0; 
 global.spell_max_ammo[5] = 120;
 //Global ammo so that it can be carried over between stages.
-global.spell_ammo[5] = global.spell_max_ammo[4];
+global.spell_ammo[5] = global.spell_max_ammo[5];
 global.spell_ammo_per_level[5] = 10;
 global.spell_reload[5] = 20;
+global.spell_script[5] = scp_spell_multi;
+global.spell_sprite[5] = spr_button_spell_sprout;
+
+//Ice Spike
+global.spell_level[6] = 0; 
+global.spell_max_ammo[6] = 120;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[6] = global.spell_max_ammo[6];
+global.spell_ammo_per_level[6] = 10;
+global.spell_reload[6] = 20;
+global.spell_script[6] = scp_spell_ice_spike;
+global.spell_sprite[6] = spr_button_spell_sprout;
+
+
+
+
 
 
 //Which spell is selected for player 1
@@ -136,7 +161,7 @@ global.spell_selected[0] = 5;
 //Which spell is selected for player 2
 global.spell_selected[1] = 4; 
 //Which spell is selected for player 3
-global.spell_selected[2] = 2; 
+global.spell_selected[2] = 6; 
 
 
 

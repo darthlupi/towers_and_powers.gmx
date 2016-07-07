@@ -45,6 +45,7 @@
         <sprite>sprites\spr_proj_beam_1</sprite>
         <sprite>sprites\spr_proj_beam_2</sprite>
         <sprite>sprites\spr_proj_multi</sprite>
+        <sprite>sprites\spr_proj_ice_spike</sprite>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_this_player</sprite>
@@ -139,6 +140,7 @@
       <sprite>sprites\spr_player_selected</sprite>
       <sprites name="particles">
         <sprite>sprites\spr_spark</sprite>
+        <sprite>sprites\spr_white_particle</sprite>
       </sprites>
       <sprites name="fonts">
         <sprite>sprites\spr_font_red</sprite>
@@ -244,6 +246,7 @@
       <scripts name="spells">
         <script>scripts\scp_spell_machine_gun_old.gml</script>
         <script>scripts\scp_spell_machine_gun.gml</script>
+        <script>scripts\scp_spell_ice_spike.gml</script>
         <script>scripts\scp_spell_multi.gml</script>
         <script>scripts\scp_spell_roller.gml</script>
         <script>scripts\scp_spell_beam.gml</script>
@@ -283,6 +286,7 @@
         <script>scripts\scp_button_create.gml</script>
         <script>scripts\scp_button_step.gml</script>
         <script>scripts\scp_button_draw.gml</script>
+        <script>scripts\scp_button_spell_step.gml</script>
         <script>scripts\scp_button_spell_draw.gml</script>
       </scripts>
       <scripts name="button_scripts">
@@ -321,6 +325,7 @@
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
+        <object>objects\obj_proj_ice_spike</object>
         <object>objects\obj_proj_multi</object>
         <object>objects\obj_proj_roller</object>
         <object>objects\obj_proj_beam</object>
@@ -369,6 +374,8 @@
     <objects name="effects">
       <objects name="particles">
         <object>objects\obj_e_spark</object>
+        <object>objects\obj_ice_chunk</object>
+        <object>objects\obj_wind_particle</object>
         <object>objects\obj_chunk</object>
         <objects name="smoke">
           <object>objects\obj_smoke_bright</object>

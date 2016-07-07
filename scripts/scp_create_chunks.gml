@@ -52,7 +52,7 @@ for ( rr = 0;rr < chunk_r;rr+=1)
         //Explodes
         if ( chunk_type == 1 ){
           //Just some default chunk physics       
-          chunk.speed = 2 + random(2);
+          chunk.speed = 1 + random(1);
           chunk.direction = 0 + random(270);
         }
         
