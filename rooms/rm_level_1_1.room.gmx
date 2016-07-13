@@ -55,7 +55,7 @@
     <instance objName="obj_song_1" x="144" y="-60" name="inst_E9344F34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_pause" x="360" y="0" name="inst_3BB7C900" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bg_speed_slow_rd" x="108" y="-60" name="inst_4E612210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_1" x="252" y="36" name="inst_0240BB7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_1" x="228" y="36" name="inst_0240BB7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="24" y="0" name="inst_8B0EF1A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="0" y="0" name="inst_AFEA4B3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="0" y="24" name="inst_3E230219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -157,10 +157,8 @@
     <instance objName="obj_block" x="384" y="144" name="inst_F4EEE4BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_opening" x="24" y="84" name="inst_76B9BF99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_2" x="204" y="36" name="inst_E0FC8068" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_mp" x="156" y="156" name="inst_104D63F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_mp" x="360" y="60" name="inst_29870E30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_mp" x="36" y="156" name="inst_4A03F380" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_3" x="276" y="36" name="inst_AFCCC7E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fg_fog_creator" x="408" y="0" name="inst_9679D663" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

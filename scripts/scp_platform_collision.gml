@@ -55,7 +55,8 @@ if ( vspeed != 0 || hspeed != 0 || gravity != 0 ) {
       //that occurs if the target is the middle of a jump block.
       //The player will jump past the block and try to get to the center again.  Ugly jump loop.
       //Only reset teh path if jump was triggered from a collision wit a jump block - jump_path.
-      if ( distance_to_point(target_x,target_y) > 24 && jump_path ){
+      //if ( distance_to_point(target_x,target_y) > 24 && jump_path ){
+      if ( jump_path  && !place_meeting(target_x,target_y,obj_block_jump) ){
          tmp_path_results = mp_grid_path(global.mp_grid, my_path, x, y, target_x, target_y, false);
          if ( tmp_path_results ){
             path_start(my_path,move_speed,0,0);

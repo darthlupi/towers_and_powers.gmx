@@ -101,6 +101,9 @@
       <sprites name="floating_eye">
         <sprite>sprites\spr_floating_eye</sprite>
       </sprites>
+      <sprites name="Blastlette">
+        <sprite>sprites\sprite110</sprite>
+      </sprites>
     </sprites>
     <sprites name="controller">
       <sprite>sprites\spr_hud</sprite>
@@ -148,6 +151,7 @@
         <sprite>sprites\spr_font_press_start</sprite>
         <sprite>sprites\spr_font_blue</sprite>
         <sprite>sprites\spr_font_white</sprite>
+        <sprite>sprites\spr_font_text</sprite>
       </sprites>
       <sprites name="level_up">
         <sprite>sprites\spr_effect_stat_up</sprite>
@@ -192,6 +196,12 @@
         <sprite>sprites\spr_start_menu_energy</sprite>
         <sprite>sprites\sprite92</sprite>
         <sprite>sprites\spr_start_menu_top</sprite>
+      </sprites>
+      <sprites name="magic_explained">
+        <sprite>sprites\spr_explained_channeling</sprite>
+        <sprite>sprites\spr_explained_fabrication</sprite>
+        <sprite>sprites\spr_explained_compression</sprite>
+        <sprite>sprites\spr_bg_chalk</sprite>
       </sprites>
     </sprites>
     <sprites name="collectables">
@@ -416,6 +426,12 @@
         <object>objects\obj_start_menu_energy</object>
         <object>objects\obj_start_menu_top</object>
       </objects>
+      <objects name="magic_explained">
+        <object>objects\obj_explained_channeling</object>
+        <object>objects\obj_explained_compression</object>
+        <object>objects\obj_explained_farbrication</object>
+        <object>objects\obj_chalk_board</object>
+      </objects>
     </objects>
     <objects name="collectables">
       <object>objects\obj_door</object>
@@ -432,7 +448,11 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\rm_jump_fix</room>
+    <room>rooms\rm_magic_explained_1</room>
+    <room>rooms\rm_magic_explained_2</room>
+    <room>rooms\rm_magic_explained_3</room>
+    <room>rooms\rm_level_1_0</room>
+    <room>rooms\rm_level_1_1</room>
     <room>rooms\rm_lv_1_2</room>
     <room>rooms\rm_lv_1_3</room>
     <room>rooms\rm_template</room>

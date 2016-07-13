@@ -53,6 +53,8 @@ button_script = scp_button_player_1;
           <argument>
             <kind>1</kind>
             <string>scp_button_step();
+
+if ! instance_exists(obj_player_1) then sprite_index = spr_button_empty;
 </string>
           </argument>
         </arguments>

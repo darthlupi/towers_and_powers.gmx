@@ -98,8 +98,8 @@ global.spell_max_ammo[1] = 120;
 global.spell_ammo[1] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[1] = 10;
 global.spell_reload[1] = 20;
-global.spell_script[0] = scp_spell_machine_gun;
-global.spell_sprite[0] = spr_button_spell_m_gun;
+global.spell_script[1] = scp_spell_machine_gun;
+global.spell_sprite[1] = spr_button_spell_m_gun;
 
 //Water Slash
 global.spell_level[2] = 0; 
@@ -108,8 +108,8 @@ global.spell_max_ammo[2] = 120;
 global.spell_ammo[2] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[2] = 10;
 global.spell_reload[2] = 20;
-global.spell_script[0] = scp_spell_water_slash;
-global.spell_sprite[0] = spr_button_spell_sprout;
+global.spell_script[2] = scp_spell_water_slash;
+global.spell_sprite[2] = spr_button_spell_sprout;
 
 //Roller
 global.spell_level[3] = 0; 
@@ -153,11 +153,8 @@ global.spell_sprite[6] = spr_button_spell_sprout;
 
 
 
-
-
-
 //Which spell is selected for player 1
-global.spell_selected[0] = 5; 
+global.spell_selected[0] = 0; 
 //Which spell is selected for player 2
 global.spell_selected[1] = 4; 
 //Which spell is selected for player 3
@@ -188,6 +185,7 @@ global.font_score = font_add_sprite(spr_font_score,ord('!'),true,1);
 global.font_white = font_add_sprite(spr_font_white,ord('!'),true,1);
 global.font_red = font_add_sprite(spr_font_red,ord('!'),true,1);
 global.font_press_start = font_add_sprite(spr_font_press_start,ord('!'),true,1);
+global.font_text = font_add_sprite(spr_font_text,ord('!'),true,1);
 
 //Points
 global.points = 0;
