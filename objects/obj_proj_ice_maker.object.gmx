@@ -41,6 +41,7 @@ enemy_array[] = 0;
 started = 0;
 //Switch direction
 beam_dir = 0;
+//When to start moving the beam
 alarm[4] = 30;
 
 b = 0;
@@ -84,6 +85,31 @@ alarm[2] = 1;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Reverse beam movement
+beam_dir = beam_dir * -1;
+alarm[5] = 24;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
@@ -101,10 +127,9 @@ alarm[2] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//beam_dir = beam_dir * -1;
-//alarm[4] = 10;
+            <string>alarm[5] = 13;  //Trigger up and down
+beam_dir = 1; //Start moving that beam!
 
-beam_dir = 1;
 </string>
           </argument>
         </arguments>
@@ -229,6 +254,8 @@ instance_destroy();
 
 
 if ( image_index &gt;= 7 ){
+
+  //Do once when beam starts
   if (!started){
     my_flash = instance_create(x,y,obj_dark_screen);
     my_flash.color = c_white;
@@ -259,6 +286,7 @@ if ( image_index &gt;= 7 ){
   image_angle += image_yscale * 10 * beam_dir;
   if image_angle &gt; 360 then image_angle = 360;
   if image_angle &lt; -180 then image_angle = -180;
+  
   //Create particles along the beam
   //Use below tmp_len if you want to create particles down the length of the beam
   //tmp_len = random(len);
