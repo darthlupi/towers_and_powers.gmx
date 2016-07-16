@@ -30,6 +30,8 @@
 //The script to run when the button is pressed :)
 //Override this variable to creat unique actions for your buttons...
 button_script = scp_button_player_3;
+
+select_frame = 0;
 </string>
           </argument>
         </arguments>
@@ -78,6 +80,16 @@ if ! instance_exists(obj_player_3) then sprite_index = spr_button_empty;
           <argument>
             <kind>1</kind>
             <string>scp_button_draw();
+
+
+//Draw selection
+if ( instance_exists(obj_player_3) ){
+  if ( obj_controller.player_id = obj_player_3.id ){
+    select_frame +=0.2;
+    if select_frame &gt; 15 then tmp_ani = 1;
+    draw_sprite(spr_button_selected,select_frame,x,y);
+  }
+}
 </string>
           </argument>
         </arguments>

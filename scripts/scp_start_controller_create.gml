@@ -152,9 +152,19 @@ global.spell_script[6] = scp_spell_ice_spike;
 global.spell_sprite[6] = spr_button_spell_sprout;
 
 
+//Ice Maker
+global.spell_level[7] = 0; 
+global.spell_max_ammo[7] = 120;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[7] = global.spell_max_ammo[6];
+global.spell_ammo_per_level[7] = 10;
+global.spell_reload[7] = 20;
+global.spell_script[7] = scp_spell_ice_maker;
+global.spell_sprite[7] = spr_button_spell_sprout;
+
 
 //Which spell is selected for player 1
-global.spell_selected[0] = 0; 
+global.spell_selected[0] = 7; 
 //Which spell is selected for player 2
 global.spell_selected[1] = 4; 
 //Which spell is selected for player 3

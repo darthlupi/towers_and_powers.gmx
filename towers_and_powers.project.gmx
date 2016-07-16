@@ -37,15 +37,25 @@
   <sprites name="sprites">
     <sprites name="player">
       <sprites name="projectiles">
-        <sprite>sprites\spr_machine_gun</sprite>
-        <sprite>sprites\spr_proj_sprout_1</sprite>
-        <sprite>sprites\spr_proj_sprout_2</sprite>
-        <sprite>sprites\spr_proj_water_slash</sprite>
-        <sprite>sprites\spr_proj_roller</sprite>
-        <sprite>sprites\spr_proj_beam_1</sprite>
-        <sprite>sprites\spr_proj_beam_2</sprite>
-        <sprite>sprites\spr_proj_multi</sprite>
-        <sprite>sprites\spr_proj_ice_spike</sprite>
+        <sprites name="spells">
+          <sprite>sprites\spr_proj_water_slash</sprite>
+          <sprite>sprites\spr_proj_ice_spike</sprite>
+          <sprite>sprites\spr_proj_multi</sprite>
+          <sprite>sprites\spr_proj_beam_2</sprite>
+          <sprite>sprites\spr_proj_beam_1</sprite>
+          <sprite>sprites\spr_proj_roller</sprite>
+          <sprite>sprites\spr_proj_sprout_2</sprite>
+          <sprite>sprites\spr_proj_sprout_1</sprite>
+          <sprite>sprites\spr_machine_gun</sprite>
+          <sprites name="ice_maker">
+            <sprite>sprites\spr_proj_ice_maker</sprite>
+            <sprite>sprites\spr_ice_maker_beam</sprite>
+            <sprite>sprites\spr_flake</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="attacks">
+          <sprite>sprites\spr_attack_normal</sprite>
+        </sprites>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_this_player</sprite>
@@ -122,6 +132,7 @@
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
       <sprite>sprites\spr_button_empty</sprite>
+      <sprite>sprites\spr_button_selected</sprite>
       <sprite>sprites\spr_button_spell_beam</sprite>
       <sprite>sprites\spr_button_spell_roller</sprite>
       <sprite>sprites\spr_button_spell_water_slash</sprite>
@@ -254,12 +265,13 @@
       <script>scripts\scp_player_next_level.gml</script>
       <script>scripts\scp_player_level_effects.gml</script>
       <scripts name="spells">
-        <script>scripts\scp_spell_machine_gun_old.gml</script>
+        <script>scripts\scp_attack_normal.gml</script>
         <script>scripts\scp_spell_machine_gun.gml</script>
         <script>scripts\scp_spell_ice_spike.gml</script>
         <script>scripts\scp_spell_multi.gml</script>
         <script>scripts\scp_spell_roller.gml</script>
         <script>scripts\scp_spell_beam.gml</script>
+        <script>scripts\scp_spell_ice_maker.gml</script>
         <script>scripts\scp_spell_water_slash.gml</script>
         <script>scripts\scp_spell_sprout.gml</script>
       </scripts>
@@ -335,15 +347,18 @@
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
+        <object>objects\obj_attack_normal</object>
         <object>objects\obj_proj_ice_spike</object>
         <object>objects\obj_proj_multi</object>
         <object>objects\obj_proj_roller</object>
         <object>objects\obj_proj_beam</object>
+        <object>objects\obj_proj_ice_maker</object>
         <object>objects\obj_proj_water_slash</object>
         <objects name="proj_sprout">
           <object>objects\obj_proj_sprout_1</object>
           <object>objects\obj_proj_sprout_2</object>
         </objects>
+        <object>objects\object73</object>
       </objects>
       <object>objects\obj_player_ko</object>
       <object>objects\obj_this_player</object>

@@ -4,7 +4,7 @@ if ( !move_select && hp > 0 ){
   //Attack if the alarm for being ready to shoot again OR being read to run can hit is ready
   if ( alarm[1] <= 0 ){
     if ( global.wand[p_index] == 0 ){
-      scp_spell_machine_gun_old();
+      scp_attack_normal();
     }
 
   }

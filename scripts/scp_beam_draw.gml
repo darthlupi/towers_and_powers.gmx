@@ -17,7 +17,9 @@ for ( b=tmp_start_point;b<=tmp_length-tmp_step;b+=tmp_step){
   draw_sprite_ext(tmp_sprite_2,image_index + random(5),tmp_x ,tmp_y ,image_xscale,image_yscale,tmp_angle,c_white,1);
 }
 //Draw the end
-tmp_x = tmp_x + lengthdir_x(tmp_end_point,tmp_angle);
-tmp_y = tmp_y + lengthdir_y(tmp_end_point,tmp_angle);
-draw_sprite_ext(tmp_sprite_1,-1,tmp_x,tmp_y,-image_xscale,image_yscale,tmp_angle,c_white,1);
+if ( tmp_end_point > 0 ){
+  tmp_x = tmp_x + lengthdir_x(tmp_end_point,tmp_angle);
+  tmp_y = tmp_y + lengthdir_y(tmp_end_point,tmp_angle);
+  draw_sprite_ext(tmp_sprite_1,-1,tmp_x,tmp_y,-image_xscale,image_yscale,tmp_angle,c_white,1);
+}
 

@@ -1,5 +1,5 @@
 //Set the attack range...
-range = 180;
+range = 150;
 
 if ( xscale == 1 ) {
   tmp_a_dir = 0;
