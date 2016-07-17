@@ -46,12 +46,14 @@
           <sprite>sprites\spr_proj_roller</sprite>
           <sprite>sprites\spr_proj_sprout_2</sprite>
           <sprite>sprites\spr_proj_sprout_1</sprite>
+          <sprite>sprites\spr_proj_fire_ball</sprite>
           <sprite>sprites\spr_machine_gun</sprite>
           <sprites name="ice_maker">
             <sprite>sprites\spr_proj_ice_maker</sprite>
             <sprite>sprites\spr_ice_maker_beam</sprite>
             <sprite>sprites\spr_flake</sprite>
           </sprites>
+          <sprite>sprites\spr_proj_proximity_mime</sprite>
         </sprites>
         <sprites name="attacks">
           <sprite>sprites\spr_attack_normal</sprite>
@@ -155,6 +157,7 @@
       <sprites name="particles">
         <sprite>sprites\spr_spark</sprite>
         <sprite>sprites\spr_white_particle</sprite>
+        <sprite>sprites\spr_spark_line</sprite>
       </sprites>
       <sprites name="fonts">
         <sprite>sprites\spr_font_red</sprite>
@@ -187,6 +190,9 @@
       </sprites>
       <sprites name="foreground_effects">
         <sprite>sprites\spr_fg_fog</sprite>
+      </sprites>
+      <sprites name="explosions">
+        <sprite>sprites\spr_explosion_1</sprite>
       </sprites>
     </sprites>
     <sprites name="grid">
@@ -267,6 +273,8 @@
       <scripts name="spells">
         <script>scripts\scp_attack_normal.gml</script>
         <script>scripts\scp_spell_machine_gun.gml</script>
+        <script>scripts\scp_spell_fireball.gml</script>
+        <script>scripts\scp_spell_prox_mime.gml</script>
         <script>scripts\scp_spell_ice_spike.gml</script>
         <script>scripts\scp_spell_multi.gml</script>
         <script>scripts\scp_spell_roller.gml</script>
@@ -347,6 +355,8 @@
       <object>objects\obj_player_parent</object>
       <objects name="projectiles">
         <object>objects\obj_machine_gun_shot</object>
+        <object>objects\obj_spell_fireball</object>
+        <object>objects\obj_spell_prox_mime</object>
         <object>objects\obj_attack_normal</object>
         <object>objects\obj_proj_ice_spike</object>
         <object>objects\obj_proj_multi</object>
@@ -358,7 +368,7 @@
           <object>objects\obj_proj_sprout_1</object>
           <object>objects\obj_proj_sprout_2</object>
         </objects>
-        <object>objects\object73</object>
+        <object>objects\obj_spell_explosion</object>
       </objects>
       <object>objects\obj_player_ko</object>
       <object>objects\obj_this_player</object>
@@ -400,6 +410,7 @@
       <objects name="particles">
         <object>objects\obj_e_spark</object>
         <object>objects\obj_ice_chunk</object>
+        <object>objects\obj_spark_line</object>
         <object>objects\obj_wind_particle</object>
         <object>objects\obj_chunk</object>
         <objects name="smoke">

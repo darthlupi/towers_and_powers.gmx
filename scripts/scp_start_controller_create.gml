@@ -156,19 +156,38 @@ global.spell_sprite[6] = spr_button_spell_sprout;
 global.spell_level[7] = 0; 
 global.spell_max_ammo[7] = 120;
 //Global ammo so that it can be carried over between stages.
-global.spell_ammo[7] = global.spell_max_ammo[6];
+global.spell_ammo[7] = global.spell_max_ammo[7];
 global.spell_ammo_per_level[7] = 10;
 global.spell_reload[7] = 20;
 global.spell_script[7] = scp_spell_ice_maker;
 global.spell_sprite[7] = spr_button_spell_sprout;
 
+//Fireball
+global.spell_level[8] = 0; 
+global.spell_max_ammo[8] = 120;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[8] = global.spell_max_ammo[8];
+global.spell_ammo_per_level[8] = 10;
+global.spell_reload[8] = 20;
+global.spell_script[8] = scp_spell_fireball;
+global.spell_sprite[8] = spr_button_spell_sprout;
+
+//Prox Mime
+global.spell_level[9] = 0; 
+global.spell_max_ammo[9] = 120;
+//Global ammo so that it can be carried over between stages.
+global.spell_ammo[9] = global.spell_max_ammo[9];
+global.spell_ammo_per_level[9] = 10;
+global.spell_reload[9] = 20;
+global.spell_script[9] = scp_spell_prox_mime;
+global.spell_sprite[9] = spr_button_spell_sprout;
 
 //Which spell is selected for player 1
-global.spell_selected[0] = 7; 
+global.spell_selected[0] = 9; 
 //Which spell is selected for player 2
-global.spell_selected[1] = 4; 
+global.spell_selected[1] = 7; 
 //Which spell is selected for player 3
-global.spell_selected[2] = 6; 
+global.spell_selected[2] = 8; 
 
 
 
