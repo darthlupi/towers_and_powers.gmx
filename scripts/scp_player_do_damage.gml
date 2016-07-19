@@ -10,6 +10,7 @@ if tmp_dmg <= 0 then tmp_dmg = 1;
 
 //Subtract the target's hp
 tmp_target.hp -= tmp_dmg;
+
 //Create the damage text object
 tmp_text = instance_create(tmp_target.x,tmp_target.bbox_top,obj_damage_done);
 tmp_text.dmg = "-" + string(tmp_dmg);

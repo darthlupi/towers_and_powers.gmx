@@ -35,6 +35,8 @@ yscale = 1;
 knocked_back = 0;
 //How long for flying enemies to recover from knock back
 knocked_back_delay = 20;
+//Give exp or not when killed...
+give_exp = true;
 
 //Jumping stuff
 jump = 0;

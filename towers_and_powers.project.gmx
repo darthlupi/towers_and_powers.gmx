@@ -116,6 +116,13 @@
       <sprites name="Blastlette">
         <sprite>sprites\sprite110</sprite>
       </sprites>
+      <sprites name="purple_slime">
+        <sprite>sprites\spr_purple_slime_w</sprite>
+        <sprite>sprites\spr_purple_slime_j</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="obstacles">
+      <sprite>sprites\spr_trap_floor_spikes</sprite>
     </sprites>
     <sprites name="controller">
       <sprite>sprites\spr_hud</sprite>
@@ -205,6 +212,7 @@
       <sprite>sprites\spr_block_ladder</sprite>
       <sprite>sprites\spr_block_air</sprite>
       <sprite>sprites\spr_jump_block</sprite>
+      <sprite>sprites\spr_block_beware</sprite>
     </sprites>
     <sprites name="menus">
       <sprites name="start_menu">
@@ -296,6 +304,8 @@
       <script>scripts\scp_enemy_short_path.gml</script>
       <script>scripts\scp_enemy_attack_knock_back.gml</script>
       <script>scripts\scp_enemy_knocked_back.gml</script>
+      <script>scripts\scp_enemy_check_obstacles.gml</script>
+      <script>scripts\scp_enemy_hunt_player.gml</script>
     </scripts>
     <scripts name="tools">
       <script>scripts\scp_mouse_over_check.gml</script>
@@ -377,9 +387,14 @@
     <objects name="enemy">
       <object>objects\obj_enemy</object>
       <object>objects\obj_enemy_mp</object>
+      <object>objects\obj_purple_slime</object>
       <object>objects\obj_floating_eye</object>
       <object>objects\obj_enemy_create_test</object>
       <object>objects\obj_floating_eye_create</object>
+    </objects>
+    <objects name="obstacles">
+      <object>objects\obj_trap_spike_floor_1</object>
+      <object>objects\obj_obstacle_parent</object>
     </objects>
     <objects name="controller">
       <object>objects\obj_controller</object>
@@ -445,6 +460,7 @@
       <object>objects\obj_block_ladder</object>
       <object>objects\obj_block_air</object>
       <object>objects\obj_block_jump</object>
+      <object>objects\obj_block_beware</object>
     </objects>
     <objects name="menus">
       <objects name="start_menu">
@@ -474,9 +490,6 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_start_menu</room>
-    <room>rooms\rm_magic_explained_1</room>
-    <room>rooms\rm_magic_explained_2</room>
-    <room>rooms\rm_magic_explained_3</room>
     <room>rooms\rm_level_1_0</room>
     <room>rooms\rm_level_1_1</room>
     <room>rooms\rm_lv_1_2</room>
@@ -485,6 +498,9 @@
     <room>rooms\rm_level_up_mock_up</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_lvl_1_4</room>
+    <room>rooms\rm_magic_explained_2</room>
+    <room>rooms\rm_magic_explained_3</room>
+    <room>rooms\rm_magic_explained_1</room>
     <room>rooms\room6</room>
   </rooms>
   <help>

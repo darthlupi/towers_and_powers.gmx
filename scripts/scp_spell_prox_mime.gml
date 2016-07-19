@@ -1,5 +1,5 @@
 //Set the attack range...
-range = 150;
+range = 120;
 
 if ( xscale == 1 ) {
   tmp_a_dir = 0;
@@ -17,11 +17,9 @@ repeat(1){
   my_attack.speed += random(1); 
   my_attack.image_angle = tmp_a_dir; 
   tmp_reload = 20;
+  my_attack.alarm[0] = range;
 }
-//Set the range on the attack
-with(my_attack){
-  if range > 0 then alarm[0] = range / speed + 1 else alarm[0] = 0;
-}
+
 
 //Attack sprite setup
 my_wand.attack_1 = 1;

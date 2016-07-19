@@ -183,9 +183,9 @@ global.spell_script[9] = scp_spell_prox_mime;
 global.spell_sprite[9] = spr_button_spell_sprout;
 
 //Which spell is selected for player 1
-global.spell_selected[0] = 9; 
+global.spell_selected[0] = 4; 
 //Which spell is selected for player 2
-global.spell_selected[1] = 7; 
+global.spell_selected[1] = 6; 
 //Which spell is selected for player 3
 global.spell_selected[2] = 8; 
 

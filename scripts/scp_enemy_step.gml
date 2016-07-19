@@ -13,26 +13,20 @@ tmp_player_list[2,0] = obj_player_3;
 //Freeze the enemy
 
 if ( !alarm[4] ){
-  //Basic movement using the multipathing examples
-  if ( random(100)> 95  && instance_exists(obj_player_parent) && gravity == 0 && jump == 0  ){
-  
-    //Find the shortest path to the player...
-    scp_enemy_short_path();  
-    
-    //Move towards the closest player...
-    if ( instance_exists(tmp_target) ){
-      scp_enemy_mp_move(tmp_target.x,tmp_target.y);
-    
-      //Start moving on the path if one was found
-      if ( tmp_path_results ){
-        path_start(my_path,move_speed,0,0);
-      }
-    }
-  }
+
+  //Hunt the player
+  if random(100) > 50 then scp_enemy_hunt_player();  
+
+  //Stop in your tracks if you are possibly colliding with traps
+  if ( jump == 0 && scp_enemy_check_obstacles(obj_obstacle_parent,20,xscale) ){
+    path_end();
+    hspeed = 0;
+    vspeed = 0;
+  }  
 
   //Jumping and collisions
   //Auto jump
-  if ( place_meeting(x,y,obj_block_jump) && should_jump == 0 && jump == 0 && alarm[2] <= 0  && !flying){
+  if ( ( place_meeting(x,y,obj_block_jump) || place_meeting(x,y,obj_obstacle_parent) ) && should_jump == 0 && jump == 0 && alarm[2] <= 0  && !flying){
     should_jump = 1;
     //Sounds
     audio_play_sound(snd_jump,1,false);
@@ -43,6 +37,7 @@ if ( !alarm[4] ){
    //Set the jump cool down
    alarm[2] = 30;
   }
+
   
   //Perform the actual jump
   scp_jump_fall();
@@ -68,5 +63,9 @@ if x < view_xview[0] -sprite_width and hspeed < 0 then instance_destroy();
 if x > view_xview[0] + view_wview[0] and hspeed > 0 then instance_destroy();
 //Out of hit points
 if hp <= 0 then instance_destroy();
+
+
+//Make sure the target gives exp.  Obstacle collisions should set this to false.
+give_exp = true;
 
 
