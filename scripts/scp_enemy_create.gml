@@ -26,10 +26,18 @@ move_speed= 0.75;
 sprite_climb = spr_devil_dog_c;
 sprite_walk = spr_devil_dog_w;
 sprite_jump = spr_devil_dog_j;
+sprite_attack = spr_devil_dog_j;
+
+
+//Attacking stuff
+attacking = 0;
+
 
 //image_xscale will scale the bbox breaking collisions
 xscale = 1;
 yscale = 1;
+//Mostly used for turrets ( only used for turrets so far )
+target_xscale = xscale;
 
 //Status effects
 knocked_back = 0;
@@ -38,6 +46,8 @@ knocked_back_delay = 20;
 //Give exp or not when killed...
 give_exp = true;
 
+
+
 //Jumping stuff
 jump = 0;
 jump_max = 2; //Vspeed from jumping
@@ -45,6 +55,22 @@ gravity = 0;
 should_jump = 0; //Should we trigger the jump now?
 jump_speed = 3;
 jump_path = 0; //Should we continue the prior path on landing  - always 0 for enemies
-//Which grid to use - normal, no jumping or flying
+
+//////////////////////
+//Enemy behaviors
+/////////////////////
+//These enemies can move anywhere there is a ladder or air block.
 flying = 0;
+//This enemy has the ability to jump over obstacles and holes.
+//It also uses the grid for jumping units.
 jumping = 0;
+//Is this a turret enemy?
+//These enemies remain stationary
+turret = 0;
+//Ranged types will stop and fire a long range attack at the player
+ranged = 0;
+//Hunters find the closest player and pursue!
+hunter = 1;
+
+
+

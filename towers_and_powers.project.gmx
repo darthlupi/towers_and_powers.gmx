@@ -114,11 +114,15 @@
         <sprite>sprites\spr_floating_eye</sprite>
       </sprites>
       <sprites name="Blastlette">
-        <sprite>sprites\sprite110</sprite>
+        <sprite>sprites\spr_blastlette_t</sprite>
+        <sprite>sprites\spr_blastlette_a</sprite>
       </sprites>
       <sprites name="purple_slime">
         <sprite>sprites\spr_purple_slime_w</sprite>
         <sprite>sprites\spr_purple_slime_j</sprite>
+      </sprites>
+      <sprites name="projectiles">
+        <sprite>sprites\spr_projectiles</sprite>
       </sprites>
     </sprites>
     <sprites name="obstacles">
@@ -388,9 +392,13 @@
       <object>objects\obj_enemy</object>
       <object>objects\obj_enemy_mp</object>
       <object>objects\obj_purple_slime</object>
+      <object>objects\obj_blastlette</object>
       <object>objects\obj_floating_eye</object>
       <object>objects\obj_enemy_create_test</object>
       <object>objects\obj_floating_eye_create</object>
+      <objects name="projectiles">
+        <object>objects\obj_enemy_projectile</object>
+      </objects>
     </objects>
     <objects name="obstacles">
       <object>objects\obj_trap_spike_floor_1</object>

@@ -4,8 +4,9 @@
 ///////////////////////
 
 
-//Set the image_xscale if not being knocked back
-if ( !knocked_back ){
+//Set the image_xscale if not being knocked back or a turret type.
+//Turrets set their xcale in their aim code.
+if ( !knocked_back && !turret ){
   scp_set_xscale();
 }
 
@@ -24,8 +25,23 @@ if ( jump > 0 )
   sprite_index = sprite_jump;
 }
 
+if ( attacking == 1 )
+{
+  sprite_index = sprite_attack;
+}
+
+//Turret should not be animated unless it is turning or attacking.
+//Turning animation is handled outside of this script.
+if ( turret ){
+  //Free the animation if not attacking
+  //if attacking == 0 then image_index = 0;
+  image_speed = 0;
+}
+//All other sprites should restart the animation 2 frames early as the last two frames
+//are for freezing and hurt images.
 //Rotate if we are on the last frame.  Last frame is for damage.  Second to last if frozen.
 if ( image_index > image_number - 3 )
 {
-    image_index = 0;
+  image_index = 0;
 }
+
