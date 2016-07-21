@@ -113,13 +113,14 @@
     <instance objName="obj_door_opening" x="348" y="108" name="inst_C934A8F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floating_eye" x="240" y="216" name="inst_D48B6918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fg_fog_creator" x="300" y="-120" name="inst_27F64A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blastlette" x="132" y="84" name="inst_DB330E07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blastlette" x="96" y="84" name="inst_DB330E07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blastlette" x="-324" y="36" name="inst_6538E96D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blastlette" x="72" y="336" name="inst_494753BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="144" y="144" name="inst_5EE3295A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="120" y="144" name="inst_9A5767DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_jump" x="144" y="72" name="inst_2ABF3824" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_jump" x="96" y="120" name="inst_27DEF7DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_purple_slime" x="336" y="132" name="inst_8DB0FFEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tiles" x="264" y="120" w="24" h="24" xo="176" yo="51" id="10000824" name="inst_10718BEE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

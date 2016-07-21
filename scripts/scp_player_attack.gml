@@ -4,10 +4,10 @@
 
 //Auto target 
 //Set targeting range in pixels...
-range = 300;
+tmp_look_ahead = 300;
 //Set an enemy target if we have a clear line of site to the target.        
 //range,radius,xscale,start_angle,target,block,check for closest
-tmp_enemy_target = scp_can_hit(range,20,xscale,10,obj_enemy,obj_block,global.auto_target);            
+tmp_enemy_target = scp_can_hit(300,20,xscale,10,obj_enemy,obj_block,global.auto_target);            
 
 //Pick facing direction...      
 if ( tmp_enemy_target ){

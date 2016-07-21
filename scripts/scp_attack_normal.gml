@@ -1,4 +1,7 @@
+range = 150;
 
+//Attack if in range
+if ( distance_to_point(tmp_enemy_target.x,tmp_enemy_target.y ) <= range ){
   
   if ( xscale == 1 ) {
     tmp_a_dir = 0;
@@ -24,4 +27,4 @@
   //Attack sprite setup
   my_wand.attack_1 = 1;
   my_wand.image_index = 0;
-
+}
