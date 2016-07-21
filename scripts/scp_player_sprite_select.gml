@@ -7,9 +7,12 @@ image_speed = 0.25;
 //Moving
 if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) && jump == 0 ) )
 {
-  //Set xscale  --- REMOVED FOR AUTO AIMING
-  //Add again if you want to be able to contantly set your xscale
-  //scp_set_xscale();
+  //Change the xscale based upon move direction only if no enemy is targeted.
+  //We want to use the xscale set based on direction to enemy if we have an enemy
+  //in sites.
+  if ( !enemy_target ){
+    scp_set_xscale();
+  }
 
   //Moving and climbing
   if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom + 1,obj_block) ) 

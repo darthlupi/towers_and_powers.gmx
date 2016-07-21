@@ -24,6 +24,9 @@ alarm[2] += regen_timer;
 attack_charge = 0;
 attack_charge_max = 1;
 
+//Target for auto aiming
+enemy_target = -1;
+
 //Movement target for mouse and grid based movement
 target_x = x;
 target_y = y;
