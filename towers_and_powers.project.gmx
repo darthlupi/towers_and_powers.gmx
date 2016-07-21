@@ -58,6 +58,7 @@
         <sprites name="attacks">
           <sprite>sprites\spr_attack_normal</sprite>
         </sprites>
+        <sprite>sprites\spr_tmp</sprite>
       </sprites>
       <sprites name="units">
         <sprite>sprites\spr_this_player</sprite>
