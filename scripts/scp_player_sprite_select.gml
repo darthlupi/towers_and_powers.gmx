@@ -7,8 +7,9 @@ image_speed = 0.25;
 //Moving
 if ( ( path_speed && path_index != -1 ) || ( place_meeting(x,y,obj_block_air) && jump == 0 ) )
 {
-  //Set xscale
-  scp_set_xscale();
+  //Set xscale  --- REMOVED FOR AUTO AIMING
+  //Add again if you want to be able to contantly set your xscale
+  //scp_set_xscale();
 
   //Moving and climbing
   if ( place_meeting(x,y,obj_block_ladder) && ! position_meeting(x,bbox_bottom + 1,obj_block) ) 

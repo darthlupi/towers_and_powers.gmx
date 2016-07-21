@@ -1,7 +1,9 @@
 //Attack if the reload alarm is not set and we are not moving this step
 //Also, make sure you are alive :)
 
-//Set the attack range...
+
+//Auto target 
+//Set targeting range in pixels...
 range = 300;
 //Set an enemy target if we have a clear line of site to the target.        
 //range,radius,xscale,start_angle,target,block,check for closest
