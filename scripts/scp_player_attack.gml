@@ -9,11 +9,15 @@ tmp_look_ahead = 300;
 //range,radius,xscale,start_angle,target,block,check for closest
 tmp_enemy_target = scp_can_hit(300,20,xscale,10,obj_enemy,obj_block,global.auto_target);            
 
-//Pick facing direction...      
+//Auto select facing direction based on target direction.
+//Do not set this if jumping.  Jumping uses xscale for movement during landings.      
 if ( tmp_enemy_target ){
   //Set the xscale based on the direction to the enemy for auto targeting
-  if x > tmp_enemy_target.x && global.auto_target then xscale = -1 
-  if x <= tmp_enemy_target.x && global.auto_target then xscale = 1 
+  //if you are not jumping.  Jumping uses the xscale to setup it's landing movement.
+  if ( !jump ){
+    if x > tmp_enemy_target.x && global.auto_target then xscale = -1 
+    if x <= tmp_enemy_target.x && global.auto_target then xscale = 1 
+  }
 }
 
 if ( !move_select && hp > 0 &&  tmp_enemy_target ){
