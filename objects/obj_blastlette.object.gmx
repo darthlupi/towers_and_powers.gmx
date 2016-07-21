@@ -47,7 +47,10 @@ turret = 1;
 ranged = 1;
 //Hunters find the closest player and pursue!
 hunter = 0;
-
+//Image speed stuff
+image_speed = 0.25;
+//Default image speed in case we need to change it for stuff...
+start_image_speed = image_speed;
 
 </string>
           </argument>

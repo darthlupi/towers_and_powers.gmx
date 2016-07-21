@@ -3,6 +3,7 @@ if ( keyboard_check_pressed(ord('R') ) )
     game_restart();
 }
 
+
 //If a coin was collected
 //do a little effect for the text for score:)
 if ( alarm[1] )

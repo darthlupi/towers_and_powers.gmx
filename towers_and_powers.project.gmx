@@ -462,6 +462,7 @@
         <object>objects\obj_fg_fog</object>
         <object>objects\obj_fg_fog_creator</object>
       </objects>
+      <object>objects\obj_screen_shake</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_block</object>

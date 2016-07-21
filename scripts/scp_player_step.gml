@@ -12,8 +12,7 @@ if ( hp <= 0 )
 //Movement code
 scp_player_mp_move();
 
-//Shooting 
-scp_player_attack();
+
 
 tmp_jump_block = instance_position(x,y,obj_block_jump);
 if ( path_speed && path_index != -1 ){
@@ -46,6 +45,9 @@ if jump = 0 then manual_jump = 0;
 scp_platform_collision();
 //Level up
 scp_player_level_up();
+
+//Shooting 
+scp_player_attack();
 
 //Select sprites
 sprite_index = scp_player_sprite_select();

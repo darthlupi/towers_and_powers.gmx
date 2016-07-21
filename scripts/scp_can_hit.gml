@@ -16,7 +16,7 @@ tmp_block = argument5;
 tmp_get_closest = argument6;
 
 //Angle to increment the radius per step
-tmp_angle_increment = 15;
+tmp_angle_increment = 10;
 
 //Closest enemy
 tmp_closest = instance_nearest(x,y,tmp_target);

@@ -12,6 +12,7 @@ if (tmp_dist > 12){
   //Do not wait before engaging move mode
   alarm[3] = 0;
 }
+alarm[3] = 0; //Just do it!  Ignore distance to mouse pointer :)
 
 if ( mouse_check_button_pressed(mb_left) && mouse_y < 192 ){
  //Switch which player is selected on mb press.

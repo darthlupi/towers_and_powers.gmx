@@ -1,13 +1,17 @@
 image_speed = 0.25;
+//Default image speed in case we need to change it for stuff...
+start_image_speed = image_speed;
 
 //Stats
 
 //Stats
 hp_max = 10;
 hp = hp_max;
-reload = 20;
+reload = 120;
 attack = 1;
 armor = 1;
+//Attack range
+range = 120;
 //Point value 
 gold_value = 100;
 exp_value = 40;

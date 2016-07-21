@@ -35,7 +35,7 @@ if ( attacking == 1 )
 if ( turret ){
   //Free the animation if not attacking
   //if attacking == 0 then image_index = 0;
-  image_speed = 0;
+  if attacking = 0 then image_speed = 0 else image_speed = start_image_speed;
 }
 //All other sprites should restart the animation 2 frames early as the last two frames
 //are for freezing and hurt images.
@@ -43,5 +43,7 @@ if ( turret ){
 if ( image_index > image_number - 3 )
 {
   image_index = 0;
+  //Stop the attack animation 
+  attacking = 0;
 }
 
