@@ -18,6 +18,7 @@ if ( !alarm[4] ){
     if random(100) > 50 then scp_enemy_hunt_player();  
   }
   
+
   if ( turret ){
     hspeed = 0;
     vspeed = 0;
@@ -56,9 +57,6 @@ if ( !alarm[4] ){
   }
               
 
-
-  
-
   //Stop in your tracks if you are possibly colliding with traps
   if ( jump == 0 && scp_enemy_check_obstacles(obj_obstacle_parent,20,xscale) ){
     path_end();
@@ -84,7 +82,6 @@ if ( !alarm[4] ){
   scp_jump_fall();
   
 } else {
-  
   path_end();
 }
 

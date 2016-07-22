@@ -7,7 +7,7 @@
 tmp_look_ahead = 300;
 //Set an enemy target if we have a clear line of site to the target.        
 //range,radius,xscale,start_angle,target,block,check for closest
-enemy_target = scp_can_hit(300,20,xscale,10,obj_enemy,obj_block,global.auto_target);            
+enemy_target = scp_can_hit(tmp_look_ahead,20,xscale,10,obj_enemy,obj_block,global.auto_target);            
 
 //Auto select facing direction based on target direction.
 //Do not set this if jumping.  Jumping uses xscale for movement during landings.      

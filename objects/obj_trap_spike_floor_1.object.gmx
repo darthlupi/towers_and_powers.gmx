@@ -113,7 +113,7 @@ image_speed = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ( !other.alarm[0] &amp;&amp; state = 1 &amp;&amp; !scp_item_in_array(other.id,hit_array) )
+            <string>if ( !other.alarm[0] &amp;&amp; state == 1 &amp;&amp; !scp_item_in_array(other.id,hit_array) )
 {
     scp_enemy_do_damage(attack,other);
     other.alarm[0] = 20;
