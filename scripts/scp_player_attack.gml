@@ -1,7 +1,6 @@
 //Attack if the reload alarm is not set and we are not moving this step
 //Also, make sure you are alive :)
 
-
 //Auto target 
 //Set targeting range in pixels...
 tmp_look_ahead = 300;
