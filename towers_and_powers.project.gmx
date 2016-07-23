@@ -232,6 +232,9 @@
         <sprite>sprites\spr_explained_compression</sprite>
         <sprite>sprites\spr_bg_chalk</sprite>
       </sprites>
+      <sprites name="load_out_menu">
+        <sprite>sprites\spr_coming_at_you</sprite>
+      </sprites>
     </sprites>
     <sprites name="collectables">
       <sprite>sprites\spr_door_opening</sprite>
@@ -240,15 +243,27 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\bg_tiles</background>
-    <background>background\background2</background>
+    <backgrounds name="level_dungeon">
+      <background>background\background2</background>
+      <background>background\bg_wall_1</background>
+      <background>background\bg_tiles</background>
+      <background>background\background0</background>
+    </backgrounds>
     <background>background\bg_mockups</background>
-    <background>background\bg_wall_1</background>
-    <background>background\bg_title_gradient</background>
-    <background>background\bg_clouds_title_1</background>
-    <background>background\bg_clouds_title_2</background>
-    <background>background\bg_clouds_title_3</background>
+    <backgrounds name="menu_title">
+      <background>background\bg_clouds_title_2</background>
+      <background>background\bg_clouds_title_1</background>
+      <background>background\bg_title_gradient</background>
+      <background>background\bg_clouds_title_3</background>
+    </backgrounds>
+    <backgrounds name="menu_load_out">
+      <background>background\bg_menu_load_out_1</background>
+      <background>background\bg_menu_load_out_3</background>
+      <background>background\bg_menu_load_out_2</background>
+      <background>background\bg_menu_load_out_4</background>
+      <background>background\bg_menu_load_out_sides</background>
+      <background>background\bg_dark_tint</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -412,13 +427,7 @@
     </objects>
     <objects name="button">
       <object>objects\obj_button</object>
-      <object>objects\obj_button_spell_multi</object>
       <object>objects\obj_button_upgrade</object>
-      <object>objects\obj_button_p1</object>
-      <object>objects\obj_button_p2</object>
-      <object>objects\obj_button_p3</object>
-      <object>objects\obj_button_action</object>
-      <object>objects\obj_button_pause</object>
       <object>objects\obj_button_question</object>
       <object>objects\obj_button_empty</object>
       <object>objects\obj_button_go</object>
@@ -427,6 +436,14 @@
         <object>objects\obj_button_spell_4</object>
         <object>objects\obj_button_spell_3</object>
         <object>objects\obj_button_spell_2</object>
+      </objects>
+      <objects name="in_game">
+        <object>objects\obj_button_p3</object>
+        <object>objects\obj_button_action</object>
+        <object>objects\obj_button_p2</object>
+        <object>objects\obj_button_spell_multi</object>
+        <object>objects\obj_button_p1</object>
+        <object>objects\obj_button_pause</object>
       </objects>
     </objects>
     <objects name="effects">
@@ -483,6 +500,11 @@
         <object>objects\obj_explained_farbrication</object>
         <object>objects\obj_chalk_board</object>
       </objects>
+      <objects name="load_out">
+        <object>objects\obj_button_l_menu_p1</object>
+        <object>objects\obj_button_l_menu_p2</object>
+        <object>objects\obj_button_l_menu_p3</object>
+      </objects>
     </objects>
     <objects name="collectables">
       <object>objects\obj_door</object>
@@ -504,12 +526,13 @@
     <room>rooms\rm_lv_1_2</room>
     <room>rooms\rm_lv_1_3</room>
     <room>rooms\rm_template</room>
-    <room>rooms\rm_level_up_mock_up</room>
     <room>rooms\rm_random</room>
     <room>rooms\rm_lvl_1_4</room>
     <room>rooms\rm_magic_explained_2</room>
     <room>rooms\rm_magic_explained_3</room>
     <room>rooms\rm_magic_explained_1</room>
+    <room>rooms\room14</room>
+    <room>rooms\rm_level_up_mock_up</room>
     <room>rooms\room6</room>
   </rooms>
   <help>

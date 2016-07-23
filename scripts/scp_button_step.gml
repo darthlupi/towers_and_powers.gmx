@@ -5,15 +5,10 @@ if ( scp_mouse_over_check(self) )
     {
         script_execute(button_script);
     }    
-    image_speed = 0.2;
+    selected = 1;
 }
-else
+else 
 {
-    image_index = 0;
-    image_speed = 0;
+  selected = 0;
 }
 
-if ( selected = 1 )
-{
-    image_index = 1;
-}

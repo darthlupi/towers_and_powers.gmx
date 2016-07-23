@@ -184,7 +184,7 @@ if ( beam_result[0] ){
       scp_player_do_damage(attack,beam_result[0]);
       //Sounds
       audio_play_sound(snd_hit,1,false);
-      alarm[2] = 5;
+      alarm[2] = 10;
     }
 }
 //Length of the beam
