@@ -1,6 +1,8 @@
 //Reset the displayas it fixes interpolation issues with scaling etc
 display_reset(0,false);
 
+//Turn music on and off
+global.music = false;
 
 //Do players auto target?
 global.auto_target = true;
@@ -109,7 +111,7 @@ global.spell_ammo[2] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[2] = 10;
 global.spell_reload[2] = 20;
 global.spell_script[2] = scp_spell_water_slash;
-global.spell_sprite[2] = spr_button_spell_sprout;
+global.spell_sprite[2] = spr_button_spell_water_slash;
 
 //Roller
 global.spell_level[3] = 0; 
@@ -139,7 +141,7 @@ global.spell_ammo[5] = global.spell_max_ammo[5];
 global.spell_ammo_per_level[5] = 10;
 global.spell_reload[5] = 20;
 global.spell_script[5] = scp_spell_multi;
-global.spell_sprite[5] = spr_button_spell_sprout;
+global.spell_sprite[5] = spr_button_spell_multi;
 
 //Ice Spike
 global.spell_level[6] = 0; 
@@ -149,7 +151,7 @@ global.spell_ammo[6] = global.spell_max_ammo[6];
 global.spell_ammo_per_level[6] = 10;
 global.spell_reload[6] = 20;
 global.spell_script[6] = scp_spell_ice_spike;
-global.spell_sprite[6] = spr_button_spell_sprout;
+global.spell_sprite[6] = spr_button_spell_frost_lance;
 
 
 //Ice Maker
@@ -160,7 +162,7 @@ global.spell_ammo[7] = global.spell_max_ammo[7];
 global.spell_ammo_per_level[7] = 10;
 global.spell_reload[7] = 20;
 global.spell_script[7] = scp_spell_ice_maker;
-global.spell_sprite[7] = spr_button_spell_sprout;
+global.spell_sprite[7] = spr_button_spell_ice_maker;
 
 //Fireball
 global.spell_level[8] = 0; 
@@ -170,7 +172,7 @@ global.spell_ammo[8] = global.spell_max_ammo[8];
 global.spell_ammo_per_level[8] = 10;
 global.spell_reload[8] = 20;
 global.spell_script[8] = scp_spell_fireball;
-global.spell_sprite[8] = spr_button_spell_sprout;
+global.spell_sprite[8] = spr_button_spell_fire_balll;
 
 //Prox Mime
 global.spell_level[9] = 0; 
@@ -180,7 +182,7 @@ global.spell_ammo[9] = global.spell_max_ammo[9];
 global.spell_ammo_per_level[9] = 10;
 global.spell_reload[9] = 20;
 global.spell_script[9] = scp_spell_prox_mime;
-global.spell_sprite[9] = spr_button_spell_sprout;
+global.spell_sprite[9] = spr_button_proximity_slime;
 
 //Which spell is selected for player 1
 global.spell_selected[0] = 4; 

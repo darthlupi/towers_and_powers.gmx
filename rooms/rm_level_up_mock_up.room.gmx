@@ -51,25 +51,25 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_button_empty" x="108" y="66" name="inst_8D082FB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="108" y="108" name="inst_AEB1D0F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="108" y="150" name="inst_07FFCC93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="156" y="66" name="inst_8A74E4A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="156" y="108" name="inst_64FD385D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="156" y="150" name="inst_CCE9B3EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="204" y="66" name="inst_8CA49545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="204" y="108" name="inst_8B82EA7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="204" y="150" name="inst_B347C3C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="252" y="66" name="inst_A3834FAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="252" y="108" name="inst_FDE4071E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="252" y="150" name="inst_0BE7F94D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="300" y="66" name="inst_7B3AFE96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="300" y="108" name="inst_D14F776C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_empty" x="300" y="150" name="inst_F89604CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_selection_thingy" x="48" y="-84" name="inst_A1AEDB84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_p1" x="12" y="66" name="inst_43B33540" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_p2" x="12" y="108" name="inst_113B6DD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_p3" x="12" y="150" name="inst_8C402F6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="108" y="66" name="inst_95284CB9" locked="0" code="//Which spell&#xA;spell = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="156" y="66" name="inst_771F0C72" locked="0" code="//Which spell&#xA;spell = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="204" y="66" name="inst_B86BC9FA" locked="0" code="//Which spell&#xA;spell = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="252" y="66" name="inst_1B923643" locked="0" code="//Which spell&#xA;spell = 3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="300" y="66" name="inst_6D68239E" locked="0" code="//Which spell&#xA;spell = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="300" y="108" name="inst_A4A51431" locked="0" code="//Which spell&#xA;spell = 9;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="252" y="108" name="inst_BD03A64B" locked="0" code="//Which spell&#xA;spell = 8;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="204" y="108" name="inst_59A16833" locked="0" code="//Which spell&#xA;spell = 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="156" y="108" name="inst_81494F33" locked="0" code="//Which spell&#xA;spell = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="108" y="108" name="inst_68049604" locked="0" code="//Which spell&#xA;spell = 5;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="108" y="150" name="inst_940D0C08" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="156" y="150" name="inst_B5888BDF" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="204" y="150" name="inst_FB934A66" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="252" y="150" name="inst_61B82B1C" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="300" y="150" name="inst_2C9631E2" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

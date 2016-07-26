@@ -52,6 +52,24 @@ scp_player_attack();
 //Select sprites
 sprite_index = scp_player_sprite_select();
 
+//Moving outside of the room!
+if ( bbox_left < 0 ){
+  hspeed = 0;
+  x+= 2;
+}
+if ( bbox_right > room_width ){
+  hspeed = 0;
+  x-= 2;
+}
+if ( y > room_height ){
+  hp = 0;
+}
+if ( bbox_top < 0 ){
+  vspeed = 0;
+  y += 2;
+}
+
+
 
 
 

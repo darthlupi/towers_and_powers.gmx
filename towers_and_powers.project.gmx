@@ -146,13 +146,8 @@
       <sprite>sprites\spr_question_button</sprite>
       <sprite>sprites\spr_button_empty</sprite>
       <sprite>sprites\spr_button_selected</sprite>
-      <sprite>sprites\spr_button_spell_beam</sprite>
-      <sprite>sprites\spr_button_spell_roller</sprite>
-      <sprite>sprites\spr_button_spell_water_slash</sprite>
-      <sprite>sprites\spr_button_spell_m_gun</sprite>
       <sprite>sprites\spr_button_check</sprite>
       <sprite>sprites\spr_button_key_stone</sprite>
-      <sprite>sprites\spr_button_spell_sprout</sprite>
       <sprite>sprites\spr_button_p_2</sprite>
       <sprite>sprites\spr_button_p_1</sprite>
       <sprite>sprites\spr_button_p_3</sprite>
@@ -161,6 +156,20 @@
       <sprite>sprites\spr_back_button</sprite>
       <sprite>sprites\spr_upgrade_button</sprite>
       <sprite>sprites\spr_player_button_ko</sprite>
+      <sprites name="spells">
+        <sprite>sprites\spr_button_spell_beam</sprite>
+        <sprite>sprites\spr_button_spell_m_gun</sprite>
+        <sprite>sprites\spr_button_spell_water_slash</sprite>
+        <sprite>sprites\spr_button_spell_sprout</sprite>
+        <sprite>sprites\spr_button_empty_2</sprite>
+        <sprite>sprites\spr_button_spell_ice_maker</sprite>
+        <sprite>sprites\spr_button_spell_fire_balll</sprite>
+        <sprite>sprites\spr_button_proximity_slime</sprite>
+        <sprite>sprites\sprite135</sprite>
+        <sprite>sprites\spr_button_spell_multi</sprite>
+        <sprite>sprites\spr_button_spell_frost_lance</sprite>
+        <sprite>sprites\spr_button_spell_roller</sprite>
+      </sprites>
     </sprites>
     <sprites name="effects">
       <sprite>sprites\spr_shadow_small</sprite>
@@ -504,6 +513,7 @@
         <object>objects\obj_button_l_menu_p1</object>
         <object>objects\obj_button_l_menu_p2</object>
         <object>objects\obj_button_l_menu_p3</object>
+        <object>objects\obj_button_l_menu_spell</object>
       </objects>
     </objects>
     <objects name="collectables">
@@ -531,8 +541,8 @@
     <room>rooms\rm_magic_explained_2</room>
     <room>rooms\rm_magic_explained_3</room>
     <room>rooms\rm_magic_explained_1</room>
-    <room>rooms\room14</room>
     <room>rooms\rm_level_up_mock_up</room>
+    <room>rooms\room14</room>
     <room>rooms\room6</room>
   </rooms>
   <help>
