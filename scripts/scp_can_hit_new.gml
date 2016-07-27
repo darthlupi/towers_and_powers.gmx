@@ -18,11 +18,8 @@ tmp_get_closest = argument6;
 //Angle to increment the radius per step
 tmp_angle_increment = 10;
 
-//Last distance for calculating closest enemy.
-//We use the last distance to check each collided object to see if it is closer than the last.
-//If it is closer AND tmp_get_closest is set to true that is the object to target.
-tmp_last_dist = 1000000000;
-tmp_closest_target = -1;
+//Closest enemy
+tmp_closest = instance_nearest(x,y,tmp_target);
 
 //Check direction based tmp_direction or look both directions if looking for closest enemy
 
@@ -39,13 +36,9 @@ if ( tmp_direction == 1 || tmp_get_closest == true ) {
     if ( tmp_collider ){
       if ( !collision_line(x,y,tmp_collider.x,tmp_collider.y,tmp_block,false,true) ){
         //If this is the target facing direction and a successful line of site to target was acheived...
-        //We do this so that if you are purposely aiming in a direction auto targeting won't override your aim.
         if tmp_direction = 1 then return tmp_collider;
-       //Check if this is the closest target if we didn't collide in the facing directio
-        if ( tmp_get_closest ){
-          if  ( distance_to_object(tmp_collider) < tmp_last_dist ){
-            tmp_closest_target = tmp_collider;
-          }
+        if ( tmp_closest == tmp_collider && tmp_get_closest ){
+          return tmp_collider;
         }
       }
     }
@@ -67,13 +60,10 @@ if ( tmp_direction == -1 || tmp_get_closest == true ) {
     if ( tmp_collider ){
       if ( !collision_line(x,y,tmp_collider.x,tmp_collider.y,tmp_block,false,true) ){
         //If this is the target facing direction and a successful line of site to target was acheived...
-        //We do this so that if you are purposely aiming in a direction auto targeting won't override your aim.
         if tmp_direction == -1 then return tmp_collider;
-        //Check if this is the closest target if we didn't collide in the facing direction
-        if ( tmp_get_closest ){
-          if  ( distance_to_object(tmp_collider) < tmp_last_dist ){
-            tmp_closest_target = tmp_collider;
-          }
+        //If the collider is the closest target AND we are checking for closest target
+        if ( tmp_closest == tmp_collider && tmp_get_closest ){
+          return tmp_collider;
         }
       }
     }
@@ -82,8 +72,5 @@ if ( tmp_direction == -1 || tmp_get_closest == true ) {
   }
 }
 
-//If we are targeting closet object just return the closest object
-if ( tmp_get_closest && tmp_closest_target ){
-  return tmp_closest_target;
-}
+
 

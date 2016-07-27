@@ -1,5 +1,7 @@
-//If the player selected exists then configure the spell button...
-if ( instance_exists( obj_controller.player_id ) && instance_exists(obj_player_parent) ) {
+//If a player is selected and the player selected exists then configure the spell button...
+//Strangely, it is possible for the player_id object to exist before the variable is set.
+//It defaults to -1 if no player is found in the controller.  Maybe that is an instance id?
+if ( obj_controller.player_id && instance_exists( obj_controller.player_id )  ) {
   //The script to run when the button is pressed :)
   //Override this variable to creat unique actions for your buttons...
   button_script = scp_button_spell;

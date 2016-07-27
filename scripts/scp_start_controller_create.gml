@@ -16,6 +16,13 @@ global.right_border = 0;
 //Make level for players allowed
 global.level_max = 12;
 
+//Selected player
+global.p_selected[0] = 1;
+global.p_selected[1] = 0;
+global.p_selected[2] = 0;
+global.p_selected_last = 0;
+
+
 //////////////////////
 //Player 1
 //Natural Stats

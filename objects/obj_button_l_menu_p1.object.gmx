@@ -29,11 +29,14 @@
 
 //The script to run when the button is pressed :)
 //Override this variable to creat unique actions for your buttons...
-button_script = scp_button_do_nothing;
+button_script = scp_button_l_menu_p_select;
 
 //image_index for the player sprite
 ani = 0;
 
+//Which player?
+p_index = 0;
+p_sprite = spr_player_1_s;
 </string>
           </argument>
         </arguments>
@@ -102,13 +105,7 @@ ani = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-scp_button_draw();
-ani+= 0.15;
-draw_sprite(spr_player_1_s,ani,x+18,y+16);
-draw_sprite(spr_player_1_wand,-1,x+18,y+16);
-
-
+            <string>scp_button_l_menu_p_draw();
 </string>
           </argument>
         </arguments>
