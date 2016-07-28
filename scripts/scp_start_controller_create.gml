@@ -18,9 +18,10 @@ global.level_max = 12;
 
 //Selected player
 global.p_selected[0] = 1;
-global.p_selected[1] = 0;
-global.p_selected[2] = 0;
+global.p_selected[1] = 1;
+global.p_selected[2] = 1;
 global.p_selected_last = 0;
+
 
 
 //////////////////////

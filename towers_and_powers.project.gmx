@@ -240,7 +240,7 @@
         <sprite>sprites\spr_bg_chalk</sprite>
       </sprites>
       <sprites name="load_out_menu">
-        <sprite>sprites\spr_coming_at_you</sprite>
+        <sprite>sprites\spr_which_player</sprite>
       </sprites>
     </sprites>
     <sprites name="collectables">
@@ -368,6 +368,7 @@
         <script>scripts\scp_button_do_nothing.gml</script>
         <scripts name="load_out_menu">
           <script>scripts\scp_button_l_menu_p_select.gml</script>
+          <script>scripts\scp_button_l_menu_spell_select.gml</script>
           <script>scripts\scp_button_l_menu_p_draw.gml</script>
           <script>scripts\scp_button_l_menu_continue.gml</script>
         </scripts>
@@ -520,7 +521,12 @@
         <object>objects\obj_button_l_menu_p2</object>
         <object>objects\obj_button_l_menu_p3</object>
         <object>objects\obj_button_l_menu_spell</object>
+        <object>objects\obj_button_l_menu_spell_s_parent</object>
+        <object>objects\obj_button_l_menu_spell_s_p1</object>
+        <object>objects\obj_button_l_menu_spell_s_p2</object>
+        <object>objects\obj_button_l_menu_spell_s_p3</object>
         <object>objects\obj_button_l_menu_continue</object>
+        <object>objects\obj_l_menu_which_player</object>
       </objects>
     </objects>
     <objects name="collectables">

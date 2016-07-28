@@ -13,7 +13,7 @@ my_attack = instance_create(x+xscale*10,y,obj_proj_sprout_1);
 my_attack.range = range;
 my_attack.attack = 2 + attack;
 my_attack.dir = tmp_a_dir;
-my_attach.alarm[0] = range;
+my_attack.alarm[0] = range;
 tmp_reload = 50;
 
 //Attack sprite setup

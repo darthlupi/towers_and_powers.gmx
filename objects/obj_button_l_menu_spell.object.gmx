@@ -29,10 +29,7 @@
 
 //The script to run when the button is pressed :)
 //Override this variable to creat unique actions for your buttons...
-button_script = scp_button_do_nothing;
-
-//image_index for the player sprite
-ani = 0;
+button_script = scp_button_l_menu_spell_select;
 
 //Which spell does this button represent?
 spell = 0;
@@ -145,7 +142,7 @@ scp_button_draw();
       </action>
     </event>
   </events>
-  <PhysicsObject>-1</PhysicsObject>
+  <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -156,8 +153,5 @@ scp_button_draw();
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>32,32</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

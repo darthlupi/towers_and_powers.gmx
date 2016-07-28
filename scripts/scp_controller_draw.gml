@@ -5,16 +5,16 @@ y = view_yview[0] + 192;
 
 
 //Create bottons
-my_button_1.x = x+209;
-my_button_1.y = y+8;
-my_button_2.x = x+213 + 32;
-my_button_2.y = y+8;
-my_button_3.x = x+218 + 62 ;
-my_button_3.y = y+8;
-my_button_4.x = x+222 + 101 ;
-my_button_4.y = y+8;
-my_button_5.x = x+225 + 133 ;
-my_button_5.y = y+8;
+my_button_1.x = x+224;
+my_button_1.y = y+23;
+my_button_2.x = x+213 + 47;
+my_button_2.y = y+23;
+my_button_3.x = x+218 + 77 ;
+my_button_3.y = y+23;
+my_button_4.x = x+222 + 116 ;
+my_button_4.y = y+23;
+my_button_5.x = x+225 + 148 ;
+my_button_5.y = y+23;
 
 if ( instance_exists(obj_player_1) ){
   if obj_player_1.alarm[0] > 0 then my_button_1.x += random(2) - random(2)  ;

@@ -17,10 +17,8 @@ if ( obj_controller.player_id && instance_exists( obj_controller.player_id )  ) 
     tmp_rec = 28;
   }
 
-  
-  
   if ( tmp_rec != 28 ){
-    draw_rectangle(x + 2,y+2+tmp_rec,x+30,y+30,false);
+    draw_rectangle(x -13,y-13+tmp_rec,x+15,y+15,false);
   } 
   
   draw_set_alpha(1); 

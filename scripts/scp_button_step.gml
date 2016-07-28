@@ -6,7 +6,10 @@ if ( scp_mouse_over_check(self) )
         script_execute(button_script);
     }  
     //Only trigger the POP up alarm if moused over for the first time  
-    if !selected && !alarm[1] then alarm[1] = 10;
+    if ( !selected && !alarm[1] ){
+      alarm[1] = 10;
+      image_xscale = 1;
+    }
     
     selected = 1;
 }

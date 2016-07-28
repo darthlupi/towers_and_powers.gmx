@@ -16,6 +16,9 @@ if ( obj_controller.player_id && instance_exists( obj_controller.player_id )  ) 
   spell_script = global.spell_script[spell_selected];
   //Which sprite to use for the button
   sprite_index = global.spell_sprite[spell_selected];
+  
+  //Trigger the spell effects on button push etc.
+  scp_button_step();
 
 }
 else { //Draw the empty sprite if the player seleced is no more or all players are gone...

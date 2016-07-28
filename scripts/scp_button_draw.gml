@@ -1,7 +1,9 @@
+//Poop
 if ( alarm[1] ){
   if alarm[1] > 5 then image_xscale +=0.025 else image_xscale -=0.025;
   image_yscale = image_xscale;
-}else{
+}
+else if ( alarm[2] <= 0 ){
   image_xscale = 1;
   image_yscale = 1;
 }
