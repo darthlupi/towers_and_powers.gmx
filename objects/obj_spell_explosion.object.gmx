@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>repeat(5){
   my_smoke = instance_create(x-10+random(20),y-10+random(20),obj_smoke_bright);
-  my_smoke.speed = 3 + random(2);
+  my_smoke.speed = 1 + random(1);
   my_smoke.direction = random(360);
 }
 

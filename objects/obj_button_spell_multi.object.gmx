@@ -74,9 +74,7 @@ button_script = scp_button_spell;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//Select spells etc
-scp_button_spell_step();
+            <string>scp_button_spell_step()
 </string>
           </argument>
         </arguments>

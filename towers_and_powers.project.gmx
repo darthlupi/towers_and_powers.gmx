@@ -100,6 +100,7 @@
           <sprite>sprites\spr_player_delete</sprite>
           <sprite>sprites\spr_player_1_s_a</sprite>
         </sprites>
+        <sprite>sprites\spr_player_example</sprite>
       </sprites>
     </sprites>
     <sprites name="enemy">
@@ -252,6 +253,7 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <background>background\bg_menus</background>
     <backgrounds name="level_dungeon">
       <background>background\background2</background>
       <background>background\bg_wall_1</background>
@@ -527,6 +529,8 @@
         <object>objects\obj_button_l_menu_spell_s_p3</object>
         <object>objects\obj_button_l_menu_continue</object>
         <object>objects\obj_l_menu_which_player</object>
+        <object>objects\obj_test_player</object>
+        <object>objects\obj_block_menu</object>
       </objects>
     </objects>
     <objects name="collectables">
