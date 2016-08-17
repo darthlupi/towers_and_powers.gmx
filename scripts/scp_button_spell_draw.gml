@@ -28,7 +28,7 @@ if ( obj_controller.player_id && instance_exists( obj_controller.player_id )  ) 
   draw_set_alpha(1); 
   draw_set_color(c_white);
   draw_set_font(global.font_white);
-  draw_text(x+15,y+18,global.spell_ammo[spell_selected] );
+  draw_text(x,y,global.spell_ammo[spell_selected] );
 
 
 }

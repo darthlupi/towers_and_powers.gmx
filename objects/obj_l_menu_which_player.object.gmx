@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 player_selected = 0;
+x = 0;
+y = 60;
 </string>
           </argument>
         </arguments>

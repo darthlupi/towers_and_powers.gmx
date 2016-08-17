@@ -65,13 +65,13 @@
     <instance objName="obj_button_l_menu_spell" x="212" y="122" name="inst_59A16833" locked="0" code="//Which spell&#xA;spell = 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell" x="172" y="122" name="inst_81494F33" locked="0" code="//Which spell&#xA;spell = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell" x="128" y="122" name="inst_68049604" locked="0" code="//Which spell&#xA;spell = 5;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_l_menu_spell" x="128" y="160" name="inst_940D0C08" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_l_menu_spell" x="128" y="160" name="inst_940D0C08" locked="0" code="//Which spell&#xA;spell = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell" x="172" y="160" name="inst_B5888BDF" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell" x="212" y="160" name="inst_FB934A66" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell" x="252" y="160" name="inst_61B82B1C" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell" x="292" y="160" name="inst_2C9631E2" locked="0" code="//Which spell&#xA;spell = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_continue" x="356" y="212" name="inst_9DF99871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_l_menu_which_player" x="0" y="60" name="inst_927D4875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_l_menu_which_player" x="-40" y="268" name="inst_927D4875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell_s_p1" x="64" y="82" name="inst_AF8DD2BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell_s_p2" x="64" y="122" name="inst_8FB0FA07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_l_menu_spell_s_p3" x="64" y="160" name="inst_E96B8C2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -12,7 +12,7 @@ if ( xscale == -1 ) {
 my_attack = instance_create(x+xscale*10,y,obj_proj_ice_maker);
 my_attack.range = range;
 my_attack.image_angle = tmp_a_dir;
-my_attack.attack = 2 + attack;
+my_attack.attack = spell_attack + attack;
 my_attack.image_yscale = xscale;
 my_attack.hspeed = xscale * 2;
 //my_attack.hspeed = 2 * xscale;

@@ -12,8 +12,8 @@ if ( instance_exists(obj_player_parent) && instance_exists(obj_controller.player
           //Reduce ammo count
           global.spell_ammo[tmp_spell_selected] -= 1;
           script_execute(tmp_spell_to_cast);
-          if tmp_reload <= 0 then tmp_reload = 1;
-          alarm[tmp_which_alarm] = tmp_reload;
+          if spell_reload <= 0 then spell_reload = 1;
+          alarm[tmp_which_alarm] = spell_reload;
         }
       }
     }

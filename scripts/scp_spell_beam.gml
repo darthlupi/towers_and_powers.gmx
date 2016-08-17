@@ -12,7 +12,7 @@ if ( xscale == -1 ) {
 my_attack = instance_create(x+xscale*10,y,obj_proj_beam);
 my_attack.range = range;
 my_attack.image_angle = tmp_a_dir;
-my_attack.attack = 2 + attack;
+my_attack.attack = spell_attack + attack;
 my_attack.image_xscale = 1;
 tmp_reload = 20;
 

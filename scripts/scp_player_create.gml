@@ -2,11 +2,26 @@ move_speed = 2;
 image_speed = 0.25;
 
 //Stats
+///////////////////
+//How much damage can the player sustain
 hp_max = global.hp_max[p_index] + global.item_hp_max[p_index];
+//How quickly spells reload
 reload = global.reload[p_index] + global.item_reload[p_index];
+//Base attack power plus any bonus from magical items
 attack = global.attack[p_index] + global.item_attack[p_index];
+//Base armor plus armor from item
 armor = global.armor[p_index] + global.item_armor[p_index];
+//Rate of regernation of hp is base plus item regen 
 regen = global.regen[p_index] + global.item_regen[p_index];
+//Spell stats
+tmp_spell = global.spell_selected[p_index];
+//Spell stats
+///////////////////
+//Spell attack
+spell_attack = global.spell_attack[tmp_spell] + ( global.spell_attack_per_level[tmp_spell] * global.spell_level[tmp_spell] );
+//Spell reload
+spell_reload = global.spell_reload[tmp_spell] + ( global.spell_reload_per_level[tmp_spell] * global.spell_level[tmp_spell] );
+
 
 hp = hp_max;
 

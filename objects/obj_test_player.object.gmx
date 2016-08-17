@@ -28,6 +28,9 @@
             <string>image_speed = 0.25;
 alarm[0] = 50;
 my_wand = instance_create(x+500,y,obj_player_1_wand);
+
+spell_attack = 2;
+spell_reload = 80;
 </string>
           </argument>
         </arguments>

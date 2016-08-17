@@ -13,7 +13,7 @@ audio_play_sound(snd_shoot,1,false);
 for (s=0;s<180;s+=15){
   my_attack = instance_create(x+xscale*10,y,obj_proj_multi);
   my_attack.range = range;
-  my_attack.attack = 2 + attack;
+  my_attack.attack = spell_attack + attack;
   my_attack.direction = s + tmp_a_dir - 90;
   my_attack.speed += random(1);
   my_attack.image_angle = s + tmp_a_dir - 90; 
