@@ -126,6 +126,13 @@
         <sprite>sprites\spr_projectiles</sprite>
       </sprites>
     </sprites>
+    <sprites name="blocks">
+      <sprite>sprites\spr_blocks</sprite>
+      <sprite>sprites\spr_block_ladder</sprite>
+      <sprite>sprites\spr_block_air</sprite>
+      <sprite>sprites\spr_jump_block</sprite>
+      <sprite>sprites\spr_block_beware</sprite>
+    </sprites>
     <sprites name="obstacles">
       <sprite>sprites\spr_trap_floor_spikes</sprite>
     </sprites>
@@ -181,14 +188,6 @@
         <sprite>sprites\spr_white_particle</sprite>
         <sprite>sprites\spr_spark_line</sprite>
       </sprites>
-      <sprites name="fonts">
-        <sprite>sprites\spr_font_red</sprite>
-        <sprite>sprites\spr_font_score</sprite>
-        <sprite>sprites\spr_font_press_start</sprite>
-        <sprite>sprites\spr_font_blue</sprite>
-        <sprite>sprites\spr_font_white</sprite>
-        <sprite>sprites\spr_font_text</sprite>
-      </sprites>
       <sprites name="level_up">
         <sprite>sprites\spr_effect_stat_up</sprite>
         <sprite>sprites\sprite75</sprite>
@@ -219,12 +218,14 @@
       <sprite>sprites\spr_grid_arrow</sprite>
       <sprite>sprites\spr_grid_arrow_swap</sprite>
     </sprites>
-    <sprites name="blocks">
-      <sprite>sprites\spr_blocks</sprite>
-      <sprite>sprites\spr_block_ladder</sprite>
-      <sprite>sprites\spr_block_air</sprite>
-      <sprite>sprites\spr_jump_block</sprite>
-      <sprite>sprites\spr_block_beware</sprite>
+    <sprites name="fonts">
+      <sprite>sprites\spr_font_red</sprite>
+      <sprite>sprites\spr_font_score</sprite>
+      <sprite>sprites\spr_font_press_start</sprite>
+      <sprite>sprites\spr_font_blue_press_start</sprite>
+      <sprite>sprites\spr_font_blue</sprite>
+      <sprite>sprites\spr_font_white</sprite>
+      <sprite>sprites\spr_font_text</sprite>
     </sprites>
     <sprites name="menus">
       <sprites name="start_menu">
@@ -283,6 +284,7 @@
     <scripts name="controller">
       <scripts name="start">
         <script>scripts\scp_start_controller_create.gml</script>
+        <script>scripts\scp_start_controller_spells.gml</script>
       </scripts>
       <scripts name="game">
         <script>scripts\scp_controller_create.gml</script>
@@ -373,6 +375,9 @@
           <script>scripts\scp_button_l_menu_spell_select.gml</script>
           <script>scripts\scp_button_l_menu_p_draw.gml</script>
           <script>scripts\scp_button_l_menu_continue.gml</script>
+          <script>scripts\scp_l_menu_controller_step.gml</script>
+          <script>scripts\scp_l_menu_controller_create.gml</script>
+          <script>scripts\scp_l_menu_controller_draw.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -531,6 +536,7 @@
         <object>objects\obj_l_menu_which_player</object>
         <object>objects\obj_test_player</object>
         <object>objects\obj_block_menu</object>
+        <object>objects\obj_l_menu_controller</object>
       </objects>
     </objects>
     <objects name="collectables">

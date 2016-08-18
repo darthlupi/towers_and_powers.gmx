@@ -1,5 +1,6 @@
-//Only active this button on press
+//Only activate this button on press
 if ( mouse_check_button_pressed(mb_left) ) {
+
     global.spell_selected[global.p_selected_last] = spell;
     
     //Set player 1's spell if he is selected
@@ -22,6 +23,7 @@ if ( mouse_check_button_pressed(mb_left) ) {
     tmp_selected_object.alarm[2] = 10; //Rotate the sprite
     tmp_selected_object.old_sprite = tmp_selected_object.sprite_index;
     tmp_selected_object.new_sprite = global.spell_sprite[spell];
+    
 } 
 
   
