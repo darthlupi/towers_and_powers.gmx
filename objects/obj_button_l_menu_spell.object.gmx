@@ -3,7 +3,7 @@
   <spriteName>spr_button_empty</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10001</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -106,7 +106,16 @@ sprite_index = global.spell_sprite[spell];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scp_button_step();
+            <string>
+//If not colliding with the selection sprite then this button can be used...
+if ( ! collision_point(x,y,obj_l_menu_which_player,true,true) ){
+  scp_button_step();
+  depth = -1;
+}
+else
+{
+  depth = 1;
+}
 </string>
           </argument>
         </arguments>
