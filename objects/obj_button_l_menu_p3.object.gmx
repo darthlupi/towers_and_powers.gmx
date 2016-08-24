@@ -34,10 +34,14 @@ button_script = scp_button_l_menu_p_select;
 //image_index for the player sprite
 ani = 0;
 
+//Walking onto screen coordinates
+walk_x = -32
+
+
 //Which player?
 p_index = 2;
 p_sprite = spr_player_3_s;
-
+p_sprite_walk = spr_player_3_w;
 </string>
           </argument>
         </arguments>
