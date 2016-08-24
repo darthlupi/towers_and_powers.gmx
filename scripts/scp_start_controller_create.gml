@@ -2,7 +2,7 @@
 display_reset(0,false);
 
 //Turn music on and off
-global.music = false;
+global.music = true;
 
 //Do players auto target?
 global.auto_target = true;
