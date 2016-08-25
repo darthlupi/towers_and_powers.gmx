@@ -3,10 +3,26 @@ image_angle = 0 + hspeed;
 //KO if out of hp
 if ( hp <= 0 )
 {
-    with(my_wand){instance_destroy();}
-    hp = 0;
-    scp_create_chunks(sprite_index,2,x - abs(sprite_xoffset),y - abs(sprite_yoffset),bbox_bottom,xscale,yscale,0);
-    instance_destroy();
+  with(my_wand){instance_destroy();}
+  hp = 0;
+  scp_create_chunks(sprite_index,2,x - abs(sprite_xoffset),y - abs(sprite_yoffset),bbox_bottom,xscale,yscale,0);
+  instance_destroy();
+  //Select anthor player...
+  with( obj_controller ){
+    //Which player was selected
+    player_selected = 0;
+    if ( instance_exists(obj_player_1) ) {
+      player_id = obj_player_1.id;
+    }else if ( instance_exists(obj_player_2) ) {
+      player_id = obj_player_2.id;
+    }else if ( instance_exists(obj_player_3) ) {
+      player_id = obj_player_3.id;
+    }else{
+      player_id = -1;
+    }   
+  }    
+    
+    
 }   
 
 //Movement code

@@ -22,7 +22,7 @@ global.spell_max_ammo[1] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[1] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[1] = 10;
-global.spell_reload[1] = 20;
+global.spell_reload[1] = 2;
 global.spell_reload_per_level[1] = 1;
 global.spell_attack[1] = 2;
 global.spell_attack_per_level[1] = 2;

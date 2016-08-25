@@ -503,6 +503,11 @@
         <object>objects\obj_fg_fog_creator</object>
       </objects>
       <object>objects\obj_screen_shake</object>
+      <objects name="doors">
+        <object>objects\obj_door</object>
+        <object>objects\obj_door_opening</object>
+        <object>objects\obj_door_closing</object>
+      </objects>
     </objects>
     <objects name="blocks">
       <object>objects\obj_block</object>
@@ -540,12 +545,9 @@
       </objects>
     </objects>
     <objects name="collectables">
-      <object>objects\obj_door</object>
-      <object>objects\obj_door_opening</object>
-      <object>objects\obj_key_stone_counter_6</object>
       <object>objects\obj_key_stone</object>
       <object>objects\obj_coin</object>
-      <object>objects\obj_door_closing</object>
+      <object>objects\obj_key_stone_counter_6</object>
     </objects>
     <objects name="music">
       <object>objects\obj_song_2</object>

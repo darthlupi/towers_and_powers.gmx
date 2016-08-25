@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//Create players
 if global.p_selected[0] = 1 then instance_create(x,y+12,obj_player_1);
-if global.p_selected[1] = 1 then instance_create(x + 6,y+12,obj_player_2);
+if global.p_selected[1] = 1 then instance_create(x + 24,y+12,obj_player_2);
 if global.p_selected[2] = 1 then instance_create(x + 12,y+12,obj_player_3);
 </string>
           </argument>
