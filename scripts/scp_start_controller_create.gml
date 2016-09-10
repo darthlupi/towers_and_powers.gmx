@@ -108,7 +108,7 @@ global.font_text = font_add_sprite(spr_font_text,ord('!'),true,1);
 global.font_blue_press_start = font_add_sprite(spr_font_blue_press_start,ord('!'),true,1);
 
 //Points
-global.points = 0;
+global.points = 10000;
 
 //Which spell is selected
 global.spell = 0;

@@ -1,5 +1,6 @@
 //The spell to describe or upgrade is the spell assigned to the last player spelected.
-spell = global.spell_selected[global.p_selected_last];
+//spell = global.spell_selected[global.p_selected_last];
+//Moved to scp_button_l_menu_spell_select
 
 //Set the sprite to be the sprite of the last selected spell
 sprite_index = global.spell_sprite[spell]

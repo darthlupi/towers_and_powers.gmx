@@ -153,7 +153,9 @@
       <sprite>sprites\spr_player_button</sprite>
       <sprite>sprites\spr_question_button</sprite>
       <sprite>sprites\spr_button_empty</sprite>
+      <sprite>sprites\spr_button_unlock</sprite>
       <sprite>sprites\spr_button_selected</sprite>
+      <sprite>sprites\spr_button_locked</sprite>
       <sprite>sprites\spr_button_check</sprite>
       <sprite>sprites\spr_button_key_stone</sprite>
       <sprite>sprites\spr_button_p_2</sprite>
@@ -296,6 +298,11 @@
         <script>scripts\scp_controller_select_first_player.gml</script>
         <script>scripts\scp_controller_random_level.gml</script>
       </scripts>
+      <scripts name="load_out_menu">
+        <script>scripts\scp_l_menu_controller_create.gml</script>
+        <script>scripts\scp_l_menu_controller_step.gml</script>
+        <script>scripts\scp_l_menu_controller_draw.gml</script>
+      </scripts>
     </scripts>
     <scripts name="player">
       <script>scripts\scp_player_create.gml</script>
@@ -371,13 +378,12 @@
         <script>scripts\scp_button_player_3.gml</script>
         <script>scripts\scp_button_do_nothing.gml</script>
         <scripts name="load_out_menu">
-          <script>scripts\scp_button_l_menu_p_select.gml</script>
-          <script>scripts\scp_button_l_menu_spell_select.gml</script>
+          <script>scripts\scp_button_l_menu_unlock.gml</script>
           <script>scripts\scp_button_l_menu_p_draw.gml</script>
           <script>scripts\scp_button_l_menu_continue.gml</script>
-          <script>scripts\scp_l_menu_controller_step.gml</script>
-          <script>scripts\scp_l_menu_controller_create.gml</script>
-          <script>scripts\scp_l_menu_controller_draw.gml</script>
+          <script>scripts\scp_button_l_menu_p_select_new.gml</script>
+          <script>scripts\scp_button_l_menu_p_select.gml</script>
+          <script>scripts\scp_button_l_menu_spell_select.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -533,6 +539,7 @@
         <object>objects\obj_button_l_menu_p2</object>
         <object>objects\obj_button_l_menu_p3</object>
         <object>objects\obj_button_l_menu_spell</object>
+        <object>objects\obj_button_l_menu_unlock</object>
         <object>objects\obj_button_l_menu_spell_s_parent</object>
         <object>objects\obj_button_l_menu_spell_s_p1</object>
         <object>objects\obj_button_l_menu_spell_s_p2</object>

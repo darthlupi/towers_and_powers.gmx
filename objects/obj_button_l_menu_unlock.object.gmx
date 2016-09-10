@@ -29,7 +29,7 @@
 
 //The script to run when the button is pressed :)
 //Override this variable to creat unique actions for your buttons...
-button_script = scp_button_l_menu_spell_select;
+button_script = scp_button_l_menu_unlock;
 
 //Which spell does this button represent?
 spell = 0;
@@ -37,6 +37,29 @@ spell = 0;
 //alarm[0] is the where all of the important unique stuff happens :)
 alarm[0] = 1;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Can you create a not enough money effect :)
 </string>
           </argument>
         </arguments>
@@ -83,7 +106,7 @@ alarm[0] = 1;
           <argument>
             <kind>1</kind>
             <string>//Set the sprite
-sprite_index = global.spell_sprite[spell];
+sprite_index = spr_button_unlock;
 </string>
           </argument>
         </arguments>
@@ -106,16 +129,18 @@ sprite_index = global.spell_sprite[spell];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//If not colliding with the selection sprite then this button can be used...
-if ( ! collision_point(x,y,obj_l_menu_which_player,true,true) ){
+            <string>spell = obj_l_menu_controller.spell;
+
+//Make it visible or not :)
+if ( !global.spell_level[spell] ){
+  visible = true;
   scp_button_step();
-  depth = -1;
+} else {
+  visible = false;
 }
-else
-{
-  depth = 1;
-}
+
+
+
 </string>
           </argument>
         </arguments>
@@ -138,16 +163,17 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>scp_button_draw();
 
 
-scp_button_draw();
+//global.spell_cost[spell];
 
-//Draw the locked spell if the spell is not yet unlocked
-if ( !global.spell_level[spell] ){
- draw_sprite(spr_button_locked,-1,x,y);
-}
 
+//Draw money
+draw_set_halign(fa_left);
+draw_set_color(c_white);
+draw_set_font(global.font_score);
+draw_text_transformed(x + 20,y, "COST $" + string(global.spell_cost[spell]),0.75,0.75,0 );
 
 
 

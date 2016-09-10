@@ -2,6 +2,7 @@
 
 //Fire sprouts
 global.spell_level[0] = 0; 
+global.spell_cost[0] = 10000;
 global.spell_max_ammo[0] = 60;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[0] = global.spell_max_ammo[0]; 
@@ -18,6 +19,7 @@ global.spell_desc[0] = "Summon the mighty Fire Sprout and watch it seak your ene
 
 //Machine Gun
 global.spell_level[1] = 0; 
+global.spell_cost[1] = 1000;
 global.spell_max_ammo[1] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[1] = global.spell_max_ammo[1];
@@ -34,6 +36,7 @@ global.spell_desc[1] = "Powerfull spell that does stuff."
 
 //Water Slash
 global.spell_level[2] = 0; 
+global.spell_cost[2] = 1000;
 global.spell_max_ammo[2] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[2] = global.spell_max_ammo[1];
@@ -50,6 +53,7 @@ global.spell_desc[2] = "Powerfull spell that does stuff."
 
 //Roller
 global.spell_level[3] = 0; 
+global.spell_cost[3] = 100;
 global.spell_max_ammo[3] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[3] = global.spell_max_ammo[3];
@@ -66,6 +70,7 @@ global.spell_desc[3] = "Powerfull spell that does stuff."
 
 //Fire beam
 global.spell_level[4] = 0; 
+global.spell_cost[4] = 100;
 global.spell_max_ammo[4] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[4] = global.spell_max_ammo[4];
@@ -82,6 +87,7 @@ global.spell_desc[4] = "Powerfull spell that does stuff."
 
 //Multi Shot
 global.spell_level[5] = 0; 
+global.spell_cost[5] = 100;
 global.spell_max_ammo[5] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[5] = global.spell_max_ammo[5];
@@ -98,6 +104,7 @@ global.spell_desc[5] = "Powerfull spell that does stuff."
 
 //Ice Spike
 global.spell_level[6] = 0; 
+global.spell_cost[6] = 100;
 global.spell_max_ammo[6] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[6] = global.spell_max_ammo[6];
@@ -114,6 +121,7 @@ global.spell_desc[6] = "Powerfull spell that does stuff."
 
 //Ice Maker
 global.spell_level[7] = 0; 
+global.spell_cost[7] = 100;
 global.spell_max_ammo[7] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[7] = global.spell_max_ammo[7];
@@ -130,6 +138,7 @@ global.spell_desc[7] = "Powerfull spell that does stuff."
 
 //Fireball
 global.spell_level[8] = 0; 
+global.spell_cost[8] = 100;
 global.spell_max_ammo[8] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[8] = global.spell_max_ammo[8];
@@ -146,6 +155,7 @@ global.spell_desc[8] = "Powerfull spell that does stuff."
 
 //Prox Mime
 global.spell_level[9] = 0; 
+global.spell_cost[9] = 100;
 global.spell_max_ammo[9] = 120;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[9] = global.spell_max_ammo[9];
@@ -166,9 +176,6 @@ global.spell_selected[0] = 4;
 global.spell_selected[1] = 6; 
 //Which spell is selected for player 3
 global.spell_selected[2] = 8; 
-
-
-
 
 //For single player can be deleted if going multi unit...
 //Which spell is selected in slot 1

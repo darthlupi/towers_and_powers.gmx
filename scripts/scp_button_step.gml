@@ -1,4 +1,6 @@
-
+//If this button is moused over perform the mouse over animation and set all the 
+//appropriate variables.
+//We also want to trigger the script associated with the button if mb_left is pressed.
 if ( scp_mouse_over_check(self) )
 {
     if ( mouse_check_button(mb_left) )
