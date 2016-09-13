@@ -74,6 +74,8 @@ scp_player_create();
           <argument>
             <kind>1</kind>
             <string>scp_player_step();
+
+
 </string>
           </argument>
         </arguments>

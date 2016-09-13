@@ -81,6 +81,8 @@ sprite_jump_d = spr_player_2_j_d;
           <argument>
             <kind>1</kind>
             <string>scp_player_step();
+
+
 </string>
           </argument>
         </arguments>

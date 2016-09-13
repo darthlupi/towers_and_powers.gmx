@@ -32,7 +32,7 @@ alarm[2] = 8;
 //Create bottons
 my_button_1 = instance_create(x+213,y+8,obj_button_p1);
 my_button_2 = instance_create(x+213 + 32 + 4,y+8,obj_button_p2);
-my_button_3 = instance_create(x+213 + 64 + 2,y+8,obj_button_p3);
+//my_button_3 = instance_create(x+213 + 64 + 2,y+8,obj_button_p3);
 my_button_4 = instance_create(x+213 + 96 + 12,y+8,obj_button_spell_multi);
 my_button_5 = instance_create(x+213 + 128 + 12,y+8,obj_button_action);
 //Text variables
@@ -42,7 +42,7 @@ angle =0;
 
 //For leveling stuff
 lvl_frame = 0;
-
+spell_lvl_frame = 0;
 
 //Prepare the grid movement
 scp_controller_grid_create();

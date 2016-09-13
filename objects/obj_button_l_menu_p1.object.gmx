@@ -88,6 +88,11 @@ p_sprite_walk = spr_player_1_w;
           <argument>
             <kind>1</kind>
             <string>scp_button_step();
+
+//Only active this button when it's "row" is selected
+if ( mouse_y &gt; y - 12 &amp;&amp; mouse_y &lt; y + 12 ) {
+  global.p_selected_last = p_index;
+} 
 </string>
           </argument>
         </arguments>

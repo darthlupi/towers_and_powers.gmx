@@ -4,16 +4,16 @@ x = view_xview[0];
 y = view_yview[0] + 192;
 
 
-//Create bottons
-my_button_1.x = x+224;
+//Place Buttons
+my_button_1.x = x+231;
 my_button_1.y = y+23;
-my_button_2.x = x+213 + 47;
+my_button_2.x = x+260 + 18;
 my_button_2.y = y+23;
-my_button_3.x = x+218 + 77 ;
-my_button_3.y = y+23;
-my_button_4.x = x+222 + 116 ;
+//my_button_3.x = x+290  ;
+//my_button_3.y = y+23;
+my_button_4.x = x+330  ;
 my_button_4.y = y+23;
-my_button_5.x = x+225 + 148 ;
+my_button_5.x = x+372  ;
 my_button_5.y = y+23;
 
 if ( instance_exists(obj_player_1) ){
@@ -56,7 +56,26 @@ if ( instance_exists(player_id) && player_id != -1 )
     draw_sprite(spr_player_health,0,x+118+h2*4,y+8);
   }
   
-  //Draw level up crap :)
+  /////////////////////////////////////
+  //Draw the spell level
+  tmp_spell = global.spell_selected[player_id.p_index];
+  spell_lvl_frame += 0.1;
+  //Set how much of the level bar to show based on how close to leveling you are.
+  //This is represented 0 to 1 ( precentage ) of exp vs exp for next level.
+  if ( global.spell_exp[tmp_spell] == 0 ){
+    tmp_lvl_percent = 0;
+  }
+  else{
+    tmp_lvl_percent = global.spell_exp[tmp_spell] / ( global.spell_next_level[tmp_spell] * global.spell_level[tmp_spell] );
+  }
+  tmp_x = 311;
+  tmp_y = 42;
+  draw_sprite_ext(spr_hud_spell_exp_b,spell_lvl_frame,x+tmp_x,y+tmp_y,1,1,0,c_white,1);
+  draw_sprite_ext(spr_hud_spell_exp_t,-1,x+tmp_x + 41,y+tmp_y,1-tmp_lvl_percent,1,0,c_white,1);
+
+    
+  //////////////////////////////////////////////////////////////////////////
+  //Draw player level up bar and text
   //Set the frame to draw 
   lvl_frame += 0.1;
   if lvl_frame > 20 then tmp_frame = 0;

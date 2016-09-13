@@ -66,7 +66,7 @@ if ( keyboard_check_pressed(ord('B') ) )
     with(obj_button_action){script_execute(button_script);}    
 }
 
-//Jump and stuff
+//Cast the spell!!!!
 if ( mouse_check_button_pressed(mb_right)  ){
     with(obj_button_spell_multi){script_execute(button_script);}
 }

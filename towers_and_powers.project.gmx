@@ -148,6 +148,10 @@
       <sprite>sprites\spr_player_health</sprite>
       <sprite>sprites\spr_hud_exp_bar_b</sprite>
       <sprite>sprites\spr_hud_exp_bar_t</sprite>
+      <sprite>sprites\spr_hud_spell_exp_b</sprite>
+      <sprite>sprites\spr_hud_spell_exp_b2</sprite>
+      <sprite>sprites\spr_hud_spell_exp_t</sprite>
+      <sprite>sprites\spr_hud_spell_exp_t2</sprite>
     </sprites>
     <sprites name="button">
       <sprite>sprites\spr_player_button</sprite>
@@ -384,6 +388,7 @@
           <script>scripts\scp_button_l_menu_p_select_new.gml</script>
           <script>scripts\scp_button_l_menu_p_select.gml</script>
           <script>scripts\scp_button_l_menu_spell_select.gml</script>
+          <script>scripts\scp_button_l_menu_unlock_draw.gml</script>
         </scripts>
       </scripts>
     </scripts>
