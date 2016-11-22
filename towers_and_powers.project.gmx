@@ -257,6 +257,9 @@
       <sprite>sprites\spr_key_stone</sprite>
       <sprite>sprites\sprite87</sprite>
       <sprite>sprites\spr_coin</sprite>
+      <sprite>sprites\spr_exp_crystal_10</sprite>
+      <sprite>sprites\spr_exp_crystal_5</sprite>
+      <sprite>sprites\spr_exp_crystal_1</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -403,6 +406,7 @@
       <script>scripts\scp_transition_create.gml</script>
       <script>scripts\scp_transition_draw.gml</script>
       <script>scripts\scp_transition_freeze_unfreeze.gml</script>
+      <script>scripts\scp_transition_draw_gui.gml</script>
     </scripts>
     <scripts name="effects">
       <script>scripts\scp_enter_door_way.gml</script>
@@ -560,6 +564,7 @@
       <object>objects\obj_key_stone</object>
       <object>objects\obj_coin</object>
       <object>objects\obj_key_stone_counter_6</object>
+      <object>objects\obj_exp_crystal</object>
     </objects>
     <objects name="music">
       <object>objects\obj_song_2</object>
@@ -568,20 +573,16 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_level_1_1</room>
     <room>rooms\rm_start_menu</room>
     <room>rooms\rm_level_up_mock_up</room>
     <room>rooms\rm_level_1_0</room>
-    <room>rooms\rm_level_1_1</room>
     <room>rooms\rm_lv_1_2</room>
     <room>rooms\rm_lv_1_3</room>
     <room>rooms\rm_template</room>
-    <room>rooms\rm_random</room>
-    <room>rooms\rm_lvl_1_4</room>
     <room>rooms\rm_magic_explained_2</room>
     <room>rooms\rm_magic_explained_3</room>
     <room>rooms\rm_magic_explained_1</room>
-    <room>rooms\room14</room>
-    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

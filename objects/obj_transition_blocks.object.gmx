@@ -32,6 +32,29 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scp_transition_reset();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -52,16 +75,6 @@
             <string>//Freeze the screen 
 scp_transition_freeze_unfreeze(1);
 
-
-//Not working for some reason... ...had to move to draw event.
-//Place any effects you wish!
-
-//Place the growing squares effect
-//for ( ty = 0; ty &lt; view_hview[1];ty+=32){
-//  for ( tx = 0; tx &lt; view_wview[1];tx+=32){
-//    instance_create(view_xview[1] + tx, view_yview[1] + ty,obj_transition_block); 
-//  }
-//}
 </string>
           </argument>
         </arguments>
@@ -87,11 +100,11 @@ scp_transition_freeze_unfreeze(1);
             <string>//Unfreeze 
 scp_transition_freeze_unfreeze(0);
 scp_transition_reset();
-//instance_destroy();
-//Goto next room if this is the end of the level...
-if level_start == 0 then room_goto_next();
 //Destroy self if this is the start of the level...
 if level_start == 1 then instance_destroy();
+//Goto next room if this is the end of the level...
+if level_start == 0 then room_goto_next();
+
 </string>
           </argument>
         </arguments>
@@ -138,6 +151,29 @@ if level_start == 1 then instance_destroy();
           <argument>
             <kind>1</kind>
             <string>scp_transition_reset();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scp_transition_draw_gui();
 </string>
           </argument>
         </arguments>

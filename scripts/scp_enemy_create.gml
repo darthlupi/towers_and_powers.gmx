@@ -14,7 +14,7 @@ armor = 1;
 range = 120;
 //Point value 
 gold_value = 100;
-exp_value = 40;
+exp_value = 59;
 
 //Only used for multipathmovement :)
 my_path = path_add();

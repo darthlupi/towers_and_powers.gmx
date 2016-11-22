@@ -5,7 +5,7 @@ global.spell_level[0] = 0;
 global.spell_exp[0] = 0; 
 global.spell_next_level[0] = 60; 
 global.spell_cost[0] = 10000;
-global.spell_max_ammo[0] = 60;
+global.spell_max_ammo[0] = 8;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[0] = global.spell_max_ammo[0]; 
 global.spell_ammo_per_level[0] = 5;
@@ -24,7 +24,7 @@ global.spell_level[1] = 0;
 global.spell_exp[1] = 0; 
 global.spell_next_level[1] = 60; 
 global.spell_cost[1] = 1000;
-global.spell_max_ammo[1] = 120;
+global.spell_max_ammo[1] = 20;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[1] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[1] = 10;
@@ -43,7 +43,7 @@ global.spell_level[2] = 0;
 global.spell_exp[2] = 0; 
 global.spell_next_level[2] = 60;  
 global.spell_cost[2] = 1000;
-global.spell_max_ammo[2] = 120;
+global.spell_max_ammo[2] = 8;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[2] = global.spell_max_ammo[1];
 global.spell_ammo_per_level[2] = 10;
@@ -62,7 +62,7 @@ global.spell_level[3] = 0;
 global.spell_exp[3] = 0; 
 global.spell_next_level[3] = 60; 
 global.spell_cost[3] = 100;
-global.spell_max_ammo[3] = 120;
+global.spell_max_ammo[3] = 12;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[3] = global.spell_max_ammo[3];
 global.spell_ammo_per_level[3] = 10;
@@ -81,7 +81,7 @@ global.spell_level[4] = 1;
 global.spell_exp[4] = 0; 
 global.spell_next_level[4] = 60; 
 global.spell_cost[4] = 100;
-global.spell_max_ammo[4] = 120;
+global.spell_max_ammo[4] = 6;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[4] = global.spell_max_ammo[4];
 global.spell_ammo_per_level[4] = 10;
@@ -100,7 +100,7 @@ global.spell_level[5] = 0;
 global.spell_exp[5] = 0; 
 global.spell_next_level[5] = 60; 
 global.spell_cost[5] = 100;
-global.spell_max_ammo[5] = 120;
+global.spell_max_ammo[5] = 6;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[5] = global.spell_max_ammo[5];
 global.spell_ammo_per_level[5] = 10;
@@ -119,13 +119,13 @@ global.spell_level[6] = 2;
 global.spell_exp[6] = 0; 
 global.spell_next_level[6] = 60; 
 global.spell_cost[6] = 100;
-global.spell_max_ammo[6] = 120;
+global.spell_max_ammo[6] = 10;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[6] = global.spell_max_ammo[6];
 global.spell_ammo_per_level[6] = 10;
 global.spell_reload[6] = 5;
 global.spell_reload_per_level[6] = 1;
-global.spell_attack[6] = 9;
+global.spell_attack[6] = 2;
 global.spell_attack_per_level[6] = 2;
 global.spell_range[6] = "long";
 global.spell_script[6] = scp_spell_ice_spike;
@@ -138,7 +138,7 @@ global.spell_level[7] = 0;
 global.spell_exp[7] = 0; 
 global.spell_next_level[7] = 60; 
 global.spell_cost[7] = 100;
-global.spell_max_ammo[7] = 120;
+global.spell_max_ammo[7] = 4;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[7] = global.spell_max_ammo[7];
 global.spell_ammo_per_level[7] = 10;
@@ -157,13 +157,13 @@ global.spell_level[8] = 0;
 global.spell_exp[7] = 0; 
 global.spell_next_level[7] = 60; 
 global.spell_cost[8] = 100;
-global.spell_max_ammo[8] = 120;
+global.spell_max_ammo[8] = 7;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[8] = global.spell_max_ammo[8];
 global.spell_ammo_per_level[8] = 10;
 global.spell_reload[8] = 40;
 global.spell_reload_per_level[8] = 1;
-global.spell_attack[8] = 15;
+global.spell_attack[8] = 5;
 global.spell_attack_per_level[9] = 2;
 global.spell_range[8] = "medium";
 global.spell_script[8] = scp_spell_fireball;
@@ -176,10 +176,10 @@ global.spell_level[9] = 0;
 global.spell_exp[9] = 0; 
 global.spell_next_level[9] = 60; 
 global.spell_cost[9] = 100;
-global.spell_max_ammo[9] = 120;
+global.spell_max_ammo[9] = 8;
 //Global ammo so that it can be carried over between stages.
 global.spell_ammo[9] = global.spell_max_ammo[9];
-global.spell_ammo_per_level[9] = 10;
+global.spell_ammo_per_level[9] = 2;
 global.spell_reload[9] = 20;
 global.spell_reload_per_level[9] = 1;
 global.spell_attack[9] = 2;

@@ -13,7 +13,7 @@ draw_set_font(global.font_press_start);
 draw_text_ext_transformed(48,22,spell_description,-1,-1,0.75,0.75,0 );
 
 draw_set_font(global.font_blue_press_start);
-draw_text_ext_transformed(36,44,"POWER:   RELOAD:   RANGE:      COUNT : "    ,-1,-1,1,1,0 );
+draw_text_ext_transformed(36,44,"POWER:   RELOAD:   RANGE:      AMMO : "    ,-1,-1,1,1,0 );
 draw_set_font(global.font_press_start);
 draw_text(86,44,spell_power);
 draw_text(170,44,spell_reload);

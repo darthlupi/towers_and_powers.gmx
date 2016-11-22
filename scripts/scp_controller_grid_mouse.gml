@@ -1,8 +1,8 @@
 //We add in the view_xview and yview because the view[1] does not move thus
 //mouse x is not updated with teh default views position :)
 
-wx = mouse_x + view_xview[0];
-wy = mouse_y + view_yview[0];
+wx = mouse_x;
+wy = mouse_y;
 //Track mouse along grid
 for( mx = grid_left * grid_size_x;mx< ( view_xview[0] + view_wview[0] ) - grid_right * grid_size_x;mx += grid_size_x )
 {

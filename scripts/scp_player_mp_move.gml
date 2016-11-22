@@ -1,7 +1,7 @@
 
 //Delay when you can actually start moving.
 //This allows the player to tap around to change direction.
-tmp_dist = distance_to_point(mouse_x + view_xview[0],mouse_y + view_yview[0]);
+tmp_dist = distance_to_point(mouse_x,mouse_y);
 //Make it so that if you are not pressing pressing the mouse then trigger the delay.
 if ( !mouse_check_button(mb_left) ){
   //How long to wait before engaging move mode
@@ -54,7 +54,7 @@ if ( obj_controller.player_id == id && mouse_check_button(mb_left) && jump == 0 
   
   //Only set the target one mouse press.
   //We use these variables to reset the path after an auto jump so it must stay set manually only.
-  target_x = mouse_x + view_xview[0];
+  target_x = mouse_x;
   target_y = obj_controller.mouse_grid_y + obj_controller.grid_size_y / 2 ;
 
   //If Not flying and you selected a location this is in the air
